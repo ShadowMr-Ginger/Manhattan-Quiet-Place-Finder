@@ -9,6 +9,83 @@ export const MANHATTAN_CENTER = {
   lng: -73.9712,
 };
 
+// Unsplash photo collections for place types
+// 按地点类型的 Unsplash 照片集合
+const photoSets: Record<string, string[]> = {
+  cafe: [
+    'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80',
+    'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80',
+    'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+  ],
+  library: [
+    'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&q=80',
+    'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&q=80',
+    'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80',
+  ],
+  coworking: [
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+    'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+    'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800&q=80',
+  ],
+  public: [
+    'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80',
+    'https://images.unsplash.com/photo-1519331379826-fbf3350e8b6f?w=800&q=80',
+    'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=800&q=80',
+  ],
+};
+
+// Common tags by type
+// 按类型的常见标签
+const tagSets: Record<string, string[]> = {
+  Cafe: ['WiFi Stable', 'Power Outlets', 'Good Coffee', 'Natural Light', 'Cozy Vibe', 'Study Friendly', 'Soft Music'],
+  Library: ['Silent Zone', 'Free WiFi', 'Reading Rooms', 'Historic Building', 'Spacious', 'Well Heated', 'Research Access'],
+  'Coworking Space': ['Meeting Rooms', 'Standing Desks', 'Free Coffee', 'Printer Access', '24/7', 'Networking', 'Phone Booths'],
+  'Public Study Area': ['Free Entry', 'Outdoor Seating', 'People Watching', 'Fresh Air', 'Scenic View', 'Pet Friendly'],
+};
+
+// Mock reviews generator
+// 模拟评价生成器
+function makeReviews(placeType: string, baseScore: number): QuietPlace['reviews'] {
+  const reviewers = ['Sarah M.', 'David K.', 'Jessica L.', 'Michael T.', 'Emily R.', 'Chris W.'];
+  const cafeComments = [
+    'Perfect spot for focused work. The espresso is top-notch!',
+    'Great atmosphere, but gets noisy after 4 PM.',
+    'Love the natural lighting here. My go-to coding spot.',
+    'WiFi is fast and reliable. Plenty of outlets near the window.',
+  ];
+  const libraryComments = [
+    'Incredibly quiet. I get more done here than anywhere else.',
+    'Beautiful architecture and very comfortable seating.',
+    'The reading room on the 3rd floor is a hidden gem.',
+    'Free WiFi and plenty of desk space. Highly recommend.',
+  ];
+  const coworkingComments = [
+    'Great amenities and the community is very friendly.',
+    'Phone booths are a lifesaver for Zoom calls.',
+    'Standing desks help me stay productive all day.',
+    'The free coffee keeps me going through deadlines.',
+  ];
+  const publicComments = [
+    'Nice spot when the weather is good. Can get windy though.',
+    'Love studying outdoors here. Very refreshing.',
+    'Great for reading, but bring sunscreen in summer.',
+    'Peaceful corner away from the main path.',
+  ];
+
+  const commentPool =
+    placeType === 'Cafe' ? cafeComments :
+    placeType === 'Library' ? libraryComments :
+    placeType === 'Coworking Space' ? coworkingComments :
+    publicComments;
+
+  return commentPool.slice(0, 3).map((comment, i) => ({
+    author: reviewers[i % reviewers.length],
+    rating: Math.min(5, Math.max(3, Math.round(baseScore / 20) + (i % 2 === 0 ? 1 : 0))),
+    comment,
+    date: `${Math.max(1, 14 - i * 3)} days ago`,
+  }));
+}
+
 /**
  * Mock quiet places data
  * 模拟的安静地点数据
@@ -36,6 +113,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 68 },
       { time: '6 PM', quietScore: 72 },
     ],
+    photos: photoSets.cafe,
+    tags: tagSets.Cafe.slice(0, 5),
+    reviews: makeReviews('Cafe', 88),
   },
   {
     id: '2',
@@ -59,6 +139,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 88 },
       { time: '6 PM', quietScore: 85 },
     ],
+    photos: photoSets.library,
+    tags: tagSets.Library.slice(0, 5),
+    reviews: makeReviews('Library', 95),
   },
   {
     id: '3',
@@ -82,6 +165,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 65 },
       { time: '6 PM', quietScore: 60 },
     ],
+    photos: photoSets.coworking,
+    tags: tagSets['Coworking Space'].slice(0, 5),
+    reviews: makeReviews('Coworking Space', 72),
   },
   {
     id: '4',
@@ -105,6 +191,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 65 },
       { time: '6 PM', quietScore: 62 },
     ],
+    photos: photoSets.public,
+    tags: tagSets['Public Study Area'].slice(0, 5),
+    reviews: makeReviews('Public Study Area', 78),
   },
   {
     id: '5',
@@ -128,6 +217,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 68 },
       { time: '6 PM', quietScore: 75 },
     ],
+    photos: photoSets.cafe,
+    tags: tagSets.Cafe.slice(2, 7),
+    reviews: makeReviews('Cafe', 85),
   },
   {
     id: '6',
@@ -151,6 +243,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 85 },
       { time: '6 PM', quietScore: 80 },
     ],
+    photos: photoSets.library,
+    tags: tagSets.Library.slice(1, 6),
+    reviews: makeReviews('Library', 92),
   },
   {
     id: '7',
@@ -174,6 +269,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 70 },
       { time: '6 PM', quietScore: 65 },
     ],
+    photos: photoSets.coworking,
+    tags: tagSets['Coworking Space'].slice(0, 5),
+    reviews: makeReviews('Coworking Space', 80),
   },
   {
     id: '8',
@@ -197,6 +295,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 55 },
       { time: '6 PM', quietScore: 60 },
     ],
+    photos: photoSets.public,
+    tags: tagSets['Public Study Area'].slice(0, 5),
+    reviews: makeReviews('Public Study Area', 65),
   },
   {
     id: '9',
@@ -220,6 +321,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 65 },
       { time: '6 PM', quietScore: 72 },
     ],
+    photos: photoSets.cafe,
+    tags: tagSets.Cafe.slice(1, 6),
+    reviews: makeReviews('Cafe', 82),
   },
   {
     id: '10',
@@ -243,6 +347,9 @@ export const mockQuietPlaces: QuietPlace[] = [
       { time: '5 PM', quietScore: 68 },
       { time: '6 PM', quietScore: 65 },
     ],
+    photos: photoSets.coworking,
+    tags: tagSets['Coworking Space'].slice(2, 7),
+    reviews: makeReviews('Coworking Space', 76),
   },
 ];
 

@@ -2,6 +2,17 @@
 // 安静地点查找器的类型定义
 
 /**
+ * Represents a review left by a user
+ * 用户留下的评价
+ */
+export interface PlaceReview {
+  author: string;
+  rating: number; // 1-5
+  comment: string;
+  date: string;
+}
+
+/**
  * Represents a quiet place in Manhattan
  * 表示曼哈顿的一个安静地点
  */
@@ -27,10 +38,14 @@ export interface QuietPlace {
   predictions: ScorePrediction[];
   // Status / 状态
   isOpen: boolean;
-  // Photo URL (placeholder for future) / 照片URL（未来使用）
-  photoUrl?: string;
+  // Photo URLs for carousel / 照片轮播 URL
+  photos?: string[];
   // Opening hours / 开放时间
   hours: string;
+  // Tags / 标签
+  tags: string[];
+  // User reviews / 用户评价
+  reviews: PlaceReview[];
 }
 
 /**

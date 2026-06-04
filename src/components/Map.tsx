@@ -31,10 +31,10 @@ const typeIcons = {
 };
 
 const markerColors = {
-  Cafe: 'bg-amber-500 shadow-amber-200',
-  Library: 'bg-blue-500 shadow-blue-200',
-  'Coworking Space': 'bg-purple-500 shadow-purple-200',
-  'Public Study Area': 'bg-emerald-500 shadow-emerald-200',
+  Cafe: 'bg-amber-500 shadow-amber-200 dark:shadow-amber-900/40',
+  Library: 'bg-blue-500 shadow-blue-200 dark:shadow-blue-900/40',
+  'Coworking Space': 'bg-purple-500 shadow-purple-200 dark:shadow-purple-900/40',
+  'Public Study Area': 'bg-emerald-500 shadow-emerald-200 dark:shadow-emerald-900/40',
 };
 
 interface MapProps {
@@ -51,6 +51,21 @@ function latLngToPosition(lat: number, lng: number) {
   const y = ((latMax - lat) / (latMax - latMin)) * 100;
   const x = ((lng - lngMin) / (lngMax - lngMin)) * 100;
   return { x: Math.max(0, Math.min(100, x)), y: Math.max(0, Math.min(100, y)) };
+}
+
+// Generate heatmap blobs based on place quiet scores
+function generateHeatBlobs(places: QuietPlace[]) {
+  return places.map((place) => {
+    const pos = latLngToPosition(place.lat, place.lng);
+    const radius = 8 + (place.quietScore / 100) * 12;
+    const opacity = 0.15 + (place.quietScore / 100) * 0.25;
+    const color = place.quietScore >= 80
+      ? '14, 184, 166'   // teal
+      : place.quietScore >= 60
+      ? '245, 158, 11'   // amber
+      : '244, 63, 94';   // rose
+    return { x: pos.x, y: pos.y, radius, opacity, color };
+  });
 }
 
 function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
@@ -76,14 +91,16 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
     []
   );
 
+  const heatBlobs = useMemo(() => generateHeatBlobs(places), [places]);
+
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-none bg-[#e8e6e1]">
+    <div className="relative h-full w-full overflow-hidden rounded-none bg-[#e8e6e1] dark:bg-[#1a1917]">
       {/* Background grid / 背景网格 */}
       <div className="absolute inset-0 opacity-30">
         <svg width="100%" height="100%">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d1cfc9" strokeWidth="0.5" />
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d1cfc9" strokeWidth="0.5" className="dark:stroke-[#333330]" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -91,12 +108,12 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
       </div>
 
       {/* Water / 水域 */}
-      <div className="absolute -left-4 top-0 h-full w-[15%] -skew-x-6 bg-[#b8d4e3] opacity-40" />
-      <div className="absolute -right-2 bottom-0 h-[30%] w-[20%] skew-x-3 bg-[#b8d4e3] opacity-40" />
+      <div className="absolute -left-4 top-0 h-full w-[15%] -skew-x-6 bg-[#b8d4e3] opacity-40 dark:bg-[#1e3a4d]" />
+      <div className="absolute -right-2 bottom-0 h-[30%] w-[20%] skew-x-3 bg-[#b8d4e3] opacity-40 dark:bg-[#1e3a4d]" />
 
       {/* Central Park / 中央公园 */}
       <div
-        className="absolute rounded-xl bg-[#a8c9a0] opacity-60"
+        className="absolute rounded-xl bg-[#a8c9a0] opacity-60 dark:bg-[#2d4a2d]"
         style={{ left: '48%', top: '25%', width: '14%', height: '45%', transform: 'translate(-50%, 0)' }}
       >
         <div className="absolute inset-2 opacity-20">
@@ -113,10 +130,10 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
       {/* Street grid / 街道网格 */}
       <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="none">
         {['10%', '22%', '35%', '48%', '60%', '72%', '85%'].map((y, i) => (
-          <line key={`h-${i}`} x1="0" y1={y} x2="100%" y2={y} stroke="#c4c2bc" strokeWidth="1.5" opacity="0.6" />
+          <line key={`h-${i}`} x1="0" y1={y} x2="100%" y2={y} stroke="#c4c2bc" strokeWidth="1.5" opacity="0.6" className="dark:stroke-[#3a3a37]" />
         ))}
         {['8%', '20%', '32%', '44%', '56%', '68%', '80%', '92%'].map((x, i) => (
-          <line key={`v-${i}`} x1={x} y1="0" x2={x} y2="100%" stroke="#c4c2bc" strokeWidth="1" opacity="0.4" />
+          <line key={`v-${i}`} x1={x} y1="0" x2={x} y2="100%" stroke="#c4c2bc" strokeWidth="1" opacity="0.4" className="dark:stroke-[#3a3a37]" />
         ))}
       </svg>
 
@@ -126,11 +143,52 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
         return (
           <div
             key={`b-${b.id}`}
-            className="absolute rounded-sm bg-white/50 shadow-sm"
+            className="absolute rounded-sm bg-white/50 shadow-sm dark:bg-slate-700/40"
             style={{ left: `${b.x}%`, top: `${b.y}%`, width: `${b.width}%`, height: `${b.height}%` }}
           />
         );
       })}
+
+      {/* ===== Quiet Zone Heatmap Layer ===== */}
+      {/* 安静区域热力层 */}
+      <svg className="absolute inset-0 h-full w-full pointer-events-none" preserveAspectRatio="none">
+        <defs>
+          {heatBlobs.map((blob, i) => (
+            <radialGradient key={`grad-${i}`} id={`heat-${i}`} cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor={`rgb(${blob.color})`} stopOpacity={blob.opacity} />
+              <stop offset="60%" stopColor={`rgb(${blob.color})`} stopOpacity={blob.opacity * 0.5} />
+              <stop offset="100%" stopColor={`rgb(${blob.color})`} stopOpacity="0" />
+            </radialGradient>
+          ))}
+        </defs>
+        {heatBlobs.map((blob, i) => (
+          <circle
+            key={`heat-blob-${i}`}
+            cx={`${blob.x}%`}
+            cy={`${blob.y}%`}
+            r={`${blob.radius}%`}
+            fill={`url(#heat-${i})`}
+          />
+        ))}
+      </svg>
+
+      {/* Heatmap legend */}
+      <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-xl glass-subtle px-2.5 py-1.5">
+        <div className="flex items-center gap-1">
+          <span className="h-2 w-2 rounded-full bg-teal-400" />
+          <span className="text-[9px] text-slate-500 dark:text-slate-400">Quiet</span>
+        </div>
+        <div className="h-2 w-px bg-slate-300 dark:bg-slate-600" />
+        <div className="flex items-center gap-1">
+          <span className="h-2 w-2 rounded-full bg-amber-400" />
+          <span className="text-[9px] text-slate-500 dark:text-slate-400">Moderate</span>
+        </div>
+        <div className="h-2 w-px bg-slate-300 dark:bg-slate-600" />
+        <div className="flex items-center gap-1">
+          <span className="h-2 w-2 rounded-full bg-rose-400" />
+          <span className="text-[9px] text-slate-500 dark:text-slate-400">Noisy</span>
+        </div>
+      </div>
 
       {/* Markers / 标记 */}
       {places.map((place) => {
@@ -161,10 +219,10 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
             <motion.div
               whileHover={{ scale: 1.15, y: -4 }}
               whileTap={{ scale: 0.95 }}
-              className={`relative flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full shadow-lg ${markerColors[place.type]} ${isSelected ? 'ring-4 ring-white/60' : ''}`}
+              className={`relative flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full shadow-lg ${markerColors[place.type]} ${isSelected ? 'ring-4 ring-white/60 dark:ring-slate-400/40' : ''}`}
             >
               <Icon size={16} className="text-white" strokeWidth={2.5} />
-              <div className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-white text-[8px] font-bold text-slate-700 shadow-sm">
+              <div className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-white text-[8px] font-bold text-slate-700 shadow-sm dark:bg-slate-800 dark:text-slate-200">
                 {place.quietScore}
               </div>
             </motion.div>
@@ -174,10 +232,10 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
                   initial={{ opacity: 0, y: 5 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 5 }}
-                  className="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap rounded-xl bg-white px-3 py-1.5 text-[10px] font-semibold text-slate-700 shadow-lg"
+                  className="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap rounded-xl glass-card px-3 py-1.5 text-[10px] font-semibold text-slate-700 dark:text-slate-200"
                 >
                   {place.name}
-                  <div className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-white" />
+                  <div className="absolute -top-1 left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 bg-white dark:bg-slate-800" />
                 </motion.div>
               )}
             </AnimatePresence>
@@ -187,11 +245,11 @@ function StylizedMap({ places, selectedPlaceId, onSelectPlace }: MapProps) {
 
       {/* Controls / 控制 */}
       <div className="absolute bottom-4 right-4 flex flex-col gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-white text-slate-600 shadow-md">
+        <div className="flex h-8 w-8 items-center justify-center rounded-xl glass-card text-slate-600 dark:text-slate-300">
           <Navigation size={14} />
         </div>
       </div>
-      <div className="absolute left-4 top-4 rounded-xl bg-white/80 px-3 py-1.5 text-[10px] font-medium text-slate-500 shadow-sm backdrop-blur-sm">
+      <div className="absolute left-4 top-4 rounded-xl glass-subtle px-3 py-1.5 text-[10px] font-medium text-slate-500 shadow-sm dark:text-slate-300">
         Manhattan, New York
       </div>
     </div>

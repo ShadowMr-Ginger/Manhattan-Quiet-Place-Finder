@@ -33,7 +33,7 @@ function TypewriterText({ text, speed = 25 }: { text: string; speed?: number }) 
     <>
       {text.slice(0, index)}
       {index < text.length && (
-        <span className="ml-0.5 inline-block h-3.5 w-0.5 animate-pulse bg-sky-400 align-middle" />
+        <span className="ml-0.5 inline-block h-3.5 w-0.5 animate-pulse bg-sky-400 align-middle dark:bg-sky-500" />
       )}
     </>
   );
@@ -58,13 +58,13 @@ function AnimatedMessage({ message }: { message: ChatMessage }) {
         className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${
           isAssistant
             ? 'bg-gradient-to-br from-sky-400 to-teal-400 shadow-sm'
-            : 'bg-slate-200'
+            : 'bg-slate-200 dark:bg-slate-700'
         }`}
       >
         {isAssistant ? (
           <Sparkles size={13} className="text-white" />
         ) : (
-          <User size={13} className="text-slate-600" />
+          <User size={13} className="text-slate-600 dark:text-slate-300" />
         )}
       </div>
 
@@ -73,7 +73,7 @@ function AnimatedMessage({ message }: { message: ChatMessage }) {
       <div
         className={`max-w-[80%] rounded-2xl px-3.5 py-2.5 text-xs leading-relaxed ${
           isAssistant
-            ? 'rounded-tl-sm bg-white shadow-sm'
+            ? 'rounded-tl-sm glass-card text-slate-700 dark:text-slate-200'
             : 'rounded-tr-sm bg-sky-500 text-white shadow-sm'
         }`}
       >
@@ -111,17 +111,17 @@ export default function ChatPanel({ messages, onSendMessage, isVisible }: ChatPa
   if (!isVisible) return null;
 
   return (
-    <div className="flex h-full flex-col bg-white/80 backdrop-blur-md">
+    <div className="flex h-full flex-col glass dark:bg-slate-900/70">
       {/* Chat header */}
       {/* 聊天头部 */}
-      <div className="flex items-center gap-2 border-b border-slate-100 bg-white/60 px-4 py-3 backdrop-blur-sm">
+      <div className="flex items-center gap-2 border-b border-slate-100/50 px-4 py-3 glass-subtle dark:border-slate-700/50">
         <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-sky-400 to-teal-400 shadow-sm">
           <Bot size={14} className="text-white" />
         </div>
         <div>
-          <h3 className="text-xs font-semibold text-slate-700">AI Assistant</h3>
+          <h3 className="text-xs font-semibold text-slate-700 dark:text-slate-200">AI Assistant</h3>
           {/* AI 助手 */}
-          <p className="text-[10px] text-slate-400">Always here to help</p>
+          <p className="text-[10px] text-slate-400 dark:text-slate-500">Always here to help</p>
           {/* 随时为您提供帮助 */}
         </div>
       </div>
@@ -140,14 +140,14 @@ export default function ChatPanel({ messages, onSendMessage, isVisible }: ChatPa
             animate={{ opacity: 1 }}
             className="flex flex-col items-center justify-center py-10 text-center"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-100 to-teal-100">
-              <Sparkles size={20} className="text-sky-500" />
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-100 to-teal-100 dark:from-sky-950/30 dark:to-teal-950/20">
+              <Sparkles size={20} className="text-sky-500 dark:text-sky-400" />
             </div>
-            <p className="mt-3 text-xs font-medium text-slate-500">
+            <p className="mt-3 text-xs font-medium text-slate-500 dark:text-slate-400">
               Ask me anything about quiet places
               {/* 向我询问关于安静地点的任何问题 */}
             </p>
-            <p className="mt-1 text-[10px] text-slate-400">
+            <p className="mt-1 text-[10px] text-slate-400 dark:text-slate-500">
               Try: &quot;cafe near me&quot; or &quot;quietest library&quot;
               {/* 尝试：&quot;我附近的咖啡馆&quot; 或 &quot;最安静的图书馆&quot; */}
             </p>
@@ -165,22 +165,22 @@ export default function ChatPanel({ messages, onSendMessage, isVisible }: ChatPa
       {/* 输入区域 */}
       <form
         onSubmit={handleSubmit}
-        className="border-t border-slate-100 bg-white/60 p-3 backdrop-blur-sm"
+        className="border-t border-slate-100/50 p-3 glass-subtle dark:border-slate-700/50"
       >
-        <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-3 py-2 shadow-sm focus-within:border-sky-300 focus-within:ring-2 focus-within:ring-sky-100">
+        <div className="flex items-center gap-2 rounded-2xl border border-slate-200/80 bg-white/80 px-3 py-2 shadow-sm backdrop-blur-sm focus-within:border-sky-300 focus-within:ring-2 focus-within:ring-sky-100 dark:border-slate-700/80 dark:bg-slate-800/80 dark:focus-within:border-sky-700 dark:focus-within:ring-sky-900/30">
           <input
             type="text"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Ask about quiet places..."
             // 询问关于安静地点...
-            className="flex-1 bg-transparent text-xs text-slate-700 outline-none placeholder:text-slate-400"
+            className="flex-1 bg-transparent text-xs text-slate-700 outline-none placeholder:text-slate-400 dark:text-slate-200 dark:placeholder:text-slate-500"
           />
           <motion.button
             whileTap={{ scale: 0.9 }}
             type="submit"
             disabled={!inputValue.trim()}
-            className="flex h-7 w-7 items-center justify-center rounded-xl bg-sky-500 text-white shadow-sm transition-colors hover:bg-sky-600 disabled:opacity-40 disabled:hover:bg-sky-500"
+            className="flex h-7 w-7 items-center justify-center rounded-xl bg-sky-500 text-white shadow-sm transition-colors hover:bg-sky-600 disabled:opacity-40 disabled:hover:bg-sky-500 dark:bg-sky-600 dark:hover:bg-sky-500"
           >
             <Send size={12} />
           </motion.button>

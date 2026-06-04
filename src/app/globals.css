@@ -11,6 +11,20 @@
   --primary-foreground: #ffffff;
   --border: #e2e8f0;
   --ring: #38bdf8;
+  --card: #ffffff;
+  --muted: #f1f5f9;
+}
+
+/* Dark mode variables / 深色模式变量 */
+.dark {
+  --background: #0f172a;
+  --foreground: #e2e8f0;
+  --primary: #38bdf8;
+  --primary-foreground: #0f172a;
+  --border: #334155;
+  --ring: #0ea5e9;
+  --card: #1e293b;
+  --muted: #1e293b;
 }
 
 /* Base reset / 基础重置 */
@@ -31,13 +45,14 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Custom scrollbar for modern look */
-/* 自定义滚动条以获得现代外观 */
+/* ===== Enhanced Custom Scrollbar ===== */
+/* 增强自定义滚动条 */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -46,11 +61,36 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
-  border-radius: 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.dark * {
+  scrollbar-color: #475569 transparent;
 }
 
 /* Smooth scroll behavior / 平滑滚动行为 */
@@ -72,6 +112,10 @@ input[type="range"]::-webkit-slider-runnable-track {
   background: #e2e8f0;
 }
 
+.dark input[type="range"]::-webkit-slider-runnable-track {
+  background: #334155;
+}
+
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -82,17 +126,26 @@ input[type="range"]::-webkit-slider-thumb {
   background: #14b8a6;
   border: 2px solid white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dark input[type="range"]::-webkit-slider-thumb {
+  border-color: #1e293b;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-  transform: scale(1.2);
+  transform: scale(1.25);
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.15);
 }
 
 input[type="range"]::-moz-range-track {
   height: 6px;
   border-radius: 999px;
   background: #e2e8f0;
+}
+
+.dark input[type="range"]::-moz-range-track {
+  background: #334155;
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -102,6 +155,10 @@ input[type="range"]::-moz-range-thumb {
   background: #14b8a6;
   border: 2px solid white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.dark input[type="range"]::-moz-range-thumb {
+  border-color: #1e293b;
 }
 
 /* Focus styles / 聚焦样式 */
@@ -119,7 +176,12 @@ textarea:focus-visible {
   color: #0c4a6e;
 }
 
-/* Animation utilities / 动画工具类 */
+.dark ::selection {
+  background: #0c4a6e;
+  color: #bae6fd;
+}
+
+/* ===== Animation utilities / 动画工具类 ===== */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -135,10 +197,119 @@ textarea:focus-visible {
   animation: fadeIn 0.4s ease-out forwards;
 }
 
-/* Glassmorphism utility / 毛玻璃效果工具类 */
+/* Heartbeat animation for favorite / 收藏的爱心跳动动画 */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  15% { transform: scale(1.35); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.2); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 0.5s ease-in-out;
+}
+
+/* Ripple effect / 涟漪效果 */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.ripple-container:active::after {
+  animation: ripple 0.4s ease-out;
+}
+
+/* ===== Glassmorphism utility - Enhanced ===== */
+/* 毛玻璃效果工具类 - 增强版 */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark .glass {
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Glass card variant */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.dark .glass-card {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* Glass subtle variant for floating elements */
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-subtle {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Skeleton shimmer keyframes */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }
