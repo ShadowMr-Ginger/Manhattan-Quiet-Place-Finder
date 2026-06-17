@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-ro
 import { AnimatePresence, motion } from 'framer-motion';
 import { mockQuietPlaces } from './data/mockQuietPlaces';
 import { useFavorites } from './hooks/useFavorites';
+import { useRecentViews } from './hooks/useRecentViews';
 import { ThemeProvider, useTheme } from './hooks/useTheme';
 import MapView from './pages/MapView';
 import PlaceDetail from './pages/PlaceDetail';
 import FavoritesView from './pages/FavoritesView';
+import RecentlyViewed from './pages/RecentlyViewed';
 import CompareView from './pages/CompareView';
 import ProfileView from './pages/ProfileView';
 import BottomNav from './components/BottomNav';
@@ -18,6 +20,7 @@ function AppContent() {
   const location = useLocation();
   const { isDark } = useTheme();
   const { favorites, saved, toggleFavorite, toggleSaved } = useFavorites();
+  const { recentIds, recordView, clearViews } = useRecentViews();
 
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [search, setSearch] = useState('');
@@ -79,6 +82,7 @@ function AppContent() {
                   saved={saved}
                   onToggleFavorite={toggleFavorite}
                   onToggleSaved={toggleSaved}
+                  onRecordView={recordView}
                 />
               }
             />
@@ -99,10 +103,18 @@ function AppContent() {
               }
             />
             <Route
+              path="/recently-viewed"
+              element={
+                <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="h-full">
+                  <RecentlyViewed recentIds={recentIds} favorites={favorites} onToggleFavorite={toggleFavorite} onClear={clearViews} />
+                </motion.div>
+              }
+            />
+            <Route
               path="/profile"
               element={
                 <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 20 }} className="h-full">
-                  <ProfileView favorites={favorites} saved={saved} />
+                  <ProfileView favorites={favorites} saved={saved} recentIds={recentIds} />
                 </motion.div>
               }
             />

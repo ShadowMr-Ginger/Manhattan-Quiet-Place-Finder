@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Bookmark, MapPin, ArrowLeft, Clock, Footprints, TrainFront, Car, Star, Navigation, X, Users, Volume2 } from 'lucide-react';
@@ -10,13 +10,18 @@ interface PlaceDetailProps {
   saved: string[];
   onToggleFavorite: (id: string) => void;
   onToggleSaved: (id: string) => void;
+  onRecordView?: (id: string) => void;
 }
 
-export default function PlaceDetail({ favorites, saved, onToggleFavorite, onToggleSaved }: PlaceDetailProps) {
+export default function PlaceDetail({ favorites, saved, onToggleFavorite, onToggleSaved, onRecordView }: PlaceDetailProps) {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const place = mockQuietPlaces.find((p) => p.id === id);
   const [photoIndex, setPhotoIndex] = useState(0);
+
+  useEffect(() => {
+    if (id) onRecordView?.(id);
+  }, [id, onRecordView]);
 
   if (!place) {
     return (

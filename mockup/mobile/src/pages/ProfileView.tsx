@@ -1,20 +1,36 @@
-import { Heart, Bookmark, Clock, MapPin, Star, ChevronRight } from 'lucide-react';
+import { Heart, Clock, MapPin, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { mockUserProfile } from '../data/mockQuietPlaces';
 
 interface ProfileViewProps {
   favorites: string[];
   saved: string[];
+  recentIds: string[];
 }
 
-export default function ProfileView({ favorites, saved }: ProfileViewProps) {
+export default function ProfileView({ favorites, saved, recentIds }: ProfileViewProps) {
   const navigate = useNavigate();
+  const savedTotal = favorites.length + saved.length;
 
   const menuItems = [
-    { icon: Heart, label: 'Favorites', count: favorites.length, color: 'text-rose-500', bg: 'bg-rose-50 dark:bg-rose-950/20' },
-    { icon: Bookmark, label: 'Saved Places', count: saved.length, color: 'text-amber-500', bg: 'bg-amber-50 dark:bg-amber-950/20' },
-    { icon: Clock, label: 'Recently Viewed', count: 5, color: 'text-blue-500', bg: 'bg-blue-50 dark:bg-blue-950/20' },
-    { icon: Star, label: 'My Reviews', count: 2, color: 'text-purple-500', bg: 'bg-purple-50 dark:bg-purple-950/20' },
+    {
+      icon: Heart,
+      label: 'Saved Places',
+      sublabel: `${savedTotal} favorites & saved`,
+      count: savedTotal,
+      color: 'text-rose-500',
+      bg: 'bg-rose-50 dark:bg-rose-950/20',
+      path: '/favorites',
+    },
+    {
+      icon: Clock,
+      label: 'Recently Viewed',
+      sublabel: `${recentIds.length} places`,
+      count: recentIds.length,
+      color: 'text-blue-500',
+      bg: 'bg-blue-50 dark:bg-blue-950/20',
+      path: '/recently-viewed',
+    },
   ];
 
   return (
@@ -44,8 +60,8 @@ export default function ProfileView({ favorites, saved }: ProfileViewProps) {
             <p className="text-[10px] text-white/80">Saved</p>
           </div>
           <div>
-            <p className="text-xl font-extrabold">12</p>
-            <p className="text-[10px] text-white/80">Visited</p>
+            <p className="text-xl font-extrabold">{recentIds.length}</p>
+            <p className="text-[10px] text-white/80">Recent</p>
           </div>
         </div>
       </div>
@@ -57,15 +73,15 @@ export default function ProfileView({ favorites, saved }: ProfileViewProps) {
           return (
             <button
               key={item.label}
-              onClick={() => item.label === 'Favorites' ? navigate('/favorites') : undefined}
-              className="flex items-center gap-4 rounded-2xl bg-white p-4 text-left shadow-sm dark:bg-slate-800"
+              onClick={() => navigate(item.path)}
+              className="flex items-center gap-4 rounded-2xl bg-white p-4 text-left shadow-sm active:bg-slate-50 dark:bg-slate-800 dark:active:bg-slate-700"
             >
               <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${item.bg}`}>
                 <Icon size={20} className={item.color} />
               </div>
               <div className="flex-1">
                 <p className="text-sm font-bold text-slate-800 dark:text-slate-100">{item.label}</p>
-                <p className="text-xs text-slate-500 dark:text-slate-400">{item.count} items</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400">{item.sublabel}</p>
               </div>
               <ChevronRight size={18} className="text-slate-300" />
             </button>
