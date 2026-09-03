@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+dist/
 
 # Next.js build output
 .next/
@@ -24,3 +25,17 @@ yarn-error.log*
 
 # TypeScript
 *.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins*
+.packages
+*.iml
+.pg-dl/
+.pg-test/

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="760" height="620" fill="#F7F5F2"/>
+  <text x="40" y="44" font-size="20" font-weight="700" fill="#2B2B2B">Quiet Spaces Manhattan — venue card</text>
+  <text x="40" y="66" font-size="13" fill="#8A8A8A">design mockup · real data (Kona Coffee Roasters). Attribute bars show only signals with ≥2 mentions.</text>
+
+  <!-- ===== CARD ===== -->
+  <g transform="translate(40,90)">
+    <rect width="380" height="496" rx="16" fill="#FFFFFF" stroke="#ECE8E2" filter="url(#sh)"/>
+
+    <!-- header -->
+    <circle cx="46" cy="50" r="24" fill="#F1E7D6"/>
+    <text x="46" y="59" font-size="24" text-anchor="middle">☕</text>
+    <text x="84" y="44" font-size="19" font-weight="700" fill="#23201D">Kona Coffee Roasters</text>
+    <text x="84" y="65" font-size="12.5" fill="#8A8A8A">Café · East Village · 57 2nd Ave</text>
+
+    <!-- rating -->
+    <text x="24" y="116" font-size="30" font-weight="800" fill="#23201D">4.0</text>
+    <text x="80" y="114" font-size="22" fill="#F2B705" letter-spacing="2">★★★★<tspan fill="#E2DED7">★</tspan></text>
+    <text x="80" y="133" font-size="12" fill="#8A8A8A">from 10 write-ups · 9 publications</text>
+
+    <!-- quote -->
+    <rect x="24" y="150" width="332" height="62" rx="9" fill="#F7F4EF"/>
+    <text x="38" y="174" font-size="12.5" font-style="italic" fill="#4A453F">“spacious vibe in which plenty of locals and</text>
+    <text x="38" y="192" font-size="12.5" font-style="italic" fill="#4A453F">digital nomads come to work on a daily basis”</text>
+    <text x="38" y="206" font-size="11" fill="#9A958D">— The Working Line</text>
+
+    <!-- attributes -->
+    <text x="24" y="240" font-size="13" font-weight="700" fill="#23201D">What the reviews say</text>
+    <!-- rows: label | stacked bar (green pos / grey neu / red neg, width ∝ volume) | count -->
+    <!-- Quiet 4/0/0 -->
+    <text x="24" y="265" font-size="12" fill="#5C574F">Quiet</text>
+    <rect x="150" y="256" width="75" height="11" rx="3" fill="#3BA776"/>
+    <text x="350" y="265" font-size="11" fill="#9A958D" text-anchor="end">4</text>
+    <!-- Wi-Fi 5/1/1 -->
+    <text x="24" y="288" font-size="12" fill="#5C574F">Wi-Fi</text>
+    <rect x="150" y="279" width="94" height="11" rx="3" fill="#3BA776"/>
+    <rect x="244" y="279" width="19" height="11" fill="#DAD6CF"/>
+    <rect x="263" y="279" width="19" height="11" rx="3" fill="#E0685A"/>
+    <text x="350" y="288" font-size="11" fill="#9A958D" text-anchor="end">7</text>
+    <!-- Seating 8/0/0 -->
+    <text x="24" y="311" font-size="12" fill="#5C574F">Seating</text>
+    <rect x="150" y="302" width="150" height="11" rx="3" fill="#3BA776"/>
+    <text x="350" y="311" font-size="11" fill="#9A958D" text-anchor="end">8</text>
+    <!-- Outlets 4/0/0 -->
+    <text x="24" y="334" font-size="12" fill="#5C574F">Outlets</text>
+    <rect x="150" y="325" width="75" height="11" rx="3" fill="#3BA776"/>
+    <text x="350" y="334" font-size="11" fill="#9A958D" text-anchor="end">4</text>
+    <!-- Laptop-friendly 6/0/0 -->
+    <text x="24" y="357" font-size="12" fill="#5C574F">Laptop-friendly</text>
+    <rect x="150" y="348" width="113" height="11" rx="3" fill="#3BA776"/>
+    <text x="350" y="357" font-size="11" fill="#9A958D" text-anchor="end">6</text>
+    <!-- Hours 4/0/1 -->
+    <text x="24" y="380" font-size="12" fill="#5C574F">Hours</text>
+    <rect x="150" y="371" width="75" height="11" rx="3" fill="#3BA776"/>
+    <rect x="225" y="371" width="19" height="11" rx="3" fill="#E0685A"/>
+    <text x="350" y="380" font-size="11" fill="#9A958D" text-anchor="end">5</text>
+    <!-- Crowding 0/0/2 (gets busy) -->
+    <text x="24" y="403" font-size="12" fill="#5C574F">Crowding</text>
+    <rect x="150" y="394" width="38" height="11" rx="3" fill="#E0685A"/>
+    <text x="350" y="403" font-size="11" fill="#9A958D" text-anchor="end">2</text>
+    <!-- Price 0/1/2 (pricey) -->
+    <text x="24" y="426" font-size="12" fill="#5C574F">Price</text>
+    <rect x="150" y="417" width="19" height="11" fill="#DAD6CF"/>
+    <rect x="169" y="417" width="37" height="11" rx="3" fill="#E0685A"/>
+    <text x="350" y="426" font-size="11" fill="#9A958D" text-anchor="end">3</text>
+
+    <!-- OSM footer -->
+    <line x1="24" y1="448" x2="356" y2="448" stroke="#EDE9E3"/>
+    <g transform="translate(28,460)" font-size="18">
+      <text x="0"  y="16">♿</text><text x="56"  y="16">📶</text><text x="112" y="16">🚻</text><text x="168" y="16">🕒</text><text x="224" y="16">🌿</text><text x="280" y="16">☕</text>
+      <g font-size="8.5" fill="#9A958D">
+        <text x="9"   y="30" text-anchor="middle">access</text>
+        <text x="65"  y="30" text-anchor="middle">Wi-Fi</text>
+        <text x="121" y="30" text-anchor="middle">toilets</text>
+        <text x="177" y="30" text-anchor="middle">7–7</text>
+        <text x="233" y="30" text-anchor="middle">outdoor</text>
+        <text x="289" y="30" text-anchor="middle">coffee</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== ANNOTATIONS ===== -->
+  <g transform="translate(470,110)" font-size="13" fill="#4A453F">
+    <text x="0" y="0" font-size="15" font-weight="700" fill="#23201D">How the card maps to the data</text>
+    <g font-size="12.5">
+      <text x="0" y="34">★ rating = normalised <tspan font-weight="700">endorsement_score</tspan> (−1..1 → 0..5);</text>
+      <text x="0" y="52">list is sorted by the hidden <tspan font-weight="700">ranking_score</tspan>.</text>
+      <text x="0" y="78"><tspan font-weight="700">mention_count</tspan> shown beside the score for trust.</text>
+      <text x="0" y="104">Type icon (☕ / 📚 / 🍴 / 🛏) from <tspan font-weight="700">google_types</tspan>.</text>
+      <text x="0" y="130">Quote = first verbatim <tspan font-weight="700">representative_quote</tspan> + publication.</text>
+      <text x="0" y="156">Bars = per-attribute <tspan font-weight="700">positive/neutral/negative</tspan> counts</text>
+      <text x="0" y="174">(green / grey / red); width ∝ volume; only <tspan font-weight="700">n ≥ 2</tspan> shown.</text>
+      <text x="0" y="200">Footer icons = present <tspan font-weight="700">osm.tags</tspan> (wheelchair, internet_</text>
+      <text x="0" y="218">access, toilets, opening_hours, outdoor_seating, cuisine).</text>
+    </g>
+    <rect x="0" y="244" width="250" height="1" fill="#E2DED7"/>
+    <text x="0" y="268" font-size="11" fill="#8A8A8A">Default list: mention_count ≥ 3.</text>
+    <text x="0" y="286" font-size="11" fill="#8A8A8A">Attribution shown app-wide:</text>
+    <text x="0" y="303" font-size="11" fill="#8A8A8A">“© OpenStreetMap contributors” + quote sources.</text>
+  </g>
+  <text x="470" y="455" font-size="11" fill="#9A958D">OSM amenity strip — an icon appears only when the venue carries that tag;</text>
+  <text x="470" y="471" font-size="11" fill="#9A958D">Kona has Wi-Fi, hours &amp; sidewalk seating in OSM. © OpenStreetMap contributors.</text>
+</svg>

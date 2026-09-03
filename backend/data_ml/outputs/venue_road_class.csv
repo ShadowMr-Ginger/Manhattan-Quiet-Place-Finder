@@ -1,0 +1,327 @@
+canonical_id,canonical_name,venue_type,nearest_class,nearest_dist_m,n_roads_within,dominant_class,dominant_dist_m,road_db,road_noise_prior
+cv_0001,New York Public Library - Stephen A. Schwarzman Building,library,pedestrian,41.3,92,primary,84.9,60.7,0.449
+cv_0002,Jefferson Market Library,library,service,12.2,71,secondary,26.6,62.8,0.507
+cv_0003,Black Cat LES,cafe,residential,8.6,103,motorway,151.2,63.2,0.52
+cv_0004,Housing Works Bookstore,other,residential,16.1,81,primary,76.9,61.1,0.461
+cv_0009,"The New York Public Library for the Performing Arts, Dorothy and Lewis B. Cullman Center",library,pedestrian,35.9,108,primary,49.7,63.0,0.515
+cv_0005,Variety Coffee Roasters,cafe,residential,8.8,50,secondary,22.5,63.5,0.528
+cv_0006,The Bean,cafe,residential,13.5,101,primary,18.1,67.4,0.641
+cv_0007,Stumptown Coffee Roasters,cafe,residential,14.1,80,secondary,125.5,56.0,0.315
+cv_0008,Stavros Niarchos Foundation Library (SNFL),library,secondary,15.4,103,secondary,15.4,65.1,0.575
+cv_0010,Café-Flor / Bar 21,cafe,residential,20.3,36,secondary,30.4,62.2,0.49
+cv_0011,Think Coffee,cafe,residential,12.9,93,primary,68.8,61.6,0.475
+cv_0012,Book Club Bar,cafe,residential,22.5,72,primary,170.9,57.7,0.362
+cv_0013,Kona Coffee Roasters | East Village,cafe,primary,15.5,94,primary,15.5,68.1,0.66
+cv_0014,Paper Coffee,cafe,residential,22.1,75,secondary,67.3,58.7,0.392
+cv_0015,Conwell Coffee & Cocktail Hall,cafe,residential,7.6,151,motorway,261.5,60.8,0.452
+cv_0016,Poets House,library,residential,10.6,80,trunk,248.7,59.0,0.401
+cv_0017,Amano Cafe,cafe,residential,8.1,83,secondary,82.9,57.8,0.366
+cv_0026,Butler Bakeshop & Espresso Bar,cafe,primary,11.9,74,primary,11.9,69.3,0.693
+cv_0018,Think Coffee,cafe,residential,12.7,69,secondary,21.3,63.7,0.535
+cv_0019,Ace Hotel New York,hotel,residential,23.1,80,secondary,133.3,55.8,0.307
+cv_0020,Ground Support Cafe,cafe,residential,14.4,52,trunk,250.0,59.0,0.401
+cv_0021,The Bean,cafe,primary,15.6,73,primary,15.6,68.1,0.659
+cv_0022,Mulberry Street Library,library,service,10.1,98,secondary,37.1,61.3,0.466
+cv_0023,Coffee Project New York | Chelsea,cafe,secondary,15.4,35,secondary,15.4,65.1,0.575
+cv_0024,Stumptown Coffee Roasters,cafe,residential,9.3,73,secondary,10.3,66.9,0.625
+cv_0025,Gotan,cafe,pedestrian,12.0,141,secondary,21.4,63.7,0.534
+cv_0035,Webster Library,library,residential,22.2,60,secondary,24.3,63.1,0.519
+cv_0027,Coffee Project New York | East Village,cafe,residential,11.6,75,primary,45.4,63.4,0.527
+cv_0028,Ludlow Coffee Supply,cafe,residential,10.9,118,primary,63.5,62.0,0.485
+cv_0029,Now or Never Coffee,cafe,primary,9.6,153,primary,9.6,70.0,0.714
+cv_0030,Irving Farm Coffee,cafe,residential,7.0,69,residential,7.0,57.0,0.343
+cv_0031,The Hungarian Pastry Shop,cafe,residential,17.3,68,secondary,19.8,64.0,0.544
+cv_0032,Caffe Reggio,cafe,residential,10.2,57,residential,10.2,56.9,0.34
+cv_0033,Culture Espresso,cafe,residential,15.0,76,secondary,28.4,62.5,0.499
+cv_0034,Schomburg Center for Research in Black Culture - New York Public Library,library,secondary,19.1,108,secondary,19.1,64.2,0.548
+cv_0320,Bluestone Lane Bryant Park Coffee Shop,cafe,residential,13.8,85,secondary,35.4,61.5,0.472
+cv_0036,Devoción,cafe,residential,20.5,94,primary,140.1,58.5,0.387
+cv_0037,Seven Grams Caffe,cafe,secondary,14.4,54,secondary,14.4,65.4,0.584
+cv_0038,The Lost Draft,cafe,secondary,17.3,67,primary,33.1,64.8,0.566
+cv_0039,The Chipped Cup,cafe,primary,17.9,47,primary,17.9,67.5,0.642
+cv_0040,Felix Roasting Co.,cafe,primary,17.1,67,primary,17.1,67.7,0.648
+cv_0041,Devoción,cafe,pedestrian,12.4,81,secondary,56.7,59.5,0.413
+cv_0042,Gregorys Coffee,cafe,residential,9.0,76,secondary,56.2,59.5,0.414
+cv_0043,Think Coffee,cafe,residential,14.9,79,primary,19.0,67.2,0.635
+cv_0044,Bibliotheque,cafe,residential,16.9,69,primary,39.8,64.0,0.543
+cv_0045,Ground Central Coffee Company,cafe,secondary,11.6,48,secondary,11.6,66.4,0.611
+cv_0046,Ariston Flowers,other,secondary,31.2,47,secondary,31.2,62.1,0.487
+cv_0047,Joe Coffee Company: Waverly,cafe,residential,7.5,79,secondary,56.8,59.5,0.413
+cv_0048,citizenM New York Bowery,hotel,primary,27.7,88,primary,27.7,65.6,0.588
+cv_0049,Irving Farm Coffee,cafe,secondary,18.8,39,secondary,18.8,64.2,0.55
+cv_0050,Dear Mama,cafe,residential,10.6,94,primary,69.1,61.6,0.474
+cv_0051,PUBLIC Hotel,hotel,service,23.1,118,primary,66.8,61.8,0.479
+cv_0052,787 Coffee,cafe,residential,15.5,72,secondary,106.7,56.7,0.335
+cv_0053,787 Coffee,cafe,residential,11.4,69,primary,26.9,65.7,0.591
+cv_0054,Capital One Café,cafe,pedestrian,5.3,75,primary,28.3,65.5,0.585
+cv_0055,Ground Central Coffee Company,cafe,service,18.2,80,secondary,24.9,63.0,0.516
+cv_0056,Pause Cafe,cafe,residential,9.5,84,primary,27.4,65.6,0.589
+cv_0057,Remi43 Flower & Coffee,cafe,primary,21.7,118,primary,21.7,66.6,0.618
+cv_0062,Buunni Coffee - Pinehurst,cafe,residential,12.8,37,motorway,151.3,63.2,0.52
+cv_0058,The Marlton Hotel,hotel,secondary,16.8,66,secondary,16.8,64.7,0.564
+cv_0059,Capital One Café,cafe,pedestrian,12.5,65,primary,22.3,66.5,0.615
+cv_0060,The Clock Coffee Shop,cafe,residential,32.9,127,primary,56.8,62.5,0.499
+cv_0061,The Townhouse Cafe,cafe,secondary,17.1,75,secondary,17.1,64.7,0.562
+cv_0063,Ground Central Coffee Company,cafe,secondary,13.1,106,secondary,13.1,65.8,0.595
+cv_0064,Felix Roasting Co.,cafe,primary,15.3,72,primary,15.3,68.1,0.661
+cv_0065,Everyman Espresso,cafe,residential,17.1,59,primary,52.6,62.8,0.508
+cv_0066,Kaffe Åre,cafe,residential,11.3,152,secondary,28.2,62.5,0.5
+cv_0067,Bluestone Lane Midtown East Coffee Shop,cafe,secondary,18.1,87,secondary,18.1,64.4,0.555
+cv_0068,Café Grumpy - Lower East Side,cafe,residential,23.1,93,secondary,76.3,58.2,0.376
+cv_0069,Bean & Bean Chelsea,cafe,residential,16.5,53,secondary,17.0,64.7,0.563
+cv_0070,Think Coffee,cafe,primary,21.6,65,primary,21.6,66.7,0.619
+cv_0104,Ninth Street Espresso,cafe,residential,10.9,52,secondary,24.0,63.2,0.52
+cv_0071,Barnes & Noble,cafe,residential,12.1,87,primary,69.7,61.6,0.473
+cv_0072,Ost Cafe,cafe,primary,15.7,92,primary,15.7,68.0,0.658
+cv_0073,Central Perk Coffee Company,cafe,residential,23.3,79,secondary,34.2,61.7,0.476
+cv_0074,53rd Street Library,library,secondary,14.5,59,secondary,14.5,65.4,0.582
+cv_0075,St. Agnes Library,library,primary,25.3,44,primary,25.3,66.0,0.599
+cv_0076,Bloomingdale Library,library,service,28.2,77,primary,106.2,59.7,0.421
+cv_0077,Yorkville Library,library,secondary,25.7,41,secondary,25.7,62.9,0.512
+cv_0078,New Amsterdam Library,library,secondary,28.8,140,secondary,28.8,62.4,0.497
+cv_0114,Intelligentsia Coffee High Line Hotel Coffeebar,cafe,residential,22.0,98,primary,28.2,65.5,0.586
+cv_0079,Toby’s Estate Coffee,cafe,secondary,14.1,60,secondary,14.1,65.5,0.586
+cv_0080,Irving Farm Coffee,cafe,residential,16.1,78,primary,135.9,58.7,0.391
+cv_0081,Felix Roasting Co.,cafe,residential,10.7,107,motorway,41.9,68.8,0.679
+cv_0082,Birch Coffee,cafe,primary,28.7,65,primary,28.7,65.4,0.584
+cv_0083,The Roxy Hotel New York,hotel,secondary,21.4,129,secondary,21.4,63.7,0.534
+cv_0084,King's Street Coffee,cafe,tertiary,12.3,80,tertiary,12.3,60.1,0.431
+cv_0085,Brookfield Place,other,pedestrian,32.4,553,trunk,82.8,63.8,0.538
+cv_0086,Remi Flower & Coffee,cafe,residential,20.9,102,primary,22.4,66.5,0.614
+cv_0115,NewsBar Café,cafe,residential,15.2,59,primary,117.3,59.3,0.409
+cv_0087,Birch Coffee,cafe,tertiary,14.2,79,primary,18.8,67.3,0.636
+cv_0088,Capital One Café,cafe,secondary,21.7,79,secondary,21.7,63.6,0.533
+cv_0089,Charlotte Cafe,cafe,secondary,14.9,75,primary,18.4,67.4,0.639
+cv_0090,Charlotte Cafe,cafe,residential,18.6,125,primary,22.3,66.5,0.615
+cv_0091,Ground Central Coffee Company,cafe,residential,10.0,80,secondary,68.9,58.6,0.389
+cv_0092,Variety Coffee Roasters,cafe,residential,13.0,30,secondary,15.0,65.3,0.579
+cv_0093,Bluestone Lane Manhattan West Café,cafe,tertiary,8.0,113,motorway,59.8,67.2,0.635
+cv_0094,787 Coffee,cafe,residential,6.1,79,motorway,263.4,60.8,0.451
+cv_0120,Chatham Square Library,library,secondary,22.2,168,secondary,22.2,63.5,0.529
+cv_0095,Kona Coffee Roasters | Chelsea,cafe,residential,9.0,39,secondary,16.2,64.9,0.569
+cv_0096,"P&T Knitwear Bookstore, Coffee, & Podcast Studio",cafe,residential,9.0,119,primary,59.7,62.2,0.492
+cv_0097,Bar Room at the Beekman,bar,service,16.9,170,motorway,287.3,60.4,0.44
+cv_0098,Mushtari Cafe,cafe,residential,19.0,64,primary,66.4,61.8,0.479
+cv_0099,787 Coffee,cafe,residential,13.3,49,secondary,38.3,61.2,0.462
+cv_0100,THE ELK,cafe,residential,11.7,63,trunk,217.4,59.6,0.418
+cv_0101,Manhattanville Coffee,cafe,residential,10.6,39,tertiary,19.5,58.1,0.375
+cv_0102,Think Coffee,cafe,secondary,19.3,102,secondary,19.3,64.1,0.547
+cv_0103,Starbucks Reserve Roastery New York,cafe,pedestrian,18.2,93,secondary,23.3,63.3,0.524
+cv_0160,The Drama Book Shop,other,residential,20.7,68,secondary,47.6,60.2,0.435
+cv_0105,Elsewhere Espresso.,cafe,residential,11.5,57,primary,73.2,61.4,0.467
+cv_0106,B Cup Cafe & Eatery,cafe,tertiary,10.0,51,tertiary,10.0,61.0,0.457
+cv_0107,Hungry Ghost Coffee,cafe,residential,8.0,76,secondary,48.3,60.2,0.433
+cv_0108,Irving Farm Coffee,cafe,residential,13.5,69,primary,39.5,64.0,0.544
+cv_0109,Church of Heavenly Rest Café,cafe,secondary,16.3,27,secondary,16.3,64.9,0.568
+cv_0110,Capital One Café,cafe,tertiary,16.5,127,primary,20.1,67.0,0.628
+cv_0111,Ole & Steen,cafe,living_street,13.1,83,primary,164.7,57.8,0.367
+cv_0112,Strand Book Store,other,residential,10.3,56,primary,12.5,69.0,0.687
+cv_0113,Think Coffee,cafe,residential,12.3,133,primary,18.8,67.3,0.636
+cv_0116,outro nyc,cafe,primary,21.5,62,primary,21.5,66.7,0.619
+cv_0117,96th Street Library,library,secondary,28.5,59,secondary,28.5,62.5,0.499
+cv_0118,Morningside Heights Library,library,residential,24.9,71,primary,35.1,64.5,0.558
+cv_0119,Veselka,restaurant,residential,13.0,66,primary,18.7,67.3,0.636
+cv_0121,Washington Heights Library,library,residential,12.8,53,secondary,26.7,62.7,0.507
+cv_0122,58th Street Library,library,residential,14.8,91,primary,79.1,61.0,0.458
+cv_0123,Joe Coffee Company: Bryant Park,cafe,pedestrian,2.4,88,secondary,59.4,59.3,0.407
+cv_0124,maman,cafe,primary,21.8,66,primary,21.8,66.6,0.618
+cv_0125,Ground Central Coffee Company,cafe,residential,9.6,58,primary,94.7,60.2,0.435
+cv_0126,Blue Bottle Coffee,cafe,tertiary,75.5,74,primary,165.2,57.8,0.366
+cv_0127,Double Dutch Espresso,cafe,secondary,19.9,63,secondary,19.9,64.0,0.543
+cv_0128,Ground Central Coffee Company,cafe,pedestrian,2.5,76,tertiary,16.4,58.9,0.396
+cv_0129,Daily Provisions - Union Square,restaurant,residential,15.5,88,primary,40.4,63.9,0.541
+cv_0130,maman,cafe,residential,18.1,84,secondary,131.9,55.8,0.308
+cv_0131,Think Coffee,cafe,residential,15.5,94,secondary,18.5,64.3,0.552
+cv_0132,About Coffee,cafe,primary,20.9,45,primary,20.9,66.8,0.623
+cv_0133,Ralph's Coffee,cafe,secondary,17.8,37,secondary,17.8,64.5,0.557
+cv_0161,Georgie’s Cafe & Bar,cafe,residential,11.1,108,motorway,78.6,66.0,0.601
+cv_0134,Caffe Aronne | Mobile espresso bar & coffee catering,cafe,secondary,18.0,44,secondary,18.0,64.4,0.555
+cv_0135,Midnight Express Diner,restaurant,residential,12.3,52,primary,17.6,67.5,0.644
+cv_0136,Telegraphe Cafe.,cafe,residential,9.7,33,secondary,53.6,59.7,0.42
+cv_0137,Blue Bottle Coffee,cafe,residential,33.3,73,secondary,44.4,60.5,0.444
+cv_0138,La Cabra,cafe,secondary,18.0,83,secondary,18.0,64.5,0.556
+cv_0139,Urban Backyard,cafe,residential,9.3,68,primary,38.3,64.2,0.548
+cv_0140,Café Sabarsky,restaurant,secondary,22.7,43,secondary,22.7,63.4,0.527
+cv_0141,Bibble & Sip,cafe,residential,12.1,80,secondary,38.8,61.1,0.46
+cv_0142,The Ludlow Hotel,hotel,residential,18.3,115,primary,56.2,62.5,0.5
+cv_0143,11th Street Cafe,cafe,residential,13.2,66,trunk,204.3,59.9,0.426
+cv_0144,Coppola Cafe,cafe,residential,10.1,85,secondary,75.1,58.2,0.378
+cv_0145,Joe Coffee Company: LaGuardia Place,cafe,residential,21.6,71,primary,268.3,55.7,0.306
+cv_0146,Brewlita,cafe,residential,20.5,74,secondary,59.4,59.3,0.407
+cv_0147,Dr Smood,cafe,residential,11.0,55,primary,35.6,64.5,0.557
+cv_0148,Blue Bottle Coffee,cafe,tertiary,11.3,82,secondary,15.0,65.2,0.578
+cv_0149,Poetica Coffee,cafe,primary,17.4,75,primary,17.4,67.6,0.645
+cv_0150,Picky Barista,cafe,primary,23.4,39,primary,23.4,66.3,0.609
+cv_0151,Madame Bonté Café,cafe,service,15.8,109,primary,20.9,66.8,0.623
+cv_0152,Coffee Project New York | Hell's Kitchen,cafe,residential,16.4,48,primary,21.9,66.6,0.617
+cv_0153,Coffee Project New York | Financial District,cafe,pedestrian,15.3,156,primary,25.0,66.0,0.601
+cv_0154,Blue Bottle Coffee,cafe,primary,11.5,91,primary,11.5,69.4,0.697
+cv_0155,Cafe Cluny,restaurant,residential,10.0,111,secondary,62.3,59.1,0.401
+cv_0156,Ground Central Coffee Company,cafe,secondary,12.9,64,secondary,12.9,65.9,0.597
+cv_0157,Company,cafe,secondary,14.0,118,secondary,14.0,65.5,0.586
+cv_0158,Felix Roasting Co.,cafe,secondary,22.3,92,primary,39.4,64.0,0.544
+cv_0159,Urbana Cafe & Gallery,cafe,residential,17.2,70,secondary,85.6,57.7,0.362
+cv_0162,Rex,cafe,residential,15.5,128,primary,42.0,63.8,0.536
+cv_0163,JOE & THE JUICE,cafe,residential,20.3,50,secondary,32.2,61.9,0.483
+cv_0164,Silence Please,cafe,primary,23.3,81,primary,23.3,66.3,0.609
+cv_0165,Sandro's,restaurant,secondary,27.5,49,secondary,27.5,62.6,0.503
+cv_0166,Enoch's,cafe,secondary,13.7,234,primary,18.3,67.4,0.639
+cv_0167,El Barrista cafe,cafe,primary,26.8,59,primary,26.8,65.7,0.592
+cv_0168,Kaafi by Chaiguy,cafe,secondary,16.3,68,secondary,16.3,64.9,0.568
+cv_0169,NBHD Brulee,cafe,residential,20.2,58,secondary,22.6,63.5,0.527
+cv_0170,Slate Cafe NoMad,cafe,secondary,10.7,54,secondary,10.7,66.7,0.62
+cv_0276,Gregorys Coffee,cafe,residential,11.9,63,secondary,22.2,63.5,0.529
+cv_0171,787 Coffee,cafe,residential,17.8,41,primary,92.5,60.3,0.438
+cv_0172,Gregorys Coffee,cafe,primary,21.0,66,primary,21.0,66.8,0.622
+cv_0173,Frame NYC,cafe,primary,17.3,56,primary,17.3,67.6,0.646
+cv_0174,Paris Baguette,cafe,secondary,10.5,31,secondary,10.5,66.8,0.623
+cv_0228,Gansevoort Liberty Market,restaurant,unclassified,25.7,637,secondary,34.7,61.6,0.474
+cv_0175,Le Pain Quotidien,cafe,secondary,17.1,53,secondary,17.1,64.7,0.562
+cv_0176,Barnes & Noble Cafe,cafe,secondary,22.2,72,secondary,22.2,63.5,0.53
+cv_0177,JOE & THE JUICE,cafe,secondary,13.7,47,secondary,13.7,65.6,0.59
+cv_0178,Black Star Bakery & Cafe,cafe,secondary,22.8,32,secondary,22.8,63.4,0.526
+cv_0179,Inès,cafe,residential,15.7,50,primary,84.5,60.7,0.449
+cv_0180,Birch Coffee,cafe,primary,27.3,63,primary,27.3,65.6,0.59
+cv_0181,Bluestone Lane Chelsea Piers Café,cafe,pedestrian,2.2,93,trunk,75.5,64.2,0.549
+cv_0182,Moka & Co,cafe,primary,29.8,84,primary,29.8,65.3,0.579
+cv_0183,Ten Thousand Coffee,cafe,living_street,18.1,77,secondary,124.6,56.0,0.316
+cv_0184,Home Sweet Harlem,cafe,secondary,25.9,54,secondary,25.9,62.9,0.51
+cv_0185,Devoción,cafe,secondary,15.8,76,secondary,15.8,65.0,0.572
+cv_0186,Buunni Coffee - Inwood,cafe,primary,26.5,50,primary,26.5,65.8,0.593
+cv_0204,"Drip Drop Café, coffee shop",cafe,residential,7.0,63,primary,160.2,58.0,0.37
+cv_0187,Blue Bottle Coffee,cafe,pedestrian,21.0,149,motorway,233.1,61.3,0.466
+cv_0188,Black Fox Coffee,cafe,residential,24.2,165,motorway,281.7,60.5,0.443
+cv_0189,787 Coffee,cafe,residential,15.1,102,secondary,67.3,58.7,0.392
+cv_0190,Picky Barista,cafe,secondary,34.7,67,secondary,34.7,61.6,0.474
+cv_0227,Gregorys Coffee,cafe,primary,17.8,75,primary,17.8,67.5,0.643
+cv_0191,Hi-Note Radio,other,tertiary,15.4,51,tertiary,15.4,59.1,0.404
+cv_0192,La Colombe Coffee Workshop,cafe,primary,30.9,108,primary,30.9,65.1,0.574
+cv_0193,Lafayette Grand Café & Bakery,restaurant,primary,24.0,111,primary,24.0,66.2,0.606
+cv_0194,Voyager Espresso,cafe,residential,10.3,131,residential,10.3,56.9,0.339
+cv_0195,Think Coffee,cafe,secondary,14.3,74,secondary,14.3,65.5,0.585
+cv_0196,Café Grumpy - Fashion District,cafe,residential,17.3,67,secondary,41.6,60.8,0.452
+cv_0197,kalei nyc,cafe,primary,23.6,84,primary,23.6,66.3,0.608
+cv_0198,Boris & Horton,cafe,residential,14.2,44,secondary,20.5,63.9,0.539
+cv_0203,maman,cafe,residential,9.3,54,secondary,88.7,57.5,0.358
+cv_0199,Spring Cafe Aspen,cafe,residential,10.2,91,primary,64.2,61.9,0.483
+cv_0200,Bluestone Lane Collective Caf,cafe,residential,9.4,77,secondary,18.2,64.4,0.555
+cv_0201,Joe Coffee Company: Chelsea,cafe,secondary,24.1,52,secondary,24.1,63.2,0.519
+cv_0202,Caffe Vita,cafe,residential,10.0,110,primary,63.7,62.0,0.485
+cv_0238,Birch Coffee,cafe,secondary,33.5,69,secondary,33.5,61.7,0.479
+cv_0205,Joe Coffee Company: W 85th St,cafe,residential,16.2,43,primary,19.1,67.2,0.634
+cv_0206,Third Rail Coffee,cafe,residential,10.1,63,residential,10.1,57.0,0.342
+cv_0207,Gregorys Coffee,cafe,secondary,28.3,57,secondary,28.3,62.5,0.499
+cv_0208,Think Coffee,cafe,service,11.6,116,primary,13.7,68.6,0.675
+cv_0209,Fort Washington Library,library,secondary,25.0,133,motorway,44.0,68.6,0.673
+cv_0210,Riverside Library,library,primary,14.2,105,primary,14.2,68.5,0.67
+cv_0211,Hamilton Grange Library,library,secondary,24.5,32,secondary,24.5,63.1,0.517
+cv_0212,Harlem Library,library,residential,25.8,65,primary,61.2,62.1,0.49
+cv_0213,Inwood Library,library,service,29.6,64,primary,31.3,65.0,0.573
+cv_0214,Seward Park Library,library,secondary,29.6,78,secondary,29.6,62.3,0.494
+cv_0215,Harry Belafonte 115th Street Library,library,residential,24.4,67,primary,52.3,62.8,0.509
+cv_0216,La Cabra Bakery,cafe,primary,16.2,65,primary,16.2,67.9,0.655
+cv_0217,Café Integral,cafe,residential,11.7,85,primary,35.0,64.6,0.559
+cv_0218,Cafe Grumpy - Manhattan West,cafe,tertiary,28.8,133,motorway,33.4,69.8,0.707
+cv_0219,Starbucks Coffee Company,cafe,residential,29.4,236,trunk,138.7,61.6,0.474
+cv_0220,JOE & THE JUICE,cafe,unclassified,20.5,633,trunk,70.2,64.5,0.558
+cv_0221,Arlo SoHo,hotel,secondary,16.0,170,motorway,60.3,67.2,0.634
+cv_0222,Starbucks,cafe,residential,17.8,108,secondary,51.7,59.9,0.425
+cv_0223,Starbucks Coffee Company,cafe,residential,15.3,87,primary,211.5,56.7,0.336
+cv_0224,Starbucks Coffee Company,cafe,primary,12.2,123,primary,12.2,69.1,0.69
+cv_0225,Starbucks Reserve - West Village,cafe,secondary,15.0,67,secondary,15.0,65.2,0.578
+cv_0226,Starbucks Coffee Company,cafe,primary,13.6,62,primary,13.6,68.7,0.676
+cv_0251,Black Star Bakery & Cafe,restaurant,residential,18.1,70,primary,48.4,63.2,0.519
+cv_0229,Starbucks Coffee Company,cafe,secondary,25.7,39,secondary,25.7,62.9,0.512
+cv_0230,Gregorys Coffee,cafe,secondary,10.6,87,secondary,10.6,66.7,0.621
+cv_0231,Rex,cafe,primary,19.3,69,primary,19.3,67.1,0.633
+cv_0232,Starbucks Coffee Company,cafe,residential,33.9,69,primary,43.0,63.7,0.533
+cv_0233,Union Square Cafe,restaurant,primary,14.8,87,primary,14.8,68.3,0.665
+cv_0234,Sipsteria Morningside,cafe,secondary,32.6,53,secondary,32.6,61.9,0.482
+cv_0235,The Monkey Cup,cafe,primary,14.4,82,primary,14.4,68.4,0.669
+cv_0236,The Uncommons,cafe,residential,9.3,78,residential,9.3,57.0,0.343
+cv_0237,St Kilda Coffee,cafe,residential,9.2,80,primary,146.9,58.3,0.381
+cv_0239,Le Pain Quotidien,cafe,pedestrian,8.3,90,secondary,73.3,58.3,0.381
+cv_0240,Lucky Lucky Coffee,cafe,residential,15.6,52,primary,175.9,57.5,0.359
+cv_0241,McNally Jackson Books Seaport,other,pedestrian,15.7,123,motorway,44.2,68.5,0.673
+cv_0242,Lounge on Pearl,bar,residential,12.0,150,primary,50.1,63.0,0.514
+cv_0294,:3Coffee | Flatiron,cafe,residential,21.0,67,secondary,141.3,55.5,0.3
+cv_0243,Gregorys Coffee,cafe,primary,21.1,122,primary,21.1,66.8,0.622
+cv_0244,Afficionado Coffee Roasters,cafe,secondary,11.6,107,secondary,11.6,66.4,0.611
+cv_0245,Black Press Coffee,cafe,primary,15.5,49,primary,15.5,68.1,0.66
+cv_0246,Plowshares Coffee Roasters,cafe,secondary,24.1,74,secondary,24.1,63.2,0.519
+cv_0247,TAP Brazilian Café – 100% Gluten-Free | Tapioca Sandwiches & Açaí | Upper West Side – NYC,restaurant,primary,22.0,44,primary,22.0,66.6,0.616
+cv_0248,Paris Baguette,cafe,primary,16.2,75,primary,16.2,67.9,0.655
+cv_0249,Blu Café,cafe,residential,26.4,66,motorway,128.7,63.9,0.54
+cv_0250,JOE & THE JUICE,cafe,primary,18.0,53,primary,18.0,67.4,0.641
+cv_0252,Qahwah House coffee - W Village,cafe,residential,12.8,68,secondary,46.8,60.3,0.437
+cv_0253,Grace Street Coffee & Desserts,cafe,residential,22.7,77,primary,142.1,58.5,0.385
+cv_0254,The Oasis Cafe,cafe,secondary,21.1,45,secondary,21.1,63.8,0.536
+cv_0255,Remedy Diner,restaurant,residential,9.4,97,primary,26.6,65.8,0.593
+cv_0256,Coppelia,restaurant,residential,19.8,69,secondary,41.4,60.8,0.452
+cv_0257,Waverly Diner,restaurant,residential,11.5,72,secondary,15.9,65.0,0.571
+cv_0258,Empanada Mama Hell’s Kitchen,restaurant,primary,21.4,52,primary,21.4,66.7,0.62
+cv_0259,Cafe Aroma,cafe,secondary,14.9,132,primary,17.6,67.5,0.644
+cv_0265,Fellini Coffee - Upper West,cafe,primary,18.1,42,primary,18.1,67.4,0.64
+cv_0260,Le Pain Quotidien,cafe,pedestrian,86.5,35,secondary,292.1,52.3,0.21
+cv_0261,Sote Coffee Roasters,cafe,primary,17.3,40,primary,17.3,67.6,0.647
+cv_0262,Da Capo,restaurant,primary,21.4,39,primary,21.4,66.7,0.62
+cv_0263,Zuri Coffee Broadway,cafe,primary,13.9,43,primary,13.9,68.6,0.674
+cv_0264,maman,cafe,primary,22.4,42,primary,22.4,66.5,0.614
+cv_0266,La Farine Pâtisserie et Café,cafe,primary,16.7,45,primary,16.7,67.8,0.65
+cv_0267,Green Lane Coffee,cafe,secondary,31.4,75,primary,53.7,62.7,0.506
+cv_0268,Silver Moon Bakery,other,primary,19.1,72,primary,19.1,67.2,0.634
+cv_0269,City Coffee & Bar,restaurant,residential,19.1,65,primary,22.2,66.5,0.615
+cv_0270,Typhoon Cafe,cafe,primary,24.3,67,primary,24.3,66.1,0.604
+cv_0271,Qahwah House - Broadway,cafe,primary,24.2,50,primary,24.2,66.2,0.605
+cv_0272,Oren’s Coffee,cafe,primary,17.8,68,primary,17.8,67.5,0.643
+cv_0273,Hex & Company,cafe,primary,13.5,61,primary,13.5,68.7,0.677
+cv_0274,787 Coffee,cafe,residential,23.4,74,secondary,51.7,59.9,0.425
+cv_0275,Citizen of Chelsea,cafe,residential,23.3,55,secondary,27.0,62.7,0.505
+cv_0277,Slate Cafe Midtown,cafe,secondary,11.0,68,secondary,11.0,66.6,0.617
+cv_0278,Do Not Feed Alligators,cafe,residential,14.0,70,secondary,114.3,56.4,0.326
+cv_0279,% Arabica New York Nolita,cafe,residential,7.0,94,primary,44.2,63.5,0.53
+cv_0280,Frame Coffee,cafe,primary,18.8,55,primary,18.8,67.3,0.636
+cv_0281,Lê Phin,cafe,residential,13.0,35,primary,84.7,60.7,0.449
+cv_0282,Café Lyria,cafe,residential,7.6,122,primary,51.4,62.9,0.511
+cv_0283,Genesis House,cafe,pedestrian,19.0,116,trunk,62.1,65.1,0.573
+cv_0284,WatchHouse 5th Ave.,cafe,residential,11.5,62,secondary,65.8,58.8,0.395
+cv_0285,Harney & Sons SoHo,other,residential,25.9,63,primary,27.4,65.6,0.589
+cv_0286,Soho Grand Hotel,hotel,secondary,15.9,137,secondary,15.9,65.0,0.571
+cv_0287,NOMO SOHO,hotel,residential,23.0,79,primary,53.3,62.7,0.507
+cv_0288,Crosby Street Hotel,hotel,residential,19.0,70,secondary,46.9,60.3,0.437
+cv_0289,Battery Park City Library,library,service,18.7,102,trunk,193.5,60.1,0.432
+cv_0290,Whole Foods Market,other,residential,16.6,147,trunk,139.2,61.6,0.473
+cv_0291,Dot's Cafe,cafe,residential,20.4,49,primary,89.5,60.5,0.442
+cv_0292,Caffe Roma,cafe,residential,11.7,66,secondary,25.6,62.9,0.512
+cv_0293,"noa, a café",cafe,residential,21.7,71,primary,81.1,60.9,0.455
+cv_0295,Blank Street,cafe,secondary,21.5,80,secondary,21.5,63.7,0.533
+cv_0296,Le Pain Quotidien,cafe,residential,8.9,90,secondary,48.3,60.2,0.433
+cv_0297,semicolon cafe,cafe,secondary,18.9,68,secondary,18.9,64.2,0.549
+cv_0298,Waypoint Cafe NYC,cafe,residential,17.9,104,secondary,32.5,61.9,0.482
+cv_0299,The Library at the Public,restaurant,primary,22.4,97,primary,22.4,66.5,0.614
+cv_0300,Bluestone Lane 330 Madison Avenue,cafe,primary,18.1,121,primary,18.1,67.4,0.641
+cv_0301,Matto Espresso,cafe,residential,9.3,86,primary,90.6,60.4,0.441
+cv_0302,THE ELK on Mott,cafe,residential,16.4,86,primary,132.8,58.8,0.393
+cv_0303,Jack's Stir Brew Coffee,cafe,living_street,57.0,140,motorway,189.2,62.2,0.492
+cv_0304,Writers Room Inc,other,residential,6.4,98,primary,9.2,70.0,0.714
+cv_0305,Partners Coffee - West Village,cafe,residential,12.1,86,secondary,19.8,64.0,0.544
+cv_0306,In Common NYC - A Breakfast & Brunch Restaurant,cafe,primary,17.2,164,primary,17.2,67.6,0.647
+cv_0307,Matto Espresso,cafe,primary,14.2,54,primary,14.2,68.5,0.671
+cv_0308,Le Cafe Coffee,cafe,secondary,16.8,97,secondary,16.8,64.7,0.564
+cv_0313,The Hotel Chelsea,restaurant,secondary,28.6,47,secondary,28.6,62.4,0.498
+cv_0309,Cafe East,cafe,primary,36.0,64,primary,36.0,64.4,0.555
+cv_0310,The Hugh,restaurant,secondary,15.3,77,secondary,15.3,65.2,0.576
+cv_0311,La Colombe Coffee Workshop,cafe,secondary,13.5,77,secondary,13.5,65.7,0.592
+cv_0312,Café Standard,cafe,residential,29.2,97,primary,31.4,65.0,0.572
+cv_0319,David Geffen Hall,other,pedestrian,38.3,123,primary,67.3,61.7,0.478
+cv_0314,Peacefood,cafe,residential,10.1,64,primary,132.9,58.8,0.393
+cv_0315,Serafina Broadway 55th (Midtown),restaurant,tertiary,21.5,80,secondary,54.4,59.6,0.418
+cv_0316,Pier 57,restaurant,pedestrian,2.1,106,trunk,27.1,68.7,0.676
+cv_0317,The Greenwich Hotel,hotel,residential,26.1,135,motorway,146.6,63.3,0.524
+cv_0318,Walker Hotel Greenwich Village,hotel,residential,17.2,39,secondary,81.0,57.9,0.369
+cv_0321,La Colombe Coffee Workshop,cafe,residential,10.4,130,trunk,146.2,61.3,0.467
+cv_0322,Little Collins,cafe,primary,14.3,84,primary,14.3,68.4,0.67
+cv_0323,Birch Coffee,cafe,tertiary,27.0,67,secondary,51.2,59.9,0.426
+cv_0324,Ralph's Coffee,cafe,secondary,31.2,64,secondary,31.2,62.1,0.487
+cv_0325,Caffè Lavazza.,cafe,secondary,21.5,84,secondary,21.5,63.7,0.533
+cv_0326,Andrew Heiskell Braille and Talking Book Library,library,residential,23.8,40,secondary,88.9,57.5,0.357

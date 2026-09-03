@@ -1,0 +1,947 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.22)  3 SEP 2026 14:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Team5_HushHub.tex
+(./Team5_HushHub.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+(c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen150
+\@IEEEtrantmpdimenB=\dimen151
+\@IEEEtrantmpdimenC=\dimen152
+\@IEEEtrantmpcountA=\count276
+\@IEEEtrantmpcountB=\count277
+\@IEEEtrantmpcountC=\count278
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen153
+-- This is a 10 point document.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) on input line 937.
+\CLASSINFOnormalsizebaselineskip=\dimen154
+\CLASSINFOnormalsizeunitybaselineskip=\dimen155
+\IEEEnormaljot=\dimen156
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+\IEEEquantizedlength=\dimen157
+\IEEEquantizedlengthdiff=\dimen158
+\IEEEquantizedtextheightdiff=\dimen159
+\IEEEilabelindentA=\dimen160
+\IEEEilabelindentB=\dimen161
+\IEEEilabelindent=\dimen162
+\IEEEelabelindent=\dimen163
+\IEEEdlabelindent=\dimen164
+\IEEElabelindent=\dimen165
+\IEEEiednormlabelsep=\dimen166
+\IEEEiedmathlabelsep=\dimen167
+\IEEEiedtopsep=\skip49
+\c@section=\count279
+\c@subsection=\count280
+\c@subsubsection=\count281
+\c@paragraph=\count282
+\c@IEEEsubequation=\count283
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count284
+\c@table=\count285
+\@IEEEeqnnumcols=\count286
+\@IEEEeqncolcnt=\count287
+\@IEEEsubeqnnumrollback=\count288
+\@IEEEquantizeheightA=\dimen168
+\@IEEEquantizeheightB=\dimen169
+\@IEEEquantizeheightC=\dimen170
+\@IEEEquantizeprevdepth=\dimen171
+\@IEEEquantizemultiple=\count289
+\@IEEEquantizeboxA=\box53
+\@IEEEtmpitemindent=\dimen172
+\IEEEPARstartletwidth=\dimen173
+\c@IEEEbiography=\count290
+\@IEEEtranrubishbin=\box54
+)
+** ATTENTION: Overriding command lockouts (line 2).
+(c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen174
+)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen175
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count296
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip17
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks19
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks20
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+\c@ALC@unique=\count303
+\c@ALC@line=\count304
+\c@ALC@rem=\count305
+\c@ALC@depth=\count306
+\ALC@tlm=\skip55
+\algorithmicindent=\skip56
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen183
+\Gin@req@width=\dimen184
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
+\ESO@tempdima=\dimen185
+\ESO@tempdimb=\dimen186
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen187
+\pgfutil@tempdimb=\dimen188
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box57
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2026-08-01 v3.1.12 (3.1.12)
+))
+Package: pgf 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen189
+\pgf@y=\dimen190
+\pgf@xa=\dimen191
+\pgf@ya=\dimen192
+\pgf@xb=\dimen193
+\pgf@yb=\dimen194
+\pgf@xc=\dimen195
+\pgf@yc=\dimen196
+\pgf@xd=\dimen197
+\pgf@yd=\dimen198
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count307
+\c@pgf@countb=\count308
+\c@pgf@countc=\count309
+\c@pgf@countd=\count310
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count311
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2026-08-01 v3.1.12 (3.1.12)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2026-08-01 v3.1.12 (3.1.12)
+))) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen199
+\pgfmath@count=\count314
+\pgfmath@box=\box58
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count315
+)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@picminx=\dimen256
+\pgf@picmaxx=\dimen257
+\pgf@picminy=\dimen258
+\pgf@picmaxy=\dimen259
+\pgf@pathminx=\dimen260
+\pgf@pathmaxx=\dimen261
+\pgf@pathminy=\dimen262
+\pgf@pathmaxy=\dimen263
+\pgf@xx=\dimen264
+\pgf@xy=\dimen265
+\pgf@yx=\dimen266
+\pgf@yy=\dimen267
+\pgf@zx=\dimen268
+\pgf@zy=\dimen269
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@path@lastx=\dimen270
+\pgf@path@lasty=\dimen271
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@shorten@end@additional=\dimen272
+\pgf@shorten@start@additional=\dimen273
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count316
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgflinewidth=\dimen274
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@pt@x=\dimen275
+\pgf@pt@y=\dimen276
+\pgf@pt@temp=\dimen277
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfarrowsep=\dimen278
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@max=\dimen279
+\pgf@sys@shading@range@num=\count317
+\pgf@shadingcount=\count318
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfexternal@startupbox=\box62
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfnodeparttextbox=\box63
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2026-08-01 v3.1.12 (3.1.12)
+\pgf@nodesepstart=\dimen280
+\pgf@nodesepend=\dimen281
+) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2026-08-01 v3.1.12 (3.1.12)
+)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2026-08-01 v3.1.12 (3.1.12)
+\pgffor@iter=\dimen282
+\pgffor@skip=\dimen283
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+)) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen284
+)
+\tikz@lastx=\dimen285
+\tikz@lasty=\dimen286
+\tikz@lastxsaved=\dimen287
+\tikz@lastysaved=\dimen288
+\tikz@lastmovetox=\dimen289
+\tikz@lastmovetoy=\dimen290
+\tikzleveldistance=\dimen291
+\tikzsiblingdistance=\dimen292
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
+)
+\tikz@expandcount=\count327
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))) (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count328
+) (./Team5_HushHub.aux)
+\openout1 = `Team5_HushHub.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+-- Lines per column: 56 (exact).
+(c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) [1{c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]
+Underfull \hbox (badness 1917) in paragraph at lines 165--173
+[]\OT1/ptm/m/n/10 Location-based so-cial net-works have mo-ti-vated ex-ten-
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 212.
+(c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 212.
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[]\OT1/ptm/b/n/10 Remote Of-fice Worker\OT1/ptm/m/n/10 : Needs weather-aware
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 213--214
+\OT1/ptm/m/n/10 workspaces with re-li-able Wi-Fi, tran-sit ac-cess, and
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 231--231
+\OT1/ptm/m/n/9 com-pare can-di-dates, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+[]\OT1/ptm/m/n/9 Show Quiet Score,
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 231--232
+\OT1/ptm/m/n/9 oc-cu-pancy, and dis-tance;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+\OT1/ptm/m/n/9 and pre-dicted Quiet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+\OT1/ptm/m/n/9 Scores; book-mark and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+\OT1/ptm/m/n/9 rec-om-men-da-tions based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
+[]\OT1/ptm/m/n/9 Office
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 233--233
+\OT1/ptm/m/n/9 weather-aware workspace
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 233--233
+\OT1/ptm/m/n/9 li-able Wi-Fi and tran-sit
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 233--234
+\OT1/ptm/m/n/9 Maps route link; de-tail
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 235--235
+[]\OT1/ptm/m/n/9 As a tourist un-fa-mil-iar
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 235--235
+\OT1/ptm/m/n/9 with Man-hat-tan, I want
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+[]\OT1/ptm/m/n/9 Color-coded mark-ers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+\OT1/ptm/m/n/9 by venue type; photo
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 235--236
+\OT1/ptm/m/n/9 carousels in cards and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+\OT1/ptm/m/n/9 de-tail view; an-i-mated
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
+\OT1/ptm/m/n/9 empty state with tips;
+ []
+
+[2]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 263.
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 289.
+ (c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 289.
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
+[]\OT1/pcr/m/n/10 /api/venues/\OMS/cmsy/m/n/10 f\OT1/pcr/m/n/10 id\OMS/cmsy/m/n/10 g\OT1/pcr/m/n/10 /quiet-profile \OT1/ptm/m/n/10 --- per-
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 289--292
+\OT1/ptm/m/n/10 venue ML quiet pro-file re-turn-ing to-day's hourly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--323
+[]\OT1/ptm/m/n/10 The con-ver-sa-tional as-sis-tant end-point (\OT1/pcr/m/n/10 POST
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 312--323
+\OT1/pcr/m/n/10 /api/chat\OT1/ptm/m/n/10 ) re-quires user au-then-ti-ca-tion, en-sur-ing chat
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 312--323
+\OT1/ptm/m/n/10 quiet score, min-i-mum rat-ing, venue type) us-ing reg-u-lar
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 312--323
+\OT1/ptm/m/n/10 ex-pres-sions; (ii) queries the venue database with those
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+ \OT1/ptm/m/it/10 a) Lay-out and nav-i-ga-tion: [][] \OT1/ptm/m/n/10 The pri-mary lay-out
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 330--331
+\OT1/ptm/m/n/10 (\OT1/pcr/m/n/10 MapsLayout\OT1/ptm/m/n/10 ) adopts a re-spon-sive CSS Grid de-sign,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+ \OT1/ptm/m/it/10 b) Google Maps in-te-gra-tion: [][] \OT1/ptm/m/n/10 In-ter-ac-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+\OT1/ptm/m/n/10 map-ping is im-ple-mented us-ing the Google Maps
+ []
+
+
+Underfull \hbox (badness 7133) in paragraph at lines 333--334
+\OT1/ptm/m/n/10 JavaScript API, ac-cessed through the Re-act wrap-per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+\OT1/pcr/m/n/10 @vis.gl/react-google-maps \OT1/ptm/m/n/10 [13]. The re-quired
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+\OT1/ptm/m/n/10 with the \OT1/pcr/m/n/10 google_maps_cluster_manager_2
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 370--371
+[]\OT1/ptm/b/n/10 Outdoor Ac-ces-si-bil-ity: \OT1/ptm/m/n/10 The app lever-ages dy-namic
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 374--375
+\OT1/pcr/m/n/10 SharedPreferences\OT1/ptm/m/n/10 . This en-sures that all machine-
+ []
+
+
+Underfull \hbox (badness 6252) in paragraph at lines 397--397
+[]\OT1/ptm/m/n/7 Area busy-ness
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 397--397
+[]\OT1/ptm/m/n/7 12.4M rows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
+\OMS/cmsy/m/n/7 !$ \OT1/ptm/m/n/7 1.54M
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--400
+[]\OT1/ptm/m/n/7 NYC 311 Noise
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 400--402
+[]\OT1/ptm/m/n/7 Noise com-plaints per year
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
+[]\OT1/ptm/m/n/7 DOB NOW
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--403
+[]\OT1/ptm/m/n/7 Construction
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 403--405
+[]\OT1/ptm/m/n/7 Active build-ing sites within
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
+[]\OT1/ptm/m/n/7 NYC Per-mit-ted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+[]\OT1/ptm/m/n/7 OpenStreetMap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+[]\OT1/ptm/m/n/7 Road net-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+\OT1/ptm/m/n/7 and venue
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--409
+[]\OT1/ptm/m/n/7 Manhattan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--412
+[]\OT1/ptm/m/n/7 1,018
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+[]\OT1/ptm/m/n/7 Indoor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+\OT1/ptm/m/n/7 workspace
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 415--415
+[]\OT1/ptm/m/n/7 106 ar-ti-cles,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
+\OT1/ptm/m/n/7 1,387
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
+\OT1/ptm/m/n/7 non-matching venues
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 499--499
+[]\OT1/ptm/m/n/7 Venues near match-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--501
+[]\OT1/ptm/m/n/7 Only se-lected type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
+[]\OT1/ptm/m/n/7 Venues match-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
+\OT1/ptm/m/n/7 se-lected busy level
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 529--529
+[]\OT1/ptm/m/n/7 Photos, name, ad-dress,
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 531--531
+[]\OT1/ptm/m/n/7 Noise, seat-ing, Wi-Fi,
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 537--537
+[]\OT1/ptm/m/n/7 Existing re-views listed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+[]\OT1/ptm/m/n/7 Venue re-moved from
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 543--543
+[]\OT1/ptm/m/n/7 External Google Maps
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 567--567
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--571
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 573--573
+[]\OT1/ptm/m/n/7 Last 5 viewed venues
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
+[]\OT1/ptm/m/n/7 AUTH-
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 597--597
+[]\OT1/ptm/m/n/7 WTH-
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 597--597
+[]\OT1/ptm/m/n/7 Temperature, hu-mid-ity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--599
+[]\OT1/ptm/m/n/7 WTH-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--599
+[]\OT1/ptm/m/n/7 Weather panel shows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--601
+[]\OT1/ptm/m/n/7 CHAT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--603
+[]\OT1/ptm/m/n/7 CHAT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--605
+[]\OT1/ptm/m/n/7 PRED-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--607
+[]\OT1/ptm/m/n/7 PRED-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
+[]\OT1/ptm/m/n/7 Google Map ren-ders
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 611--611
+[]\OT1/ptm/m/n/7 User-specific lists load
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 631--631
+[]\OT1/ptm/m/n/7 Venue Dis-cov-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
+[]\OT1/ptm/m/n/7 Deferred scroll-into-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
+[]\OT1/ptm/m/n/7 Applied op-ti-mistic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+\OT1/ptm/m/n/7 syn-chro-ni-sa-tion logic
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 637--637
+[]\OT1/ptm/m/n/7 Hyperlinks and back-end re-quests
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 639--640
+[]\OT1/ptm/m/n/7 Added a place-holder
+ []
+
+[7] (./Team5_HushHub.bbl [8]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+[]\OT1/ptm/m/n/8 Google, ``Place au-to-com-plete overview,'' [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+\OT1/ptm/m/n/8 https : / / developers . google . com / maps / documentation / javascript /
+ []
+
+)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[9] (./Team5_HushHub.aux)
+ ***********
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 14380 strings out of 469158
+ 296276 string characters out of 5458100
+ 708124 words of memory out of 5000000
+ 43127 multiletter control sequences out of 15000+600000
+ 671177 words of font info for 123 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 92i,12n,94p,1004b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/Users/Ginger-Hsu/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Team5_HushHub.pdf (9 pages, 184245 bytes).
+PDF statistics:
+ 93 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,982 @@
+Loaded 401 URLs from outputs/editorial_urls.jsonl
+NOTICE: robots.txt enforcement disabled via --ignore-robots.
+        Proceeding under academic-use framing (COMP47360 lecturer-approved scope).
+        URLs that robots.txt would have blocked are tagged [override] in the log below.
+
+[  1/401] www.halfhalftravel.com — /travel-guides/laptop-friendly-cafes-in-manhattan.html
+        ok  — 30981 chars, '29 Laptop-Friendly Cafes in Manhattan with WiFi (Get Work Do'
+[  2/401] theworkingline.com — /best-cafes-to-work-in-manhattan-laptop-wifi/
+        ok  — 17763 chars, 'Manhattan's 26 Best Cafes to Work & Study (Laptop Friendly)'
+[  3/401] newyorkspork.com — /best-working-cafes-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 12355 chars, '17 Best Working Cafes in New York City (Local's List)'
+[  4/401] theworkingline.com — /best-cafes-to-work-in-nyc-midtown-laptop-wifi/
+        ok  — 11977 chars, '14 Best Cafes to Work in NYC Midtown (Laptop Friendly)'
+[  5/401] orlaghclaire.com — /travel/coffee-shops-to-work-from-in-new-york/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 13176 chars, 'The Best 21 Coffee Shops to Work From in New York City'
+[  6/401] keepcalmandchiffon.com — /blog/the-10-best-new-york-city-coffee-shops-for-freelancers
+        ok  — 6443 chars, 'The 11 Best New York City Coffee Shops For Freelancers - Kee'
+[  7/401] www.remotetribe.life — /workspace/work-friendly-cafe-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 19303 chars, 'Top 7 Work Cafes NYC for Remote Workers (2026 Guide)'
+[  8/401] www.theglobalcircle.com — /8-of-the-best-laptop-friendly-work-cafes-in-new-york-city-u
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3041 chars, '17 laptop-friendly cafes/coffee shops to work in New York Ci'
+[  9/401] www.theinfatuation.com — /new-york/guides/coffee-shops-nyc-for-doing-work
+        ok  — 16901 chars, 'The Best NYC Coffee Shops With Wifi For Getting Work Done - '
+[ 10/401] www.corner.inc — /guides/manhattan/manhattan/plug-in-zen-out-best-aesthetic-c
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 404 Client Error: Not Found for url: https://www.corner.inc/guides/manhattan/manhattan/plug-in-zen-out-best-aesthetic-cafes-for-remote-work-in-manhattan
+[ 11/401] rentofficetoday.com — /en/office-space-for-rent-new_york_city/news/Best_Cafes_to_W
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://rentofficetoday.com/en/office-space-for-rent-new_york_city/news/Best_Cafes_to_Work_NYC/
+[ 12/401] www.belaroundtheworld.com — /best-coffee-shops-nyc-usa/
+        ok  — 22801 chars, '20 Best Coffee Shops in NYC For Working [2026 Guide] | Bel A'
+[ 13/401] theworkingline.com — /best-cafes-to-work-upper-east-side-nyc-wifi/
+        ok  — 11682 chars, 'Upper East Side NYC: The Best Cafes to Work and Study (WiFi)'
+[ 14/401] www.overherenewyork.com — /nycs-best-cafes-for-remote-work-studying/
+        ok  — 6708 chars, 'New York City’s Best Cafés for Remote Work & Studying • Over'
+[ 15/401] discover.shortlist.nyc — /p/cafes
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4977 chars, '45 Laptop-Friendly Cafes in NYC'
+[ 16/401] ithy.com — /article/manhattan-work-cafes-wifi-coffee-sdpx2m5o
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6803 chars, 'Unlock Manhattan's Top 20 Work-Friendly Cafes: Your Guide to'
+[ 17/401] www.sparklymaidnyc.com — /blog/10-best-working-cafes-in-new-york-city
+        ok  — 4419 chars, '10 Best Working Cafes in New York City — Sparkly Maid NYC'
+[ 18/401] pos.toasttab.com — /blog/on-the-line/best-coffee-shops-with-wifi-in-new-york-ci
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 9475 chars, 'Best Coffee Shops with WiFi in NYC'
+[ 19/401] www.coffeeandchampagne.com — /nyc-guides/the-most-beautiful-cafes-in-manhattan
+        ok  — 4948 chars, 'THE MOST BEAUTIFUL CAFÉS IN MANHATTAN — COFFEE AND CHAMPAGNE'
+[ 20/401] theworkingline.com — /best-cafes-to-work-in-lower-manhattan-laptop/
+        ok  — 17165 chars, '15 Best Cafes to Work in Lower Manhattan (Laptop Friendly)'
+[ 21/401] www.ienyc.edu — /the-blueprint/best-cafes-soho-study-work/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.ienyc.edu/the-blueprint/best-cafes-soho-study-work/
+[ 22/401] www.erricawrites.com — /blog/brooklyn-coffee-shops-wfh
+        ok  — 4754 chars, '8 Laptop-Friendly Brooklyn Coffee Shops to Work In — Errica '
+[ 23/401] mtnlyoncafe.com — /blog/best-coffee-shops-in-new-york-for-remote-work/
+        ok  — 15446 chars, 'Best Coffee Shops in New York for Remote Work - Mountain Lyo'
+[ 24/401] cornerofcarmine.com — /15-laptop-friendly-cafes-in-nyc/
+  ! fetch failed: HTTPSConnectionPool(host='cornerofcarmine.com', port=443): Max retries exceeded with url: /15-laptop-friendly-cafes-in-nyc/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))
+[ 25/401] www.remoteyear.com — /blog/9-best-laptop-friendly-cafes-new-york-city
+        skip — extraction returned <500 chars
+[ 26/401] app.assembo.ai — /blogs/cafes-near-me-with-wifi
+        ok  — 7879 chars, 'Top 10 Cafes Near Me with WiFi for Getting Work Done'
+[ 27/401] theworkingline.com — /best-cafes-to-work-in-brooklyn-nyc-laptop-wifi/
+        ok  — 16641 chars, '16 Best Cafes to Work in Brooklyn NYC (Laptop-Friendly)'
+[ 28/401] theworkingline.com — /best-cafes-to-work-in-east-village-nyc-laptop/
+        ok  — 17372 chars, '14 Best Cafes to Work in East Village NYC (Laptop-Friendly)'
+[ 29/401] www.remoteyear.com — /blog/10-best-laptop-friendly-cafes-new-york-city
+        skip — extraction returned <500 chars
+[ 30/401] www.thesq.com — /blog/best-specialty-coffee-nyc
+        ok  — 4006 chars, 'NYC’s Best Coffee Shops For Work and Specialty Brews | The S'
+[ 31/401] devourtours.com — /blog/best-coffee-shops-to-work-in-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5169 chars, 'The 6 Best Coffee Shops To Work in NYC'
+[ 32/401] www.bloomlifestyleco.com — /travel/best-coffee-shops-in-nyc-to-work-remotely
+        ok  — 3363 chars, 'Best Coffee Shops In NYC To Work Remotely — Bloom Magazine'
+[ 33/401] www.molecularcloud.org — /p/5-best-coffee-shops-in-nyc-for-remote-work-with-wifi-and-
+        ok  — 5249 chars, '5 Best Coffee Shops in NYC for Remote Work With WiFi and Out'
+[ 34/401] www.autonomous.ai — /ourblog/best-coffee-shop-to-get-work-done-in-nyc
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6791 chars, 'Tips to Choose the Best Coffee Shop to Get Work Done in NYC'
+[ 35/401] nosleep.city — /best-coffee-shops-to-work-in-nyc
+        ok  — 11977 chars, 'Discover the Best Coffee Shops to Work in NYC (2026)'
+[ 36/401] www.oreateai.com — /blog/best-cafes-in-nyc-to-work/b18746b401ecd38af6f275de231d
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/best-cafes-in-nyc-to-work/b18746b401ecd38af6f275de231d7e8b
+[ 37/401] www.caseylavie.com — /best-cafes-to-work-in-nyc/
+        ok  — 13776 chars, '10+ Best Cafés To Work In NYC - Casey La Vie'
+[ 38/401] crewfare.com — /blog/work-from-cafe-the-best-nyc-cafes-to-work-from
+        ok  — 3528 chars, 'Think Coffee'
+[ 39/401] bookscouter.com — /blog/best-study-spots-in-new-york-city/
+        ok  — 5537 chars, 'Top 8 Best Study Spots in New York City - BookScouter Blog'
+[ 40/401] www.offthemrkt.com — /lifestyle/discovering-the-best-hidden-study-nooks-in-nyc
+        ok  — 7053 chars, 'Discovering the Best Hidden Study Nooks in NYC'
+[ 41/401] nyunews.com — /culture/2025/03/06/manhattan-dining-study-cafes/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5141 chars, '5 Manhattan cafes where you can actually study'
+[ 42/401] studynearby.com — /best-places-to-study-new-york/
+        ok  — 27148 chars, 'Best Places to Study in New York: Your Ultimate NYC Study Gu'
+[ 43/401] websterapartments.org — /blog/top-study-spots-in-nyc-for-back-to-school-season/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4589 chars, 'Top Study Spots in NYC for Back-to-School Season - The Webst'
+[ 44/401] www.nycglobalcenter.com — /post/nyc-study-spots
+        ok  — 4130 chars, 'These NYC Study Spots Are Almost Too Good to Be Free'
+[ 45/401] studynearby.com — /quiet-study-spots-manhattan-libraries-silent/
+        ok  — 31359 chars, '13 Quiet Study Spots in Manhattan (Libraries, Hidden Cafes &'
+[ 46/401] studynearby.com — /best-places-to-study-in-new-york-city/
+        ok  — 32677 chars, '15 Best Places to Study in NYC (That Actually Have Outlets a'
+[ 47/401] www.oreateai.com — /blog/top-study-spots-in-nyc-where-to-find-your-focus/1ee544
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/top-study-spots-in-nyc-where-to-find-your-focus/1ee544da90f6d3cb92a056ef3635c07e
+[ 48/401] www.google.com — /goto
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11740 chars, 'The Best Study Spots in New York City: A Curated Selection'
+[ 49/401] www.nyclife.io — /best-outdoor-study-spots-in-new-york/
+        ok  — 10909 chars, 'Best Outdoor Study Spots in New York'
+[ 50/401] giggster.com — /find/new-york--ny/study
+        ok  — 8902 chars, 'Study Room for Rent Near Me | Private Study Spaces NYC | Gig'
+[ 51/401] bheuni.io — /blog/best-cafes-to-study-in-nyc
+        ok  — 12391 chars, 'Best Cafes To Study In NYC: 20 Wi Fi and Outlet Picks'
+[ 52/401] nyc1.hudsonalpha.org — /best-places-to-study-in-new-york/
+  ! fetch failed: HTTPSConnectionPool(host='nyc1.hudsonalpha.org', port=443): Max retries exceeded with url: /best-places-to-study-in-new-york/ (Caused by NameResolutionError("HTTPSConnection(host='nyc1.hudsonalpha.org', port=443): Failed to resolve 'nyc1.hudsonalpha.org' ([Errno 8] nodename nor servname provided, or not known)"))
+[ 53/401] medium.com — /@Barbara_Hartman/top-8-best-study-spots-in-nyc-25a249b603ff
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5531 chars, 'Top 8 Best Study Spots in NYC'
+[ 54/401] nosleep.city — /best-study-spots-in-nyc
+        ok  — 11823 chars, '2026 Ranked: Best Study Spots in NYC'
+[ 55/401] www.hercampus.com — /school/the-new-school/the-best-places-to-study-in-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3616 chars, 'The Best Places to Study in NYC'
+[ 56/401] jitsi.cmu.edu.jm — /best-places-to-study-nyc/
+  ! fetch failed: HTTPSConnectionPool(host='jitsi.cmu.edu.jm', port=443): Max retries exceeded with url: /best-places-to-study-nyc/ (Caused by NameResolutionError("HTTPSConnection(host='jitsi.cmu.edu.jm', port=443): Failed to resolve 'jitsi.cmu.edu.jm' ([Errno 8] nodename nor servname provided, or not known)"))
+[ 57/401] thefordhamram.com — /culture/beyond-walsh-my-favorite-study-spots-in-the-city/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3679 chars, 'Beyond Walsh: My Favorite Study Spots in the City'
+[ 58/401] focus.luminafoundation.org — /best-places-to-study-nyc/
+  ! fetch failed: HTTPSConnectionPool(host='focus.luminafoundation.org', port=443): Max retries exceeded with url: /best-places-to-study-nyc/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='focus.luminafoundation.org', port=443) at 0x11e7e0500>, 'Connection to focus.luminafoundation.org timed out. (connect timeout=30)'))
+[ 59/401] meet.nyu.edu — /life/current-students/the-best-nyu-study-spots-beyond-bobst
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3119 chars, 'The Best NYU Study Spots: Beyond Bobst Library'
+[ 60/401] thefordhamram.com — /culture/the-best-study-spots-in-new-york-city/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5533 chars, 'The Best Study Spots in New York City'
+[ 61/401] meet.nyu.edu — /life/campus-resources/nyus-hidden-spaces-lesser-known-study
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4921 chars, 'NYU’s Hidden Spaces: Lesser-Known Study Spots'
+[ 62/401] www.collegemagazine.com — /top-10-nyu-study-spots/
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.collegemagazine.com/top-10-nyu-study-spots/
+[ 63/401] resident.com — /resource-guide/2024/10/15/the-best-libraries-for-students-i
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6028 chars, 'The Best Libraries for Students in New York City'
+[ 64/401] studynewyork.us — /
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1033 chars, 'Study NY | Welcome to New York'
+[ 65/401] www.bkreader.com — /sponsored/brooklyns-top-study-spots-from-quiet-libraries-to
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6878 chars, 'Brooklyn's Top Study Spots: From Quiet Libraries to Bustling'
+[ 66/401] www.limcollege.edu — /blog/best-study-spots-students-living-new-yorker
+        ok  — 1480 chars, 'Best Study Spots for Students Living in The New Yorker'
+[ 67/401] www.bestcolleges.com — /united-states/new-york/best-libraries-in-new-york-for-stude
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7554 chars, 'Shhh! 10 NYC Libraries Students Secretly Love | BestColleges'
+[ 68/401] en.uhomes.com — /blog/best-libraries-in-nyc
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 18468 chars, '10 Best Libraries in New York: The Ultimate Student Guide'
+[ 69/401] nosleep.city — /best-libraries-in-nyc-to-study
+        ok  — 16042 chars, 'NYC to Study's Best Libraries [Updated 2026]'
+[ 70/401] www.universityliving.com — /blog/beyond-uni/best-libraries-in-new-york/
+        ok  — 8354 chars, 'Top 10 Best Libraries in New York | Ultimate Book Lovers' Gu'
+[ 71/401] www.casita.com — /blog/top-public-libraries-in-new-york-city
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7127 chars, 'Top Public Libraries In New York City You Have to Visit | Ca'
+[ 72/401] magazine.1000libraries.com — /12-must-visit-libraries-in-nyc/
+        ok  — 9621 chars, '12 Must-Visit Libraries in NYC - Magazine'
+[ 73/401] library.ccny.cuny.edu — /publiclibraries
+        ok  — 1016 chars, 'LibGuides: NYC Public Libraries: NYC Public Libraries'
+[ 74/401] amberstudent.com — /blog/post/explore-best-libraries-in-new-york-a-readers-retr
+        ok  — 65306 chars, 'Explore 10 Best Libraries in New York: A Reader’s Retreat!'
+[ 75/401] imhonyc.com — /best-libraries-in-nyc/
+        ok  — 22227 chars, 'Explore the 10 Best NYC Libraries for Peaceful Study and Stu'
+[ 76/401] futureeducationmagazine.com — /best-libraries-in-new-york/
+        ok  — 6391 chars, '8 Best Libraries in New York: A Bibliophile’s Paradise | Fut'
+[ 77/401] studynearby.com — /places-to-study-new-york-students/
+        ok  — 26012 chars, '42 Best Places to Study in New York City, NY — Libraries, Ca'
+[ 78/401] nosleep.city — /best-libraries-in-nyc
+        ok  — 11667 chars, 'The Best Libraries in NYC [Updated 2026]'
+[ 79/401] www.glassdoor.co.uk — /Community/new-york-city/wheres-the-best-library-in-nyc-to-a
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1511 chars, 'Where’s the best library in NYC to actually get work done or'
+[ 80/401] writingtipsoasis.com — /best-public-libraries-in-nyc/
+        ok  — 6651 chars, '10 of the Best Public Libraries in NYC - Writing Tips Oasis '
+[ 81/401] allthingsnewyorkcity.com — /best-libraries-to-visit-in-new-york-city/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 14582 chars, '25 Best Libraries to Visit in New York City - All Things New'
+[ 82/401] www.caseylavie.com — /best-libraries-in-nyc/
+        ok  — 14485 chars, '13+ Best Libraries in NYC - Casey La Vie'
+[ 83/401] nosleep.city — /best-libraries-in-manhattan
+        ok  — 11447 chars, 'The Best Libraries in Manhattan [Updated 2026]'
+[ 84/401] www.timeout.com — /newyork/things-to-do/most-gorgeous-nyc-libraries
+        ok  — 1089 chars, 'Most Gorgeous Libraries in NYC for Sightseeing Architecture'
+[ 85/401] www.corner.inc — /guides/manhattan/west-village/cozy-connected-best-cafes-for
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 404 Client Error: Not Found for url: https://www.corner.inc/guides/manhattan/west-village/cozy-connected-best-cafes-for-remote-work-in-west-village
+[ 86/401] nycaller.com — /quiet-cafes-for-remote-work-nyc/
+        ok  — 10364 chars, 'Quiet Cafes for Remote Work NYC: Best Spots to Focus'
+[ 87/401] www.corner.inc — /guides/new-york-city/brooklyn/get-sh-t-done-best-cafes-for-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 757 chars, 'Get Sh*t Done: Best Cafes for Remote Work in Brooklyn'
+[ 88/401] studynearme.com — /blog/remote-work-new-york-ny-2025/
+        ok  — 14358 chars, 'Remote Work in New York, NY: 310 Laptop-Friendly Cafes & Com'
+[ 89/401] bucketlisters.com — /inspiration/389-the-best-places-to-work-remotely-in-nyc
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2700 chars, 'The Best Places to Work Remotely in NYC'
+[ 90/401] wmnmagazine.com — /where-to-find-the-best-nyc-coffee-shops-for-remote-work/
+        ok  — 6506 chars, 'Where to Find the Best NYC Coffee Shops for Remote Work - WM'
+[ 91/401] www.hercampus.com — /school/st-johns/the-coziest-cafes-to-study-this-fall-in-nyc
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2532 chars, 'The Coziest Cafes to Study this Fall in NYC'
+[ 92/401] studynearby.com — /nyc-cafes-students-actually-study/
+        ok  — 30618 chars, '14 NYC Cafes Where You Can Actually Study — WiFi, Outlets & '
+[ 93/401] www.ienyc.edu — /the-blueprint/sip-study-repeat-best-cafes-in-tribeca-nyc-to
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.ienyc.edu/the-blueprint/sip-study-repeat-best-cafes-in-tribeca-nyc-to-study-and-work/
+[ 94/401] www.thrillist.com — /drink/new-york/best-nyc-coffee-shops-remote-work
+        ok  — 9312 chars, 'The 16 Best NYC Coffee Shops for Working Remotely'
+[ 95/401] www.787coffee.com — /blog/study-cafe-nyc-student-spaces
+        ok  — 9703 chars, 'Study Café Culture: How 787 Coffee Revolutionizes Student Sp'
+[ 96/401] wpadmin.neverskip.com — /legal-scope/nycs-top-study-cafes-your-guide-to-productive-h
+  ! fetch failed: HTTPSConnectionPool(host='wpadmin.neverskip.com', port=443): Max retries exceeded with url: /legal-scope/nycs-top-study-cafes-your-guide-to-productive-havens-1767647702 (Caused by NewConnectionError("HTTPSConnection(host='wpadmin.neverskip.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused"))
+[ 97/401] www.uswib.com — /lifestyle/best-caf-study-spots-near-campus
+        skip — extraction returned <500 chars
+[ 98/401] www.moveoutcleaningservicenyc.net — /blog/what-are-the-best-coffee-shops-in-nyc-with-wifi-and-ou
+        ok  — 8831 chars, 'What are the Best Coffee Shops in NYC with WiFi and Outlets '
+[ 99/401] www.newyorkertips.com — /coffee-shops-wifi/
+        ok  — 8814 chars, 'NYC Coffee Shops Great for Working with WiFi & Outlets'
+[100/401] syncremote.co — /blog/the-5-best-coffee-shops-with-wifi-in-the-financial-dis
+  ! fetch failed: HTTPSConnectionPool(host='syncremote.co', port=443): Max retries exceeded with url: /blog/the-5-best-coffee-shops-with-wifi-in-the-financial-district-nyc (Caused by NameResolutionError("HTTPSConnection(host='syncremote.co', port=443): Failed to resolve 'syncremote.co' ([Errno 8] nodename nor servname provided, or not known)"))
+[101/401] www.nyureview.com — /culture/6spclvf2mtu3sm2argv0cxq62drb0u
+        ok  — 3636 chars, 'Top 5 Places To Study at NYU — The NYU Review'
+[102/401] studynearby.com — /best-study-spots-near-nyu-washington-square/
+        ok  — 37587 chars, '15 Best Study Spots Near NYU (Washington Square Proximity & '
+[103/401] meet.nyu.edu — /life/local-bagels-and-coffee-first-year/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 8908 chars, 'Food for the Soul: Local Bagels and Coffee Locations'
+[104/401] nyunews.com — /culture/2026/04/03/best-brooklyn-cafes/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5352 chars, 'A Tandon senior’s guide to the best cafes near campus'
+[105/401] nyunews.com — /culture/dining/2025/03/04/tandon-cafes/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4426 chars, '5 study cafes near Tandon to get you through midterm season'
+[106/401] secure2.garneau.com — /trust-know/nycs-top-study-cafes-your-guide-to-productive-ha
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 525 Server Error: status code 525 for url: https://secure2.garneau.com/trust-know/nycs-top-study-cafes-your-guide-to-productive-havens-1767647702
+[107/401] www.yourlocalsguide.com — /coffee-shops-near-columbia-university/
+        ok  — 8158 chars, '7 Coffee Shops Near Columbia University (Student Approved!)'
+[108/401] news.columbia.edu — /news/30-coffee-spots-and-around-columbias-campuses-when-you
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://news.columbia.edu/news/30-coffee-spots-and-around-columbias-campuses-when-you-need-serious-caffeine-jolt
+[109/401] www.columbiamissourian.com — /special_section/collegetown/popular-coffee-shops-offer-stud
+        ok  — 3867 chars, 'Popular coffee shops offer study spots in Columbia'
+[110/401] tcadmission.com — /2023/12/13/ten-best-study-spots-to-finish-the-semester-stro
+        ok  — 5598 chars, 'Ten Best Study Spots To Finish the Semester Strong'
+[111/401] capturencrave.com — /study-work-coffee-in-the-lower-mainland/
+        ok  — 11664 chars, 'Best Study & Work Coffee Shops in the Lower Mainland | Captu'
+[112/401] www.sundial-cu.org — /p/four-underrated-coffee-shops-for
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2153 chars, 'Four Underrated Coffee Shops for the Fall'
+[113/401] www.hercampus.com — /school/mizzou/my-top-5-study-spots-in-downtown-columbia/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 8344 chars, 'My Top 5 Study Spots in Downtown Columbia'
+[114/401] www.tychr.com — /columbia-universitys-unique-study-spaces-for-productivity-a
+  ! fetch failed: HTTPSConnectionPool(host='www.tychr.com', port=443): Max retries exceeded with url: /columbia-universitys-unique-study-spaces-for-productivity-and-inspiration/ (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.tychr.com'. (_ssl.c:1010)")))
+[115/401] whenincolumbia.com — /best-coffee-shops-columbia/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11151 chars, 'Coffee Shops In Columbia, SC: The Ultimate Guide | When In C'
+[116/401] kiddingaroundcolumbia.com — /coffee-shops-columbia-sc
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11776 chars, '22+ Standout Coffee Shops: Columbia, SC in 2025'
+[117/401] www.columbiaspectator.com — /spectrum/2021/12/08/off-campus-study-spots-to-check-out-thi
+        skip — extraction returned <500 chars
+[118/401] news.columbia.edu — /news/columbia-life-hacks-your-best-advice-where-eat-study-a
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://news.columbia.edu/news/columbia-life-hacks-your-best-advice-where-eat-study-and-relax-around-campus
+[119/401] gradebook.stuy.edu — /good-cafes-to-study-near-me/
+  ! fetch failed: HTTPSConnectionPool(host='gradebook.stuy.edu', port=443): Max retries exceeded with url: /good-cafes-to-study-near-me/ (Caused by NameResolutionError("HTTPSConnection(host='gradebook.stuy.edu', port=443): Failed to resolve 'gradebook.stuy.edu' ([Errno 8] nodename nor servname provided, or not known)"))
+[120/401] fhspost.com — /10294/posterior/caffeine-and-concentration-the-best-coffee-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5748 chars, 'Caffeine and Concentration: The Best Coffee Shop Study Spots'
+[121/401] www.vancouvercoffeesnob.com — /lists/the-best-coffee-shops-to-work-or-study-from-in-vancou
+        ok  — 12714 chars, 'The Best Coffee Shops to Work or Study From In Vancouver'
+[122/401] www.theinfatuation.com — /new-york/guides/restaurants-near-columbia-university
+        ok  — 10829 chars, 'The Best Restaurants Near Columbia University - New York - T'
+[123/401] studynearby.com — /14-best-study-cafes-in-seattle-with-strong-wifi-stop-wander
+        ok  — 20955 chars, '10 Best Places to Study in 14 Best Study Cafes In Seattle Wi'
+[124/401] www.georgetown.edu — /news/off-campus-study-spots-every-hoya-should-know/
+        ok  — 4002 chars, 'Off-Campus Study Spots Every Hoya Should Know - Georgetown U'
+[125/401] neighbors.columbia.edu — /news/four-coffee-shops-around-manhattanville-you-should-che
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://neighbors.columbia.edu/news/four-coffee-shops-around-manhattanville-you-should-check-out-year
+[126/401] universitylife.columbia.edu — /news/sweet-spots-around-columbias-campuses
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://universitylife.columbia.edu/news/sweet-spots-around-columbias-campuses
+[127/401] meet.nyu.edu — /life/campus-resources/study-with-the-stars-find-your-perfec
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5252 chars, 'Study With the Stars: Find Your Perfect Study Spot at NYU'
+[128/401] www.collegemagazine.com — /10-places-to-actually-get-some-work-done-around-nyu/
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.collegemagazine.com/10-places-to-actually-get-some-work-done-around-nyu/
+[129/401] nyunews.com — /culture/2023/09/20/off-campus-study-spots/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5556 chars, 'Breakup with Bobst with these 5 off-campus study spots'
+[130/401] steinhardt.nyu.edu — /current-students/local-guide-new-graduate-students
+        ok  — 6904 chars, 'Local Guide for New Graduate Students'
+[131/401] coursementor.com — /blog/best-places-to-study-near-me/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 500 Server Error: Internal Server Error for url: https://coursementor.com/blog/best-places-to-study-near-me/
+[132/401] hslguides.med.nyu.edu — /MSGuide/studyspaces
+        ok  — 3478 chars, 'Specialty Guides: Medical Student Bookshelf: Medical Student'
+[133/401] meet.nyu.edu — /life/nyu-study-spots-study-in-comfort-and-style/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3826 chars, 'NYU Study Spots: Study in Comfort—and Style'
+[134/401] bestnewyork.us — /places-to-study/
+        ok  — 16339 chars, 'The 16 Best Places to Study in New York | BestNewYork'
+[135/401] nyunews.com — /culture/2025/10/16/culture/bobst/floors/ranked/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4261 chars, 'Ranked: The best Bobst floors for studying'
+[136/401] tcadmission.com — /2022/11/09/best-places-to-study-on-campus/
+        ok  — 2518 chars, 'Best Places to Study on Campus!'
+[137/401] unicounselling.tychr.com — /columbia-universitys-unique-study-spaces-for-productivity-a
+        ok  — 9771 chars, 'Columbia University’s Unique Study Spaces for Productivity a'
+[138/401] www.thebarnardbulletin.com — /post/study-spots-on-campus-to-try-this-finals-season
+        ok  — 5927 chars, 'Study spots on campus to try this finals season'
+[139/401] www.columbiamissourian.com — /special_section/collegetown/find-the-best-study-spots-on-ca
+  ! fetch failed: 429 Client Error: Too Many Requests for url: https://www.columbiamissourian.com/special_section/collegetown/find-the-best-study-spots-on-campus/article_699fa440-cb08-11ec-a313-336933675e69.html
+[140/401] career.missouri.edu — /career-scoop/our-fave-como-study-sip-spots/
+        ok  — 1816 chars, 'Our Fave CoMo “Study & Sip” Spots - Career Center'
+[141/401] admissionsblog.sipa.columbia.edu — /2022/03/16/favorite-study-spots-on-campus/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://admissionsblog.sipa.columbia.edu/2022/03/16/favorite-study-spots-on-campus/
+[142/401] www.columbiaspectator.com — /spectrum/2023/08/27/your-guide-to-the-columbia-libraries-de
+        skip — extraction returned <500 chars
+[143/401] sc.edu — /uofsc/posts/2024/04/study_spots_2024.php
+        ok  — 5558 chars, 'Vibe Check: USC's Best Study Spots'
+[144/401] www.schoolscoops.com — /p/blog-columbia-university-campus-tour-real-columbia
+        ok  — 15107 chars, 'Columbia University Campus Tour: How to See the Real Columbi'
+[145/401] sc.edu — /uofsc/posts/2025/04/study_spots_2025.php
+        ok  — 4579 chars, 'Your study aesthetic: Check out these underrated study spots'
+[146/401] www.dailygamecock.com — /article/2024/11/7-study-spots-to-help-prepare-you-for-final
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4133 chars, '7 different study spots to help prepare you for finals seaso'
+[147/401] www.tc.columbia.edu — /admission/blog/content/2022/best-places-to-study-on-campus/
+        ok  — 2518 chars, 'Best Places to Study On Campus!'
+[148/401] bwog.com — /2022/08/your-non-exhaustive-guide-to-crowd-free-library-stu
+        ok  — 6388 chars, 'Your (Non-Exhaustive) Guide To Crowd-Free Library Studying –'
+[149/401] www.hunter.cuny.edu — /students/campus-life/student-living-guide/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3428 chars, 'Student LIving Guide | Hunter College'
+[150/401] libguides.library.hunter.cuny.edu — /c.php
+  ! fetch failed: 404 Client Error: Not Found for url: https://libguides.library.hunter.cuny.edu/c.php?g=438691&p=2991187
+[151/401] libguides.library.hunter.cuny.edu — /c.php
+        ok  — 983 chars, 'LibGuides: Information Guides for Silberman School of Social'
+[152/401] brie.hunter.cuny.edu — /hunterathenian/2023/05/food-for-thought-places-where-hunter
+        ok  — 3733 chars, 'Food For Thought – Places Where Hunter College Students Shou'
+[153/401] hvilleblast.com — /beyond-the-library-4-study-spots-in-huntsville-we-tried-lov
+        ok  — 2046 chars, 'Beyond the library: 4 study spots in Huntsville we tried + l'
+[154/401] bookscouter.com — /blog/best-study-spots-in-houston/
+        ok  — 6473 chars, 'Top 9 Best Study Spots in Houston - BookScouter Blog'
+[155/401] apply.jhu.edu — /hopkins-insider/places-to-study-around-campus/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1915 chars, 'Places to Study Around Campus | Johns Hopkins University Adm'
+[156/401] www.citizensbank.com — /student/articles/pros-cons-different-study-spaces.aspx
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.citizensbank.com/student/articles/pros-cons-different-study-spaces.aspx
+[157/401] artsci.case.edu — /news/hidden-gems-places-to-study-off-the-beaten-path/
+        ok  — 3129 chars, 'Hidden gems: Places to study off the beaten path - College o'
+[158/401] www.albany.org — /blog/post/discover-albany-college-edition-best-places-to-st
+        ok  — 3084 chars, 'Discover Albany College Edition: Best Places to Study Off-Ca'
+[159/401] cunyba.cuny.edu — /news/library-resources/
+        ok  — 19860 chars, 'Library Resources for CUNY Students'
+[160/401] continuing-ed.hunter.cuny.edu — /campus-maps-directions-visitor-information/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 860 chars, 'Campus Map & Visitor Information'
+[161/401] forstudents.commons.gc.cuny.edu — /2023/10/06/livinghunter/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://forstudents.commons.gc.cuny.edu/2023/10/06/livinghunter/
+[162/401] studentlife.utk.edu — /2025/06/17/top-study-spots-on-campus-that-are-not-in-the-li
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4424 chars, 'Top Study Spots on Campus That are Not in the Library - Divi'
+[163/401] research.com — /best-colleges/cuny-hunter-college/campus-life
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://research.com/best-colleges/cuny-hunter-college/campus-life
+[164/401] www.apartments.com — /off-campus-housing/ny/new-york/hunter-college/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.apartments.com/off-campus-housing/ny/new-york/hunter-college/
+[165/401] khanstutorial.com — /blog-posts/how-to-get-into-hunter-college-high-school/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7479 chars, 'How to Get Into Hunter College High School?'
+[166/401] jindal.utdallas.edu — /blog/best-study-spots-utdallas/
+        ok  — 5508 chars, 'Best Study Spots On and Off Campus | Naveen Jindal School of'
+[167/401] spoonuniversity.com — /school/baruch/ten-other-coffee-shops-near-baruch-college-to
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4353 chars, '10 Other Coffee Shops Near Baruch College That Aren't Starbu'
+[168/401] guides.newman.baruch.cuny.edu — /gradstudents
+        ok  — 529 chars, 'Research Guides: Graduate Student Services: Library Overview'
+[169/401] sharedeasy.club — /baruch-college/
+        ok  — 3565 chars, 'Off-Campus Housing: Apartments Near Baruch College (CUNY) | '
+[170/401] members.apiabroad.com — /baruch-college-cuny/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6510 chars, 'Study Abroad with Baruch College, CUNY and API'
+[171/401] cuny.libanswers.com — /CUNYBrooklyn/faq/401172
+        ok  — 909 chars, 'CUNY LibAnswers: Brooklyn College Library/AIT FAQs'
+[172/401] zicklin.baruch.cuny.edu — /zicklin_news/foreign-dispatches-zicklins-gilman-scholars-re
+  ! fetch failed: HTTPSConnectionPool(host='zicklin.baruch.cuny.edu', port=443): Max retries exceeded with url: /zicklin_news/foreign-dispatches-zicklins-gilman-scholars-report-on-study-abroad/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+[173/401] www.fitnyc.edu — /
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        skip — extraction returned <500 chars
+[174/401] travel.usnews.com — /Hotels/New_York_NY/near-college-CUNY_Baruch_College_692/
+  ! fetch failed: HTTPSConnectionPool(host='travel.usnews.com', port=443): Read timed out. (read timeout=30)
+[175/401] www.bloomberg.com — /professional/products/bloomberg-terminal/education/certific
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.bloomberg.com/professional/products/bloomberg-terminal/education/certificate-courses/
+[176/401] www.hercampus.com — /school/new-school/on-a-coffee-grind-cutest-cafes-to-study-a
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1897 chars, 'On a (Coffee) Grind: Cutest Cafes to Study at in NYC'
+[177/401] honorsnyc.blogs.pace.edu — /2024/04/19/nycs-hidden-coffee-spot/
+        ok  — 529 chars, 'Pace University'
+[178/401] thepacepress.org — /11277/features/the-five-best-study-spots-near-campus/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3748 chars, 'The five best study spots near campus'
+[179/401] www.pace.edu — /news/nyc-campus-lounge-and-study-spaces
+        ok  — 2915 chars, 'NYC Campus: Lounge and Study Spaces'
+[180/401] honorsnyc.blogs.pace.edu — /2023/10/13/a-college-students-guide-to-nyc-coffee-shops/
+        ok  — 529 chars, 'Pace University'
+[181/401] ftp.bills.com.au — /lunar-tips/nycs-top-cafes-for-focused-studying-1767647702
+  ! fetch failed: HTTPSConnectionPool(host='ftp.bills.com.au', port=443): Max retries exceeded with url: /lunar-tips/nycs-top-cafes-for-focused-studying-1767647702 (Caused by NameResolutionError("HTTPSConnection(host='ftp.bills.com.au', port=443): Failed to resolve 'ftp.bills.com.au' ([Errno 8] nodename nor servname provided, or not known)"))
+[182/401] thabeautyshop.it.com — /expert-media/nycs-top-study-cafes-your-guide-to-productive-
+  ! fetch failed: HTTPSConnectionPool(host='thabeautyshop.it.com', port=443): Max retries exceeded with url: /expert-media/nycs-top-study-cafes-your-guide-to-productive-havens-1767647702 (Caused by NewConnectionError("HTTPSConnection(host='thabeautyshop.it.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused"))
+[183/401] now.fordham.edu — /inside-fordham/fordham-favorites-spots-to-eat-and-drink-nea
+  ! fetch failed: 403 Client Error: Forbidden for url: https://now.fordham.edu/inside-fordham/fordham-favorites-spots-to-eat-and-drink-near-the-lincoln-center-campus/
+[184/401] fordhamobserver.com — /77919/opinions/my-favorite-coffee-shops-near-fordham-lc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2653 chars, 'My Favorite Coffee Shops Near Fordham LC'
+[185/401] www.blueskyliving.nyc — /8-must-try-coffee-shops-near-fordham-university
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3351 chars, '8 Must Try Coffee Shops Near Fordham University'
+[186/401] www.forwardpathway.us — /a-culinary-journey-around-fordham-lincoln-center-exploring-
+        ok  — 17708 chars, 'A Culinary Journey Around Fordham Lincoln Center: Exploring '
+[187/401] observer.com — /2023/10/new-york-city-best-coffee-shops-cafes-for-work/
+        ok  — 6726 chars, 'The Best New York City Coffee Shops for Working Remotely'
+[188/401] medium.com — /@pfischetti/off-campus-study-spots-near-fordham-college-lc-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3478 chars, 'Off-Campus Study Spots Near Fordham College LC'
+[189/401] backseatdriver.blog — /2024/01/15/a-coffee-snobs-guide-to-the-best-cafes-in-nyc/
+        ok  — 6642 chars, 'A Coffee Snob’s Guide to the Best Cafes in NYC'
+[190/401] newyorkspork.com — /best-coffee-upper-west-side/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7918 chars, 'Here's the Best Coffee on the Upper West Side'
+[191/401] bookscouter.com — /blog/best-study-spots-in-chicago/
+        ok  — 5308 chars, 'Top 8 Best Study Spots in Chicago - BookScouter Blog'
+[192/401] www.bestcafechicago.org — /blog/how-to-find-the-perfect-study-cafe-in-chicago/
+  ! fetch failed: HTTPSConnectionPool(host='www.bestcafechicago.org', port=443): Max retries exceeded with url: /blog/how-to-find-the-perfect-study-cafe-in-chicago/ (Caused by NameResolutionError("HTTPSConnection(host='www.bestcafechicago.org', port=443): Failed to resolve 'www.bestcafechicago.org' ([Errno 8] nodename nor servname provided, or not known)"))
+[193/401] spoonuniversity.com — /school/f-and-m/6-best-coffee-shops-for-studying-in-lancaste
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3198 chars, '6 Best Coffee Shops for Studying in Lancaster, PA'
+[194/401] studynearby.com — /study-cafes-brooklyn-outlets-laptop-friendly/
+        ok  — 34142 chars, '14 Study Cafes in Brooklyn with Outlets (Actual Power Access'
+[195/401] www.studentluxe.co.uk — /life-at-luxe/best-areas-live-new-york-students
+        ok  — 16397 chars, 'Best Areas to Live in New York for Students'
+[196/401] theworkingline.com — /best-cafes-to-work-upper-west-side-nyc-wifi/
+        ok  — 15678 chars, '12 Best Cafes to Work on the Upper West Side NYC (with WiFi)'
+[197/401] www.abroadwithash.com — /the-best-coffee-shops-on-the-ues-nyc/
+        ok  — 7761 chars, 'Best Coffee Shops - Upper East Side NYC'
+[198/401] blog.dearsundays.com — /10-wfh-spots-ues
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5503 chars, '10 Best WFH Spots in the Upper East Side'
+[199/401] alifeofadventures.com — /blog/best-coffee-shops-in-upper-east-side/
+        ok  — 4844 chars, 'Best Coffee Shops in Upper East Side - a life of adventures'
+[200/401] newyorkspork.com — /best-coffee-upper-east-side-cafes/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7712 chars, '10 Satisfying Cafes on the Upper East Side (Local's List)'
+[201/401] www.newyorkcityadvisor.com — /coffee-shops-upper-east-side-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11580 chars, '16 Best Coffee Shops on Upper East Side of NYC - Best in The'
+[202/401] www.yourlocalsguide.com — /coffee-shops-on-the-upper-east-side/
+        ok  — 11087 chars, 'The Top 10 Coffee Shops on the Upper East Side'
+[203/401] uppereastsideandbeyond.com — /upper-east-side-cafes-and-coffee-shops/
+        ok  — 4830 chars, 'Best Upper East Side Cafes and Coffee Shops (2023) - Upper E'
+[204/401] monaghansrvc.com — /post/25-most-favorite-coffee-shops-in-upper-east-side-new-y
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11421 chars, '25 most favorite coffee shops in Upper East Side New York Ci'
+[205/401] nicestaynyc.com — /recommendation/bluestone-lane-upper-east-side/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 954 chars, 'Bluestone Lane Upper East Side - Nice Stay NYC'
+[206/401] syncremote.co — /blog/top-5-coffee-shops-with-wifi-in-the-upper-east-side
+  ! fetch failed: HTTPSConnectionPool(host='syncremote.co', port=443): Max retries exceeded with url: /blog/top-5-coffee-shops-with-wifi-in-the-upper-east-side (Caused by NameResolutionError("HTTPSConnection(host='syncremote.co', port=443): Failed to resolve 'syncremote.co' ([Errno 8] nodename nor servname provided, or not known)"))
+[207/401] www.home-barista.com — /cafes/manhattan-upper-east-side-coffee-bar-suggestions-t960
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.home-barista.com/cafes/manhattan-upper-east-side-coffee-bar-suggestions-t96013.html
+[208/401] www.yourlocalsguide.com — /coffee-shops-on-the-upper-west-side/
+        ok  — 11585 chars, 'The Top 10 Coffee Shops on the Upper West Side'
+[209/401] www.girlwiththepassport.com — /coffee-shops-on-the-upper-east-side/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 18320 chars, '17 Best Coffee Shops on the Upper East Side + Amazing Tips'
+[210/401] www.overherenewyork.com — /late-night-study-spots-nyc-open-past-midnight/
+        ok  — 10854 chars, '20+ Late Night Study Spots NYC Open Past Midnight • Over Her'
+[211/401] www.google.com — /goto
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4589 chars, 'Top Study Spots in NYC for Back-to-School Season - The Webst'
+[212/401] allytravels.com — /things-to-do-on-the-upper-west-side/
+        ok  — 11809 chars, '25 Best Things to Do on the Upper West Side: A Local's Guide'
+[213/401] www.westsiderag.com — /2025/11/13/perk-up-the-buzz-on-upper-west-side-coffee-spots
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 9693 chars, 'Perk Up! The Buzz on Upper West Side Coffee Spots'
+[214/401] www.yourlocalsguide.com — /best-coffee-shops-east-village/
+        ok  — 13305 chars, 'Best Coffee Shops in East Village With the Best Vibes'
+[215/401] newyorkspork.com — /east-village-coffee-shops/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 12187 chars, '13 Charming Coffee Shops in The East Village (Local's List)'
+[216/401] www.corner.inc — /guides/manhattan/east-village/all-time-favorites-best-east-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 404 Client Error: Not Found for url: https://www.corner.inc/guides/manhattan/east-village/all-time-favorites-best-east-village-cafes-and-coffee-shops
+[217/401] syncremote.co — /blog/5-best-cafes-with-wifi-in-the-east-village-nyc
+  ! fetch failed: HTTPSConnectionPool(host='syncremote.co', port=443): Max retries exceeded with url: /blog/5-best-cafes-with-wifi-in-the-east-village-nyc (Caused by NameResolutionError("HTTPSConnection(host='syncremote.co', port=443): Failed to resolve 'syncremote.co' ([Errno 8] nodename nor servname provided, or not known)"))
+[218/401] www.bcupcafe.com — /blog/where-to-get-the-best-morning-coffee-in-east-village-n
+        ok  — 11526 chars, 'Best Morning Coffee Spots Across East Village NYC | B Cup Ca'
+[219/401] newyorkspork.com — /lower-east-side-coffee-shops-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11434 chars, '10 Great Lower East Side Coffee Shops Locals Love'
+[220/401] syncremote.co — /blog/top-9-cafes-to-work-from-in-new-york-city
+  ! fetch failed: HTTPSConnectionPool(host='syncremote.co', port=443): Max retries exceeded with url: /blog/top-9-cafes-to-work-from-in-new-york-city (Caused by NameResolutionError("HTTPSConnection(host='syncremote.co', port=443): Failed to resolve 'syncremote.co' ([Errno 8] nodename nor servname provided, or not known)"))
+[221/401] www.theinfatuation.com — /new-york/guides/best-coffee-nyc
+        ok  — 13077 chars, 'The 19 Best Coffee Shops In NYC - New York - The Infatuation'
+[222/401] thatswhatshehad.com — /11-places-to-eat-in-the-lower-east-side/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 12507 chars, '11 Places to Eat in the Lower East Side of Manhattan | That’'
+[223/401] theworkingline.com — /best-cafes-to-work-in-chelsea-nyc-laptop-wifi/
+        ok  — 16176 chars, '15 Best Cafes to Work in Chelsea NYC (Laptop-Friendly)'
+[224/401] newyorkspork.com — /coffee-shops-chelsea-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 14500 chars, '16 Charming Coffee Shops in Chelsea (Local's Can't Help But '
+[225/401] www.eraofwe.com — /coffee-lab/en/articles/top-10-coffee-shops-in-chelsea
+        ok  — 8627 chars, 'Top 10 Coffee Shops In Chelsea - Era of We Coffee Forum'
+[226/401] fly.homes — /blog/lifestyle/cafes-in-chelsea-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 10146 chars, 'Cafes in Chelsea, NYC: Top 10 Coffee Spots for You'
+[227/401] syncremote.co — /blog/top-5-coffee-shops-in-chelsea-with-wifi
+  ! fetch failed: HTTPSConnectionPool(host='syncremote.co', port=443): Max retries exceeded with url: /blog/top-5-coffee-shops-in-chelsea-with-wifi (Caused by NameResolutionError("HTTPSConnection(host='syncremote.co', port=443): Failed to resolve 'syncremote.co' ([Errno 8] nodename nor servname provided, or not known)"))
+[228/401] monaghansrvc.com — /post/23-charming-coffee-shops-in-chelsea-new-york-city.p204
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 10867 chars, '23 charming coffee shops in Chelsea New York City'
+[229/401] realestatewithceleste.com — /blog/best-coffee-shops-in-chelsea-ny-a-locals-guide
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5700 chars, 'Top Coffee Shops to Explore in Chelsea, NY | The Celeste Pan'
+[230/401] www.sparklymaidnyc.com — /blog/10-enchanting-coffee-shops-in-chelsea-nyc
+        ok  — 4839 chars, '10 Enchanting Coffee Shops in Chelsea NYC — Sparkly Maid NYC'
+[231/401] abritandasoutherner.com — /best-coffee-shops-in-chelsea-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 13997 chars, 'Best Coffee Shops in Chelsea, NYC – Local Spots Not to Miss '
+[232/401] www.oreateai.com — /blog/best-coffee-shops-in-chelsea-nyc/b04df6cbf96f1b2108e89
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/best-coffee-shops-in-chelsea-nyc/b04df6cbf96f1b2108e892ace74e1d3d
+[233/401] www.yourlocalsguide.com — /best-coffee-in-chelsea-nyc/
+        ok  — 8816 chars, 'Best Coffee in Chelsea NYC You Need to Try'
+[234/401] cornercoffeestore.com — /best-coffee-shops-in-chelsea/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 8675 chars, '10 Best Coffee Shops in Chelsea 2026: Great CafÃ©s to Try â '
+[235/401] www.limcollege.edu — /blog/study-spots-not-far-your-pillow
+        ok  — 2868 chars, 'Study Spots Not Far from Your Pillow'
+[236/401] www.glazerteam.com — /news/the-best-cafes-in-greenwich-village
+        ok  — 6223 chars, 'The Best Cafes in Greenwich Village — The Glazer Team'
+[237/401] newyorkspork.com — /best-coffee-west-village/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 9386 chars, '14 Gorgeous West Village Coffee Shops Locals Love'
+[238/401] niceguytours.com — /the-best-coffee-shops-in-greenwich-village/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5418 chars, 'The Best Coffee Shops in Greenwich Village | Nice Guy Tours'
+[239/401] danielkramp.nyc — /blog/best-coffee-shops-in-greenwich-village-a-locals-shortl
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5088 chars, 'Best Coffee Shops in Greenwich Village: Local Guide'
+[240/401] www.foodsofny.com — /blog/5-cozy-coffee-shops-in-greenwich-village-for-caffeine-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5209 chars, 'Greenwich Village Coffee Shops | Foods of NY Tours'
+[241/401] goodlife-app.com — /the-19-best-coffee-shops-in-greenwich-village/
+        ok  — 11107 chars, 'The 19 Best Coffee Shops In Greenwich Village - GoodLife'
+[242/401] monaghansrvc.com — /post/the-21-best-coffee-shops-in-greenwich-village-new-york
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 9609 chars, 'The 21 best coffee shops in Greenwich Village New York City'
+[243/401] www.foodsofny.com — /blog/5-diverse-coffee-spots-in-greenwich-village/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5653 chars, '5 Diverse Coffee Spots in Greenwich Village | Foods of NY To'
+[244/401] newyorkspork.com — /best-coffee-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 12946 chars, '17 Best New York City Cafes (Serving Great Coffee in NYC)'
+[245/401] www.yourlocalsguide.com — /best-coffee-shops-west-village/
+        ok  — 10668 chars, 'Best Coffee Shops in West Village (For a Quick Drink!)'
+[246/401] charmedbycamille.com — /best-coffee-shops-in-the-west-village/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5719 chars, 'The Best Coffee Shops in the West Village'
+[247/401] ny.eater.com — /maps/coffee-bars-west-village
+        ok  — 8703 chars, 'Every Coffee Bar in NYC’s West Village'
+[248/401] devourtours.com — /blog/coffee-shops-in-the-west-village/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7347 chars, 'Our 10 Favorite Coffee Shops in the West Village'
+[249/401] www.untappedcities.com — /coffee-shops-in-greenwich-village/
+        ok  — 6087 chars, 'The 5 Best Coffee Shops in Greenwich Village - Untapped New '
+[250/401] www.diversitystudytrips.co.uk — /tourist-spots-for-students-in-new-york-city/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6133 chars, 'The best tourist spots for students in New York City'
+[251/401] creativestrails.com — /new-york-places-to-study/
+        ok  — 4920 chars, 'NEW YORK: PLACES FOR STUDY SESSIONS & CITY VIBES - Creatives'
+[252/401] www.allaroundmoving.com — /best-places-to-study-in-new-york/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.allaroundmoving.com/best-places-to-study-in-new-york/
+[253/401] www.yourlocalsguide.com — /coffee-shops-in-the-financial-district-nyc/
+        ok  — 12118 chars, 'The Top 10 Coffee Shops in the Financial District NYC'
+[254/401] monaghansrvc.com — /post/14-best-coffee-shops-in-financial-district-new-york-ci
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7038 chars, '14 Best coffee shops in Financial District New York City'
+[255/401] newyorkspork.com — /best-coffee-financial-district-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 10144 chars, '12 Best Coffee Shops in the Financial District (Local's Guid'
+[256/401] conwellhall.com — /
+        ok  — 1611 chars, 'Conwell Hall | Discover Exceptional Experiences in the Finan'
+[257/401] www.moodap.com — /nyc/best/cafes/coffeetea/financial-district
+        ok  — 2612 chars, 'Best Coffee/Tea Cafes in Manhattan NYC'
+[258/401] www.placemakr.com — /blog/wall-street-coffee-shops
+        ok  — 6363 chars, 'Best Local Coffee Shops in New York’s Financial District'
+[259/401] serendipitylabs.com — /us/ny/new-york-financial-district/coworking/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1911 chars, 'Upscale Flex Office Space in New York state by Serendipity L'
+[260/401] cafegrumpy.com — /press/10-best-coffee-shops-in-the-financial-district-locals
+        skip — extraction returned <500 chars
+[261/401] monaghansrvc.com — /post/12-flavorful-coffee-shops-in-financial-district-new-yo
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5054 chars, '12 flavorful coffee shops in Financial District New York Cit'
+[262/401] www.corner.inc — /guides/toronto/financial-district/plug-in-pour-over-best-wo
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1154 chars, 'Plug In & Pour Over: Best Work-Friendly Cafes in Financial D'
+[263/401] ny.eater.com — /maps/best-cafe-coffee-shop-new-york-city-brooklyn-queens
+        ok  — 7701 chars, 'The Best Coffee Shops in New York City'
+[264/401] www.home-barista.com — /cafes/suited-nyc-financial-district-t91391.html
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.home-barista.com/cafes/suited-nyc-financial-district-t91391.html
+[265/401] onewallstreet.com — /blog/best-financial-district-cafes/
+        ok  — 3101 chars, 'Best Financial District Cafes - One Wall Street'
+[266/401] guide.michelin.com — /us/en/article/travel/guide-financial-district-new-york
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        skip — extraction returned <500 chars
+[267/401] www.hertraveledit.com — /pretty-cafes-in-new-york-city/
+        ok  — 11030 chars, 'A List of Pretty Cafes in New York City - Her Travel Edit'
+[268/401] www.corner.inc — /guides/new-york-city/new-york-city/all-time-favorites-best-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1110 chars, 'All-Time Favorites: Best New York City Cafes & Creative Spac'
+[269/401] serenaslenses.net — /plants-and-flower-cafes-in-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 16078 chars, 'Cutest Plants and Flower Cafes and Coffee Shops in NYC'
+[270/401] www.moodap.com — /nyc/best/cafes/coffeetea/noho
+        ok  — 2612 chars, 'Best Coffee/Tea Cafes in Manhattan NYC'
+[271/401] twinbrothersmovers.com — /best-cafes-to-work-in-nyc/
+  ! fetch failed: 500 Server Error: Internal Server Error for url: https://twinbrothersmovers.com/2020/11/15/best-cafes-to-work-in-nyc/
+[272/401] thewanderbug.com — /nolita-neighborhood-guide-nyc/
+        ok  — 14898 chars, 'Nolita Neighbourhood Guide • New York City • The Wanderbug'
+[273/401] observer.com — /list/nolita-new-york-city-neighborhood-guide/
+        ok  — 14245 chars, 'The Nolita Guide: A Local’s Map to the Best Restaurants, Bar'
+[274/401] sohoweekly.com — /article/soho-coffee-guide-12-best-cafes-work-rest-play
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 10707 chars, 'The SoHo Coffee Guide: 12 best cafes for work, rest and play'
+[275/401] newyorkspork.com — /nyc-soho-coffee-shops-new-york-city/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 12319 chars, '17 Satisfying SoHo Coffee Shops (Local's Guide)'
+[276/401] allytravels.com — /best-coffee-shops-in-soho/
+        ok  — 6648 chars, '10 Best Coffee Shops in SoHo: The Ultimate SoHo Coffee Guide'
+[277/401] blog.dearsundays.com — /
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4772 chars, 'Top 10 Spots to Work Remotely in Soho'
+[278/401] www.storyhunt.io — /en/articles/best-coffee-in-soho-nyc
+        ok  — 7799 chars, '8 Best Coffee Shops in SoHo NYC: A Local's Guide (2026)'
+[279/401] www.sparklymaidnyc.com — /blog/10-awesome-soho-coffee-shops
+        ok  — 4250 chars, '10 Awesome SoHo Coffee Shops — Sparkly Maid NYC'
+[280/401] cornercoffeestore.com — /best-coffee-shops-in-soho/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4046 chars, '9 Best Coffee Shops in SoHo to Try Today (2026 Update) â Cor'
+[281/401] styleonpark.com — /nyc-soho-neighborhood/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 26239 chars, 'NYC SoHo Guide: Cafés, Restaurants & Hidden Gems'
+[282/401] www.travelnewyorknow.com — /best-cafes-in-soho-nyc/
+        ok  — 20430 chars, '17 Amazing Local Picks for Best Cafes in SoHo NYC in 2024'
+[283/401] www.oreateai.com — /blog/discovering-the-best-coffee-spots-in-soho-nyc/27187c30
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/discovering-the-best-coffee-spots-in-soho-nyc/27187c305d2f724a09538bd8e627684c
+[284/401] www.poorinaprivateplane.com — /soho-coffee-shops/
+        ok  — 14208 chars, 'A local's guide to the 16 Best Soho Coffee Shops'
+[285/401] coffeeenut.wordpress.com — /2020/11/07/where-to-find-the-best-coffee-in-soho-new-york-c
+        ok  — 5494 chars, 'Where to find the Best Coffee in Soho, New York City'
+[286/401] www.moodap.com — /nyc/best/cafes/coffeetea/soho
+        ok  — 2612 chars, 'Best Coffee/Tea Cafes in Manhattan NYC'
+[287/401] thewanderbug.com — /soho-nyc-cafes-bakeries-brunch/
+        ok  — 8222 chars, 'The Best Cafes, Coffee, Brunch & Bakeries in SoHo NYC • The '
+[288/401] tribecacitizen.com — /2024/12/17/crowd-sourcing-where-do-you-go-to-work-in-the-ne
+        ok  — 3019 chars, 'Tribeca Citizen | Crowd Sourcing: Where do you go to work in'
+[289/401] www.google.com — /goto
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5537 chars, 'Top 8 Best Study Spots in New York City - BookScouter Blog'
+[290/401] www.ienyc.edu — /the-blueprint/finding-your-neighborhood-nyc-ienyc-student-g
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.ienyc.edu/the-blueprint/finding-your-neighborhood-nyc-ienyc-student-guide/
+[291/401] www.timeout.com — /newyork/things-to-do/101-things-to-do-in-new-york
+        ok  — 2266 chars, '100 Best Things to Do in NYC for locals and tourists'
+[292/401] brooklynslifestyle.com — /tribeca-neighborhood-guide/
+        ok  — 20034 chars, 'Tribeca Neighborhood Guide: Where to Eat, Drink & Stay'
+[293/401] fly.homes — /blog/lifestyle/best-restaurants-in-tribeca/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11462 chars, '10 Best Restaurants in Tribeca, New York City You Must Try'
+[294/401] www.opentable.com — /neighborhood/us/new-york-city/tribeca-restaurants
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: HTTPSConnectionPool(host='www.opentable.com', port=443): Read timed out. (read timeout=30)
+[295/401] www.nytimes.com — /interactive/2025/dining/best-nyc-restaurants.html
+        ok  — 77308 chars, 'The 100 Best Restaurants in New York City in 2025'
+[296/401] www.grubstreet.com — /article/the-best-restaurants-in-tribeca.html
+        ok  — 4632 chars, 'Where to Eat During the Tribeca Festival'
+[297/401] wfhishnyc.substack.com — /p/review-dots-cafe-in-hells-kitchen
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2915 chars, 'Review: Dot’s Cafe in Hell’s Kitchen'
+[298/401] madhattersnyc.com — /blog/best-coffee-shops-restaurants-bars-hells-kitchen-nyc
+        ok  — 13985 chars, 'A Local’s Guide to the Best Coffee Shops, Restaurants, and B'
+[299/401] monaghansrvc.com — /post/13-most-favorite-coffee-shops-in-hell-s-kitchen-new-yo
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 5828 chars, '13 most favorite coffee shops in Hell’s Kitchen New York Cit'
+[300/401] brewatlas.co — /new-york/hell-s-kitchen
+        skip — extraction returned <500 chars
+[301/401] nasacafe.com — /
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3824 chars, 'NASA Cafe | Best Coffee Shop in Hell's Kitchen, New York'
+[302/401] www.discoverwalks.com — /blog/united-states/10-of-the-coolest-cafes-in-hells-kitchen
+        ok  — 6310 chars, '10 of the coolest cafes in Hell’s Kitchen'
+[303/401] dailycoffeenews.com — /2026/02/23/coffee-project-ny-brings-a-little-slice-of-coffe
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2516 chars, 'Coffee Project NY Brings a Little Slice of Coffee Heaven to '
+[304/401] www.oreateai.com — /blog/the-best-coffee-spots-in-hells-kitchen-a-brew-lovers-g
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/the-best-coffee-spots-in-hells-kitchen-a-brew-lovers-guide/1814ecbda2221141cba69e2ecd7a896c
+[305/401] w42st.com — /post/hell-s-kitchen-best-coffee-shops-kahve-jolly-goat-rex-
+        skip — extraction returned <500 chars
+[306/401] whitenoisecoffee.com — /new-york/midtown-manhattan/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4717 chars, 'Midtown Manhattan Coffee Shop & Roastery Near Hell’s Kitchen'
+[307/401] bettertogetherhere.com — /hells-kitchen-neighborhood-guide/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 17316 chars, 'Hell's Kitchen Neighborhood Guide: Bars, Restaurants & Thing'
+[308/401] w42st.com — /post/w42st-awards-2024-a-battle-of-the-coffee-shops-is-brew
+        ok  — 722 chars, 'W42ST Awards 2024: A Battle of the Coffee Shops is Brewing'
+[309/401] outpost.me — /blog/hells-kitchen-nyc
+        ok  — 15425 chars, 'Hell's Kitchen, NYC'
+[310/401] w42st.com — /post/best-brunches-hells-kitchen/
+        ok  — 1400 chars, 'Instagram Ready and Full of Flavor — the Best Brunches in He'
+[311/401] thewanderbug.com — /hells-kitchen-neighborhood-guide-nyc/
+        ok  — 6729 chars, 'Hell's Kitchen Neighbourhood Guide • New York City • The Wan'
+[312/401] www.timeout.com — /newyork/news/these-are-the-best-coffee-shops-in-nyc-accordi
+        ok  — 2706 chars, 'These are the best coffee shops in NYC according to Time Out'
+[313/401] ny.eater.com — /maps/best-restaurants-hells-kitchen-nyc
+        ok  — 8566 chars, 'The Best Restaurants in Hell’s Kitchen'
+[314/401] studynearby.com — /study-spots-outlets-charging-nyc/
+        ok  — 21248 chars, 'Study Spots with Outlets and Charging in NYC: Your Complete '
+[315/401] theculturetrip.com — /north-america/usa/new-york/articles/top-10-things-to-do-and
+  ! fetch failed: HTTPSConnectionPool(host='theculturetrip.com', port=443): Read timed out. (read timeout=30)
+[316/401] frominwoodout.com — /restaurants-in-inwood-nyc/
+        ok  — 13682 chars, 'Dine at these Cafes and Restaurants in Inwood, NYC'
+[317/401] monaghansrvc.com — /post/6-most-favorite-coffee-shops-in-inwood-new-york-city.p
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7193 chars, '6 most favorite coffee shops in Inwood New York City'
+[318/401] nycaller.com — /inwood-local-spots-guide/
+        ok  — 10878 chars, 'Inwood Local Spots Guide: Best Places to Eat & Explore'
+[319/401] www.theinfatuation.com — /new-york/reviews/buunni-coffee-inwood
+        ok  — 1459 chars, 'Buunni Coffee Inwood - Review - Inwood - New York - The Infa'
+[320/401] www.theinfatuation.com — /new-york/guides/coffee-shops-that-serve-great-food-nyc
+        ok  — 7695 chars, '12 Coffee Shops That Serve Great Food - New York - The Infat'
+[321/401] next.ecardwidget.com — /best-places-to-study-nyc/
+  ! fetch failed: HTTPSConnectionPool(host='next.ecardwidget.com', port=443): Max retries exceeded with url: /best-places-to-study-nyc/ (Caused by NameResolutionError("HTTPSConnection(host='next.ecardwidget.com', port=443): Failed to resolve 'next.ecardwidget.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[322/401] www.modernluxury.com — /24-hour-coffee-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2093 chars, 'The Best 24/7 Coffee Spots in NYC'
+[323/401] baristalife.co — /blogs/blog/open-late-coffee-shops-new-york
+        ok  — 16414 chars, 'Best Open Late Coffee Shops New York: 24-Hour Cafes & Night '
+[324/401] diner24nyc.com — /
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 610 chars, 'Best 24-Hour Diner Restaurant in New York City - Diner 24 NY'
+[325/401] www.hobokengirl.com — /coffee-shops-open-late-hoboken-jersey-city/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 8113 chars, 'Coffee Shops Open Late in Hoboken + Jersey City'
+[326/401] creatorsnetwork.co — /nyc-cafes-for-night-owls/
+        ok  — 1922 chars, 'NYC Cafés for Night Owls'
+[327/401] wetpaint.me — /travel/late-night-study-cafes-nyc-24-hours/
+        ok  — 12827 chars, 'Late Night Study Friendly Cafes NYC Open 24 Hours - Wetpaint'
+[328/401] newyorkbigevent.com — /nightlife-parties/late-night-coffee-shops-in-manhattan-open
+        ok  — 6464 chars, 'Late-Night Coffee Shops in Manhattan Open Past Midnight - Ne'
+[329/401] ny.eater.com — /maps/best-late-night-food-nyc-24-hours-restaurants
+        ok  — 7675 chars, 'The Best Late-Night Food in New York City'
+[330/401] www.opentable.com — /lists/best-cafes-new-york-city
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: HTTPSConnectionPool(host='www.opentable.com', port=443): Read timed out. (read timeout=30)
+[331/401] www.timeout.com — /newyork/restaurants/24-hour-restaurants-in-nyc
+        ok  — 721 chars, 'The 6 Best 24-hour Restaurants, Diners and Late-Night Eats i'
+[332/401] nycaller.com — /best-diners-in-nyc-2026/
+        ok  — 8303 chars, '15 Best Diners in NYC | Late-Night & Breakfast Spots'
+[333/401] www.coolstuff.nyc — /best-of/best-all-day-cafes
+        ok  — 3482 chars, 'Best All Day Cafés'
+[334/401] brightnightssocial.substack.com — /p/my-favorite-late-night-coffee-shops
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7911 chars, 'My favorite late night coffee shops, tea houses & dessert sp'
+[335/401] www.purewow.com — /food/best-24-hour-restaurants-nyc
+        ok  — 12591 chars, 'The 21 Best 24-Hour Restaurants in NYC for Your Round-the-Cl'
+[336/401] www.travelandleisure.com — /away-ceo-jessica-schinazi-nyc-guide-11927450
+        ok  — 5936 chars, 'Away CEO Jessica Schinazi's Perfect 24-hour Guide to NYC—Inc'
+[337/401] www.thetakeout.com — /2033490/best-24-hour-diners-in-us/
+        ok  — 15329 chars, 'The Best 24-Hour Diners In The US - The Takeout'
+[338/401] arlohotels.com — /soho/eat-and-drink/bodega/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1134 chars, 'SoHo Bodega'
+[339/401] www.google.com — /goto
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        skip — extraction returned <500 chars
+[340/401] travellingtoeat.com — /late-night-coffee-shops-in-nyc/
+  ! fetch failed: HTTPSConnectionPool(host='travellingtoeat.com', port=443): Max retries exceeded with url: /late-night-coffee-shops-in-nyc/ (Caused by NameResolutionError("HTTPSConnection(host='travellingtoeat.com', port=443): Failed to resolve 'travellingtoeat.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[341/401] spoonuniversity.com — /school/nyu/la-lanterna-serves-the-best-late-night-coffee-in
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 1700 chars, 'Where to Find the Best Late Night Coffee in NYC'
+[342/401] blog.resy.com — /2025/06/the-resy-guide-to-late-night-dining-in-new-york/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 728 chars, 'The Resy Guide to Late-Night Dining in New York — Resy | Rig'
+[343/401] newyorkspork.com — /best-late-night-food-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 13132 chars, '10+ Epic Late-Night Food Spots in NYC (Local's Guide)'
+[344/401] usamocha.com — /best-late-night-study-cafes-in-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 500 Server Error: Internal Server Error for url: https://usamocha.com/best-late-night-study-cafes-in-nyc/
+[345/401] moxyeastvillage.com — /alphabet-bar-cafe/
+        ok  — 807 chars, 'Alphabet Bar & Café | Moxy NYC East Village'
+[346/401] ftp.diresajunin.gob.pe — /late-night-coffee-shops-nyc/
+  ! fetch failed: HTTPSConnectionPool(host='ftp.diresajunin.gob.pe', port=443): Max retries exceeded with url: /late-night-coffee-shops-nyc/ (Caused by NameResolutionError("HTTPSConnection(host='ftp.diresajunin.gob.pe', port=443): Failed to resolve 'ftp.diresajunin.gob.pe' ([Errno 8] nodename nor servname provided, or not known)"))
+[347/401] www.theinfatuation.com — /new-york/guides/nyc-late-night-restaurants
+        ok  — 17334 chars, 'The Best Late Night Food In NYC - New York - The Infatuation'
+[348/401] www.timeout.com — /newyork/restaurants/best-coffee-shops-in-new-york
+        ok  — 1059 chars, 'The 16 best coffee shops in NYC right now'
+[349/401] coolstuffnyc.substack.com — /p/new-yorks-best-all-day-cafes
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        skip — extraction returned <500 chars
+[350/401] www.opentable.com — /cuisine/best-cafe-restaurants-new-york-ny
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: HTTPSConnectionPool(host='www.opentable.com', port=443): Read timed out. (read timeout=30)
+[351/401] www.monday-talent.com — /blog/best-nyc-la-cafes-to-take-a-zoom-call-from
+        skip — extraction returned <500 chars
+[352/401] meetflatiron.com — /cafes-to-work-flatiron
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3880 chars, 'Top 5 Cafes to Work Flatiron: Quiet, Wi-Fi Friendly Spots (2'
+[353/401] cohabs.com — /blog/best-coworking-spaces-in-manhattan-for-exploring-nyc-b
+        ok  — 9319 chars, 'Best Coworking Spaces in Manhattan for Remote Work'
+[354/401] lifeinablog.com — /5-cute-nyc-cafes-for-study-work/
+        ok  — 6976 chars, '5 Cute NYC Cafe’s for Study/Work'
+[355/401] www.groundfloorclub.com — /temescal-coffee-shops-for-remote-work-complete-2025-guide/
+        ok  — 8642 chars, 'Temescal Coffee Shops for Remote Work: Complete 2025 Guide'
+[356/401] www.alibaba.com — /product-insights/relaxed-spots-for-the-best-cafes-to-work-i
+        ok  — 3314 chars, '404-Error'
+[357/401] newyorkspork.com — /best-cafes-remote-work-nyc-coffee-shops/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 12355 chars, '17 Best Working Cafes in New York City (Local's List)'
+[358/401] nycaller.com — /best-coffee-shops-for-meetings-nyc/
+        ok  — 11355 chars, 'Best Coffee Shops for Meetings in NYC: How to Choose'
+[359/401] witwhimsy.com — /best-coffee-shop-in-new-york-city/
+        ok  — 6864 chars, 'The Best Coffee Shops in New York City | Wit & Whimsy'
+[360/401] nycaller.com — /best-breakfast-meetings-spots-nyc/
+        ok  — 11515 chars, 'Best Breakfast Meeting Spots NYC: Top Morning Picks'
+[361/401] hubblehq.com — /en-us/blog/best-coworking-spaces-nyc
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 9092 chars, 'The Best 13 Coworking Spaces in New York City | Hubble'
+[362/401] mariandthecity.com — /15-of-the-cutest-cafes-in-nyc-with-a-map/
+        ok  — 11636 chars, '15 of The Cutest Cafés in NYC (With A Map) - Mari and the Ci'
+[363/401] workvillenyc.com — /
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 2316 chars, 'Workville | Coworking Space, Meeting Rooms & Offices'
+[364/401] jessieonajourney.com — /instagrammable-cafes-in-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 17457 chars, '25 Most Instagrammable Cafes In New York City (From A Local!'
+[365/401] nyunews.com — /culture/dining/2022/10/13/best-unplugged-cafes-near-campus/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4889 chars, 'Lattes and no laptops: Unplugged cafes in NYC'
+[366/401] www.continentscondiments.com — /exploring-the-top-study-friendly-coffee-shops-in-new-york-c
+        ok  — 5778 chars, 'Exploring the Top Study-Friendly Coffee Shops in New York Ci'
+[367/401] www.oreateai.com — /blog/the-best-coffee-shops-in-nyc-for-studying-a-cozy-guide
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/the-best-coffee-shops-in-nyc-for-studying-a-cozy-guide/3f83853374790cd1a068c986b788eb61
+[368/401] www.ostrocafeastoria.com — /post/best-cafes-for-studying-in-astoria-queens
+        ok  — 5841 chars, 'Best Cafes for Studying in Astoria | Cozy Coffee & Breakfast'
+[369/401] www.studypal.co — /blog/best-cafes-study-nyc/
+        ok  — 3425 chars, 'Recent Posts'
+[370/401] studynearby.com — /study-spots-food-new-york-city/
+        ok  — 22466 chars, 'Study Spots with Food in New York City: Complete Guide for S'
+[371/401] freelancerclub.net — /resources/blog/post/the-best-new-york-cafes-for-freelancers
+        ok  — 11222 chars, 'Categories'
+[372/401] nosleep.city — /best-coffee-shops-to-work-in-manhattan
+        ok  — 11474 chars, '2026 Guide to Best Coffee Shops to Work in Manhattan'
+[373/401] www.timeout.com — /newyork/things-to-do/the-best-bookstore-cafes-in-nyc
+        skip — extraction returned <500 chars
+[374/401] quintessentially.com — /noted/best-bookstores-with-cafes-new-york-city
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4817 chars, 'Best Bookstores with Cafés in New York City'
+[375/401] monaghansrvc.com — /post/25-of-the-best-bookstore-cafes-in-new-york-city.p232
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 11598 chars, '20 of the best Bookstore Cafés in New York City'
+[376/401] tinds.com — /top-5-most-cozy-bookstore-cafes-in-nyc/
+        ok  — 4250 chars, 'Top 5 Most Cozy Bookstore Cafés in NYC that Readers Love - T'
+[377/401] magazine.1000libraries.com — /20-all-time-best-new-york-city-book-cafes/
+        ok  — 10448 chars, '20 All-Time Best New York City Book Cafés - Magazine'
+[378/401] thecreativeadventurer.com — /10-best-new-york-city-cafe-bookshops-to-cozy-up-inside-this
+        ok  — 12252 chars, '10 Best New York City Cafe Bookshops to Cozy Up Inside this '
+[379/401] forevershereads.com — /bookstore-cafes-new-york-city/
+        ok  — 7202 chars, 'Top Bookstore Cafes in New York City for Book Lovers [2024]'
+[380/401] ashleychangg.medium.com — /exploring-unique-coffee-shop-bookstores-in-lower-manhattan-
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3415 chars, 'Exploring Unique Coffee Shop Bookstores in Lower Manhattan'
+[381/401] theworkingline.com — /prettiest-bookstores-nyc-books-aesthetic-cafes/
+        ok  — 11513 chars, 'NYC's Prettiest Bookstores: 9 Spots For Books and Aesthetics'
+[382/401] www.tastingtable.com — /1824050/best-nyc-restaurants-bars-book-lovers/
+        ok  — 17096 chars, 'The 12 Best NYC Restaurants, Coffee Shops, And Bars For Book'
+[383/401] authorshaneapatterson.medium.com — /top-8-literary-themed-cafes-lounges-and-bookstores-in-nyc-b
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 13426 chars, 'Top 8 Literary-Themed Cafes, Lounges, and Bookstores in NYC'
+[384/401] medium.com — /@b.joaquin/best-nyc-bookstores-that-double-as-caf%C3%A9s-an
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4556 chars, 'Best NYC bookstores that double as cafés and bars'
+[385/401] allthingsnewyorkcity.com — /best-nyc-bookstore-cafes/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 13663 chars, '25 Best NYC Bookstore Cafes to Get Lost In - All Things New '
+[386/401] byclaudiawilliams.substack.com — /p/6-places-to-read-write-and-reflect
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6332 chars, '6 Places to Read, Write, & Reflect in New York'
+[387/401] www.oreateai.com — /blog/the-coziest-coffee-shops-in-nyc-for-book-lovers/861185
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/the-coziest-coffee-shops-in-nyc-for-book-lovers/86118566e7ece250a936ff332caf99d1
+[388/401] www.shelf-awareness.com — /theshelf//_the_best_bookstore_caf%C3%A9s_in_nyc_.html
+        ok  — 29570 chars, 'Shelf Awareness for Friday, February 17, 2023'
+[389/401] nosleep.city — /best-places-to-write-in-nyc
+        ok  — 11787 chars, 'Best Places to Write in NYC: Complete Guide (2026)'
+[390/401] medium.com — /@wordsbecomeworlds/5-affordable-cafes-to-write-at-in-manhat
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3939 chars, '5 Affordable Cafes to Write At in Manhattan'
+[391/401] www.writeyourscreenplay.com — /top-cafes-in-new-york-city-to-spend-a-day-writing/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 9550 chars, 'Top Cafés in New York City to Spend a Day Writing - Write Yo'
+[392/401] www.timeout.com — /newyork/news/this-new-coffee-shop-will-help-you-beat-writer
+        ok  — 2362 chars, 'NYC's newest coffee shop will help you beat writer's block'
+[393/401] www.oreateai.com — /blog/best-cafes-to-read-a-book-in-nyc/44db59b71be409ee4ed10
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 410 Client Error: Gone for url: https://www.oreateai.com/blog/best-cafes-to-read-a-book-in-nyc/44db59b71be409ee4ed1088f8e170dc8
+[394/401] www.dsgburke.com — /musings/10-great-places-to-write-in-nyc
+        ok  — 3188 chars, '10 Great Places to Write in NYC* — D.S.G. Burke'
+[395/401] untappedcities.com — /2022/08/11/9-nyc-cafes-influential-authors/
+        ok  — 6577 chars, '6 Hidden Coffee Shops to Discover in NYC - Untapped New York'
+[396/401] www.renthop.com — /blog/2021/09/best-coffee-shops-for-writing/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 403 Client Error: Forbidden for url: https://www.renthop.com/blog/2021/09/best-coffee-shops-for-writing/
+[397/401] substack.com — /home/post/p-154893627
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 6332 chars, '6 Places to Read, Write, & Reflect in New York'
+[398/401] www.corner.inc — /guides/new-york-city/manhattan/page-turners-best-literary-c
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+  ! fetch failed: 429 Client Error: Too Many Requests for url: https://www.corner.inc/guides/new-york-city/manhattan/page-turners-best-literary-caf-s-in-manhattan
+[399/401] diningout.com — /new-york/literary-tour-of-nyc/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 7091 chars, 'These 10 Places Serve as Literary Inspiration in NYC'
+[400/401] medium.com — /@simonetorn2014/best-writing-spots-for-freelancers-in-new-y
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 4469 chars, 'Best Writing Spots for Freelancers In New York City'
+[401/401] girlswritenow.org — /news/free-writing-spots/
+        [override] would-skip (blocked by robots.txt); proceeding under --ignore-robots
+        ok  — 3881 chars, 'Free Writing Spots | Girls Write Now'
+
+Done.
+  written:            324
+  robots-blocked:       0
+  robots overridden:  168  (fetched despite robots.txt under academic-use framing)
+  failed/short:        77
+  → outputs/editorial_corpus.jsonl

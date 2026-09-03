@@ -1,0 +1,69 @@
+.skeleton-loader {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.skeleton-nav {
+  height: 64px;
+  margin: 12px 16px 0;
+  border-radius: 16px;
+}
+
+.skeleton-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  gap: 12px;
+  padding: 12px 16px 16px;
+  min-height: 0;
+}
+
+.skeleton-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-search {
+  height: 44px;
+  border-radius: 12px;
+}
+
+.skeleton-chips {
+  display: flex;
+  gap: 8px;
+}
+
+.skeleton-chip {
+  width: 80px;
+  height: 28px;
+  border-radius: 999px;
+}
+
+.skeleton-card {
+  height: 120px;
+  border-radius: 16px;
+}
+
+.skeleton-map,
+.skeleton-panel {
+  border-radius: 20px;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-base) 25%,
+    var(--skeleton-shine) 50%,
+    var(--skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

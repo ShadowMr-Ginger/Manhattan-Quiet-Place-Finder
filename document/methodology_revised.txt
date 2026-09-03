@@ -1,0 +1,19 @@
+2. Methodology
+
+2.1 Requirements Collection
+
+Requirements were gathered through semi-structured interviews with three target groups: university students, remote workers, and tourists. These interviews informed three personas and corresponding user stories with acceptance criteria.
+
+| Persona | User Story | Key Acceptance Criteria |
+|---|---|---|
+| Student | Find quiet, low-occupancy study spots near campus, compare options, and save favorites. | Quiet Score, occupancy, distance, filters, sort, favorites, comparison, predicted scores. |
+| Office Worker | Get weather-aware workspace recommendations with Wi-Fi and transit info. | Weather panel, venue photos, route link, detail panel with Wi-Fi/hours/tags/reviews. |
+| Tourist | Find quiet places near my hotel via an intuitive map with visual guidance. | Color-coded markers, photo carousels, empty-state tips, recently viewed list. |
+
+2.2 Development Process and Tooling
+
+An Agile-inspired workflow was used. Jira tracked user stories and tasks, while Git provided version control. A Jenkins CI pipeline (`Jenkinsfile`) automated environment setup and dependency installation for the backend.
+
+2.3 Deliverables and Scope Decisions
+
+The project produced: a FastAPI backend with PostgreSQL, a React + Vite frontend, a data pipeline for venue import and MTA/311 data fetching, a prediction endpoint, and a Next.js mockup prototype. Must-haves included the map, Quiet Score, filters, and venue cards. Could-haves such as favorites, comparison, weather, route service, and smart recommendations were prioritized after the core discovery experience was complete.

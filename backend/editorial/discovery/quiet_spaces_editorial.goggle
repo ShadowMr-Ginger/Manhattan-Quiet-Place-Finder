@@ -1,0 +1,32 @@
+! name: Quiet Spaces Manhattan — Editorial Discovery
+! description: Discards forum, social media, and user-review domains from Brave Search results so editorial sources fill the top-20 slots. Discards only — no quality-based boosts — to preserve methodological neutrality.
+! public: true
+! author: COMP47360 Quiet Spaces Manhattan (UCD MSc CS Conversion)
+! homepage: https://brave.com/search/goggles/
+
+! ─── Forum / Q&A — user-generated discussion, not editorial ───
+$discard,site=reddit.com
+$discard,site=old.reddit.com
+$discard,site=np.reddit.com
+$discard,site=quora.com
+
+! ─── Social media — short-form / interaction-driven, not editorial ───
+$discard,site=tiktok.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=instagram.com
+$discard,site=facebook.com
+$discard,site=m.facebook.com
+$discard,site=youtube.com
+$discard,site=m.youtube.com
+$discard,site=youtu.be
+$discard,site=pinterest.com
+$discard,site=pinterest.co.uk
+$discard,site=linkedin.com
+$discard,site=lemon8-app.com
+
+! ─── User review aggregators — community reviews, not editorial guides ───
+$discard,site=yelp.com
+$discard,site=tripadvisor.com
+$discard,site=tripadvisor.co.uk
+$discard,site=foursquare.com

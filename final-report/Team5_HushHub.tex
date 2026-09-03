@@ -1,0 +1,693 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{eso-pic}
+\usepackage{tikz}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Hush-Hub: A Web Application for Discovering Quiet Workspaces in Manhattan}
+
+
+\makeatletter
+\newcommand{\authorlinebreak}{%
+  \end{@IEEEauthorhalign}
+  \hfill\mbox{}\par
+  \mbox{}\hfill\begin{@IEEEauthorhalign}}
+\makeatother
+
+\author{
+\IEEEauthorblockN{Jianqiao Xu}
+\IEEEauthorblockA{\textit{} \\
+\textit{University College Dublin}\\
+Dublin, Ireland \\
+jianqiao.xu@ucdconnect.ie}
+\and
+\IEEEauthorblockN{Jason Lee}
+\IEEEauthorblockA{\textit{} \\
+\textit{University College Dublin}\\
+Dublin, Ireland \\
+jason.lee@ucdconnect.ie}
+\and
+\IEEEauthorblockN{Yangxiaoshi Gao}
+\IEEEauthorblockA{\textit{} \\
+\textit{University College Dublin}\\
+Dublin, Ireland \\
+yangxiaoshi.gao@ucdconnect.ie}
+\authorlinebreak
+\IEEEauthorblockN{Jialin Wang}
+\IEEEauthorblockA{\textit{} \\
+\textit{University College Dublin}\\
+Dublin, Ireland \\
+jialin.wang1@ucdconnect.ie}
+\and
+\IEEEauthorblockN{Ziling Huang}
+\IEEEauthorblockA{\textit{} \\
+\textit{University College Dublin}\\
+Dublin, Ireland \\
+ziling.huang@ucdconnect.ie}
+\and
+\IEEEauthorblockN{Zachary Gillespie}
+\IEEEauthorblockA{\textit{} \\
+\textit{University College Dublin}\\
+Dublin, Ireland \\
+zachary.gillespie@ucdconnect.ie}
+}
+
+
+\maketitle
+
+\AddToShipoutPictureFG*{%
+\begin{tikzpicture}[remember picture, overlay]
+\node[
+  anchor=south,
+  inner sep=0pt,
+  outer sep=0pt,
+  yshift=0.5cm
+] at (current page.south) {%
+  \begin{minipage}[b]{\textwidth}
+  \centering
+  \scriptsize
+  \rule{\textwidth}{0.4pt}\\[2pt]
+  \textbf{Author contributions:} Jianqiao Xu: Leading the manuscript, User Research and Personas, Product Design, Functioanl Test. Jason Lee: Mainly contribute to the Abstract, Introdcution, User Experience, Conclusion; Yangxiaoshi Gao: Mainly contribute to the Backend Architecture, System Performance, and Functional Testing; Jialin Wang: Mainly contribute to the Frontend Web Application, also assist in completing Introduction, Functional Testing; Ziling Huang: Mainly contribute to the Mobile Application, also assist in Introduction and User Experience; Zachary Gillespie: Mainly contribute to the Data Collection Methods, Machine Learning Pipeline and System Performance. All the authors joinly contributed to Literature Review.%
+  \end{minipage}%
+};
+\end{tikzpicture}%
+}
+
+% ============================================================
+\begin{abstract}
+% ============================================================
+Finding a quiet place to work or study in a dense urban environment such as Manhattan,
+New York City, is a persistent and underserved challenge. Existing venue-discovery
+platforms rank spaces primarily by popularity or cuisine, providing little actionable
+information about noise, crowding, or temporal busyness patterns. We present
+\textit{Hush-Hub}, a full-stack web application that aggregates and analyses multiple
+independent environmental signals to help users identify suitable quiet workspaces across
+326 curated venues. The system integrates four complementary data dimensions: indoor
+quietness derived from editorial reviews, ambient street noise estimated from road
+classifications and NYC 311 noise complaint density, transient disruption from active
+construction permits and permitted loud events, and area foot-traffic busyness modelled
+from MTA subway ridership using distance-weighted Gaussian decay. A reproducible
+seven-stage pipeline turns editorial articles into structured, evidence-backed venue
+records, and a random-forest ridership predictor reduces mean absolute error by 19\%
+relative to a strong temporal baseline. The signals are served through a FastAPI REST
+API and consumed by a React map-centric web frontend and a Flutter mobile companion,
+following the broader data-driven use of open urban data demonstrated in
+\cite{deng2020walkability}. A conversational AI assistant enables natural-language venue
+discovery, and the interface supports English, Chinese and Spanish.
+\end{abstract}
+
+
+% ============================================================
+\section{Introduction}
+% ============================================================
+
+The rise of remote and hybrid work has intensified demand for accessible, quiet spaces
+outside the home. Coffee shops, libraries, and co-working venues have absorbed much of
+this demand, serving as ``third places'' that bridge domestic and professional environments~\cite{akhavan2021}. Yet these spaces are not always suitable for focused work: environmental noise, crowding, and transient disruptions such as construction or nearby events can severely degrade productivity and wellbeing~\cite{who2018,murphy2014}.
+
+Mainstream venue-discovery platforms such as Google Maps, Yelp, and Foursquare rank
+and filter spaces by popularity, user rating, or category. While these signals are
+useful for restaurant selection, they are poor proxies for quietness or suitability for
+focused work. Star ratings aggregate enjoyment across all use cases; a lively
+neighbourhood bar scores well for social visits but poorly for deep work. Location-based
+recommendation systems have explored social influence, geospatial patterns, and
+contextual features, but they rarely treat acoustic comfort or temporal busyness as
+first-class search dimensions~\cite{bao2015,ye2012}.
+
+This paper addresses the following problem: \textit{How can we identify and recommend
+quiet urban workspaces by fusing heterogeneous data sources---editorial reviews, civic
+noise complaints, transit ridership, and event permits---into interpretable,
+time-varying quietness indicators?} To answer this, we present \textit{Hush-Hub}, a
+full-stack web application targeting Manhattan, New York City---a borough of exceptional
+venue density and noise complexity. The system curates 326 candidate venues (cafes,
+libraries, restaurants, bars, and public study areas) and enriches each with four
+orthogonal signals: (i) indoor quietness inferred from editorial crowdsourcing, (ii)
+street-level noise from road classifications and reported 311 complaints, (iii)
+transient disruptions from construction and loud-event permits, and (iv) hourly area
+busyness derived from MTA subway ridership. These signals are deliberately kept
+separate and expressed in absolute, interpretable units rather than collapsed into a
+single opaque score.
+
+
+
+
+% ============================================================
+\section{Literature Review}
+\label{sec:literature}
+% ============================================================
+
+\subsection{Urban Noise, Quiet Areas, and Health}
+
+Environmental noise is now recognised as one of the most pervasive environmental
+stressors in urban areas. The World Health Organization's 2018 guidelines link long-term
+noise exposure to sleep disturbance, cardiovascular risk, and reduced cognitive
+performance in children and adults~\cite{who2018}. Murphy and King provide a systematic
+treatment of noise mapping, public-health impacts, and planning policy, showing that
+noise assessment must move beyond simple decibel contours toward spatially explicit,
+context-sensitive models~\cite{murphy2014}. Empirical studies of quiet-area identification
+have combined field measurements, soundscape recordings, and strategic noise mapping to
+delineate urban quiet areas~\cite{matsinos2017,deMeulder2026}. These works establish that
+quietness is both an acoustic property and a perceived quality, and that effective
+quiet-area mapping requires multiple data sources rather than single-indicator proxies.
+
+\subsection{Location-Based Recommendation and Venue Discovery}
+
+Location-based social networks have motivated extensive research on venue
+recommendation. Bao et al.\ survey collaborative-filtering, content-based, and hybrid
+methods that exploit user check-ins, spatial proximity, and social ties~\cite{bao2015}.
+Ye et al.\ demonstrate how social influence can be incorporated into generative models
+for point-of-interest recommendation~\cite{ye2012}. However, these systems typically
+optimise for popularity, novelty, or social relevance, not for the task-specific
+suitability of a venue for focused work. They also lack the temporal busyness and
+environmental-noise signals that determine whether a space is currently quiet.
+
+\subsection{Existing Quiet-Workspace Applications}
+
+Several products attempt to help users find quiet study or work spaces. \textit{NOOQ
+Spot} scores locations by quietness and lists amenities such as Wi-Fi and power
+outlets, but its data depend heavily on user-generated content and it does not provide a
+visual map for discovery or comparison. \textit{Study Spot} targets students with a
+simple venue directory, but it offers limited information per location and is not
+designed for office workers or tourists. Hush City crowdsources quiet-area reports
+through citizen science, producing valuable soundscape data, yet coverage is uneven and
+it does not predict future busyness or personalise recommendations~\cite{hushcity}. By
+contrast, Google Maps and Foursquare provide broad coverage and rich metadata, but their
+ranking signals reflect general popularity rather than suitability for focused work.
+
+\subsection{Gap Analysis}
+
+The literature and existing products reveal three gaps that Hush-Hub addresses. First,
+acoustic comfort and temporal busyness are rarely treated as primary recommendation
+features. Second, existing quiet-space apps rely on sparse crowdsourcing or narrow user
+segments rather than on systematically fused civic and editorial data. Third, no widely
+available tool gives users interpretable, multi-source indicators that explain why a
+venue is quiet or busy at a particular time. Hush-Hub fills these gaps by combining
+editorial reviews, NYC 311 noise complaints, MTA ridership, and event permits into a
+unified, time-aware recommendation interface for quiet workspaces.
+
+
+\section{Methodology}
+\label{sec:methodology}
+% ============================================================
+
+% ----- PRODUCT DESIGN (to be filled in) --------------------
+\subsection{User Research and Personas}
+\label{sec:userresearch}
+
+Requirements were gathered through semi-structured interviews with representative users from three target groups in Manhattan: university students, remote workers, and tourists. The interviews focused on how each group selects a workspace outside the home, what environmental factors they consider, and what tools they currently use. From these findings, we developed three personas and mapped their goals to concrete user stories with acceptance criteria.
+
+\subsubsection{Personas}
+
+\begin{itemize}
+  \item \textbf{University Student}: Needs free, quiet, low-occupancy study spots near campus, with the ability to compare options and save favourites.
+  \item \textbf{Remote Office Worker}: Needs weather-aware workspaces with reliable Wi-Fi, transit access, and route guidance.
+  \item \textbf{Tourist}: Needs visual map guidance, photos, and intuitive navigation in an unfamiliar city.
+\end{itemize}
+
+\subsubsection{User Stories and Acceptance Criteria}
+
+Table~\ref{tab:userstories} summarises the user stories and acceptance criteria derived from the interviews. The criteria directly shaped the product features described in Section~\ref{sec:productdesign}.
+
+\begin{table}[htbp]
+\caption{User Stories and Acceptance Criteria}
+\label{tab:userstories}
+\begin{center}
+\small
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{|p{0.17\columnwidth}|p{0.39\columnwidth}|p{0.39\columnwidth}|}
+\hline
+\textbf{Persona} & \textbf{User Story} & \textbf{Acceptance Criteria} \\
+\hline
+Student & As a student, I want to find quiet, low-occupancy study places near campus, compare candidates, and save regular spots so I can work efficiently. & Show Quiet Score, occupancy, and distance; filter by venue type; sort by score/distance; current and predicted Quiet Scores; bookmark and view favourites; tags and ratings; comparison; smart recommendations based on time and weather. \\
+\hline
+Office Worker & As a remote worker, I want weather-aware workspace recommendations with reliable Wi-Fi and transit info so I can work productively outside home. & Weather panel with smart tips; venue photos; Google Maps route link; detail panel shows Wi-Fi, hours, tags, reviews, and ratings. \\
+\hline
+Tourist & As a tourist unfamiliar with Manhattan, I want to find quiet places near my hotel via an intuitive map and visual cues, with friendly guidance when filters are too strict. & Color-coded markers by venue type; photo carousels in cards and detail view; animated empty state with tips; recently viewed list. \\
+\hline
+\end{tabular}
+\setlength{\tabcolsep}{6pt}
+\end{center}
+\end{table}
+
+
+\subsection{Product Design}
+\label{sec:productdesign}
+
+\subsubsection{Design Overview}
+Hush-Hub is a single-page, map-centric web application for discovering quiet study and work spaces in Manhattan. The interface follows a three-column layout: a left sidebar for search and discovery, a central interactive map for spatial exploration, and a right panel for venue details and chat. The design emphasises focus, clarity, and speed; translucent glassmorphism panels and subtle motion reduce cognitive load while keeping key information accessible.
+
+\subsubsection{Information Architecture}
+Core entities include \textit{Venue} (id, name, address, type, coordinates, Quiet Score, ranking, attributes, photos, and reviews), \textit{User} (profile, saved places, and recent views), and \textit{Review} (rating and text). Venue and review data flow from the FastAPI backend via REST API calls; filters and sorting are computed client-side. User authentication state, saved places, and recently viewed venues are synchronised with the backend, while theme preference persists in localStorage.
+
+\subsubsection{User Interface Design}
+The interface is organised into four complementary surfaces:
+\begin{itemize}
+  \item \textit{Left sidebar:} unified search bar, origin selector, type and crowdedness filters, sort controls, result cards, recent searches, and a chat shortcut.
+  \item \textit{Map:} interactive Manhattan map with clustered venue markers; Google Maps is used when an API key is provided, otherwise a stylised grid fallback preserves the layout.
+  \item \textit{Right panel:} switches between a venue detail view (photos, Quiet Score, attribute bars, busy level, opening hours, prediction chart, reviews, and save action) and a conversational chat panel.
+  \item \textit{Modals:} authentication, user profile, settings, and add-review dialogs.
+\end{itemize}
+A top navigation bar provides branding, weather, theme and language toggles, and user-profile access.
+
+\subsubsection{Interaction Design}
+Users search by name or address, filter by venue type and crowdedness level, and sort by ranking score or distance. Clicking a marker or card opens the venue detail panel and records the view. Authenticated users can save places, add reviews, and view their saved places and recently viewed list. Keyboard shortcuts (e.g., \texttt{/} for search, arrow keys to navigate the list, \texttt{Enter} to open, \texttt{Esc} to close) support efficient browsing.
+
+\subsubsection{Visual Design}
+The interface adopts a clean, modern aesthetic using Tailwind CSS: soft slate backgrounds, rounded corners, translucent glassmorphism panels, and a sky-to-teal accent gradient. Framer Motion provides smooth transitions for panel switching, modal appearance, and list updates. Light and dark themes are implemented through CSS custom properties, with the user's preference stored in localStorage.
+
+\subsubsection{Localisation and Responsiveness}
+The application supports English, Chinese, and Spanish through a React language context that loads translated content from the backend with bundled fallback translations. The layout is optimised for desktop viewports (1024\,px and above), with fixed minimum widths for side panels to maintain usability. Mobile responsiveness is identified as future work.
+
+\subsubsection{Design Outcome}
+The resulting design supports the core task flow---search, filter, explore, save, decide---within a single cohesive screen. Consistent interactive patterns, reinforced by motion, make the application feel polished while keeping quiet-space discovery as the central focus.
+
+% ----- BACKEND (written) ------------------------------------
+\subsection{Backend Architecture}
+
+Hush-Hub follows a three-tier architecture: a React single-page application served to the client, a Python REST API layer, and a PostgreSQL relational database, all deployed on a Tencent Cloud virtual machine (Ubuntu 22.04).
+
+The backend is implemented as a FastAPI application exposing a versioned REST API
+under the \texttt{/api} prefix. SQLAlchemy 2.0 serves as the ORM layer, with Pydantic
+v2 models handling request validation and response serialisation. Authentication is
+implemented with JWT bearer tokens using PyJWT, with bcrypt password hashing via
+Passlib. The following primary router modules structure the API:
+
+\begin{itemize}
+  \item \texttt{/api/venues} --- venue listing (with filtering by type, bounding box, and
+        minimum quiet score), and individual venue detail with the full attribute-score
+        breakdown and representative editorial quotes.
+  \item \texttt{/api/venues/\{id\}/quiet-profile} --- per-venue ML quiet profile
+        returning today's hourly busyness curve, area-noise indicators, construction
+        and event signals, and the indoor calm-bar breakdown.
+  \item \texttt{/api/venues/\{id\}/live} --- live crowdedness derived from the
+        current-hour busyness percentage.
+  \item \texttt{/api/chat} --- AI assistant endpoint (authentication required),
+        persisting conversation history and forwarding the last ten turns as context
+        to the language model.
+  \item \texttt{/api/auth}, \texttt{/api/users}, \texttt{/api/reviews} --- user
+        registration, login, favourites, saved lists, and venue reviews.
+\end{itemize}
+
+The PostgreSQL schema centres on a \texttt{venues} table keyed by a stable
+\texttt{canonical\_id}, storing editorial metadata (name, address, coordinates,
+venue type, quiet score, display rating, attribute scores as JSONB, and
+representative quotes). Three additional tables hold ML pipeline outputs:
+\texttt{venue\_busyness\_hourly} , \texttt{venue\_indicators} (one row per venue
+with road-noise, 311-complaint, construction, and event features), and
+\texttt{venue\_calm\_bar} (editorial noise and crowding mention counts). User data
+is stored across \texttt{users}, \texttt{user\_favorites}, \texttt{user\_saved},
+and \texttt{reviews} tables. Chat history is persisted in \texttt{chat\_messages},
+enabling cross-session conversation context. 
+
+The conversational assistant endpoint (\texttt{POST /api/chat}) requires user
+authentication, ensuring chat history can be persisted and conversation context
+maintained across sessions. On each request, the system: (i) parses natural-language
+constraints from the query (minimum/maximum quiet score, minimum rating, venue type)
+using regular expressions; (ii) queries the venue database with those constraints,
+randomising results when no score constraints are present to promote diversity;
+(iii) formats up to 15 matching venues as structured context; and (iv) forwards the
+context together with the last ten turns of conversation history to the Qianwen
+\texttt{qwen-turbo} model via the Alibaba Cloud DashScope OpenAI-compatible API.
+Both the user message and the assistant reply are saved to the \texttt{chat\_messages}
+table, making conversation history available on subsequent sessions.
+
+% ----- FRONTEND (to be filled in) --------------------------
+\subsection{Frontend Web Application}
+
+The Hush-Hub desktop client is a single-page application (SPA) built with React~19~\cite{react2025} and the Vite development and production toolchain~\cite{vite2025}. Following SPA principles of client-side rendering and dynamic interaction~\cite{mikowski2014}, the application provides dynamic updates without full-page reloads. The interface is organized as a three-pane workspace: a left sidebar for search and filtering, a central interactive map, and a right panel for venue details or conversational chat. The root \texttt{App} component is responsible for managing shared application state, such as the venue list, active filters, selected venue, authentication status, and UI theme. Feature UI is decomposed into reusable presentational components, while all HTTP access to the FastAPI backend is encapsulated in a dedicated \texttt{services/} layer (\texttt{venues}, \texttt{auth}, \texttt{venueSignals}, userReviews, and user lists).
+
+\paragraph{Layout and navigation}
+The primary layout (\texttt{MapsLayout}) adopts a responsive CSS Grid design, consisting of a left sidebar for venue search and filtering, a central interactive map, and a slide-in right panel for venue details or AI chat. Scrolling is confined to the sidebar and detail panel, allowing the map to remain fixed within the viewport during user interaction. A top navigation bar provides access to branding, current weather, theme and language settings, user authentication, profile management, and the AI chat interface.
+
+\paragraph{Google Maps integration}
+Interactive mapping is implemented using the Google Maps JavaScript API, accessed through the React wrapper \texttt{@vis.gl/react-google-maps}~\cite{visglmaps}. The required Google Maps libraries, including Advanced Markers and Places, are loaded during application startup. The map is centred on Manhattan and renders clustered venue markers using a custom viewport-based clustering implementation. The map colour scheme follows the active light or dark theme. Users can use geolocation to determine their current position, set the search origin through Google Place Autocomplete, and automatically pan or zoom when a venue is selected. If no Maps API key is configured, a non-interactive fallback map preserves the overall layout for local development.
+
+\paragraph{Search, filtering, and sorting}
+The left sidebar provides search, filtering, and sorting functions to help users find suitable study venues. It supports both free-text search and Google Place Autocomplete~\cite{googleplacesautocomplete2025}. When a place is selected from the autocomplete suggestions, the map recentres on that location. Free-text search matches venue names and addresses.
+
+Users can filter venues by type (cafe, library, or public study area). Additional options are available under the ``More filters'' panel, including area busyness, indoor quietness, opening status, wheelchair accessibility, and minimum Google rating. The area-busyness filter uses the current-hour busyness level returned by the backend and allows users to display only venues with \textit{low} or \textit{medium} busyness. The indoor quietness filter distinguishes between reviewer-confirmed \textit{calm} venues and those reported as \textit{lively}.
+
+Search results are sorted by distance whenever a search location or the user's current GPS location is available. Otherwise, venues are ordered using the application's ranking score.
+
+\paragraph{Venue detail and environmental signals}
+Selecting a venue opens a detail panel displaying photographs, editorial attributes, user reviews, save and directions actions, and a dedicated venue-signals section. The panel presents information on indoor quietness, nearby noise and disruption, together with a Busy Level forecast based on the venue's hourly busyness profile. When a complete daily profile is available, the forecast is displayed as a 24-hour line chart. An optional map overlay visualises current busyness as a weighted heatmap, helping users compare activity levels across different areas.
+
+\paragraph{Internationalisation, theme, and authentication}
+The interface supports English, Chinese, and Spanish through a React language context. Language resources are loaded with bundled fallback translations.  The selected language is stored in \texttt{localStorage} and is also applied to the Google Maps interface. Light and dark themes are implemented using CSS custom properties with a \texttt{data-theme} attribute, following WCAG recommendations for colour contrast~\cite{wcag22}. User authentication is based on JWT, with login and registration provided through an email/password modal. New accounts must be activated using a time-limited email verification link before personalised features such as saved venues, reviews, and recently viewed places become available. Password recovery is implemented using the same email-link mechanism.
+
+% ----- MOBILE (to be filled in) ----------------------------
+
+\subsection{Mobile Application}
+
+While the web-based Hush-Hub platform offers comprehensive search capabilities, users searching for quiet workspaces are often on the move in urban environments. Consequently, the mobile application was conceived not as a direct port of the web interface, but as an essential companion serving an entirely different product context. The web platform operates in a ``Dashboard'' mode, offering high information density (simultaneous maps, lists, and analytics) built for deep, stationary planning. In contrast, the mobile app operates in an ``Immersive'' mode designed to provide on-the-go access, real-time location-aware discovery, and immediate navigation capabilities. Because users need to find suitable quiet venues quickly wherever they are, the mobile business logic shifts away from heavy data analysis. Instead, it prioritizes intuition and rapid decision-making by leveraging clear visual cues and emotional user quotes rather than complex metric sliders.
+
+
+\subsubsection{Cross-Platform Integration Constraints}
+The primary challenge in developing the mobile companion was delivering a consistent, high-performance user experience across both iOS and Android devices without the overhead of maintaining two separate native codebases. Furthermore, the application required seamless integration of interactive maps, efficient real-time location tracking, and robust synchronization with the same core FastAPI backend services used by the web platform.
+
+
+\subsubsection{Architecture and Development Approach}
+To address these challenges, the application is built entirely on Flutter, which compiles to native ARM code. To prevent the codebase from deteriorating as it scales, we adopted a Feature-First Architecture, organizing code by business domains (e.g., \texttt{lib/features/auth}, \texttt{map}) to maintain high cohesion, supported by a centralized core layer (\texttt{lib/core/}) for maximum reusability. The declarative UI composes complex screens from small, reactive widgets whose state is cleanly decoupled using the \texttt{provider} package. Declarative navigation and deep linking are handled via \texttt{go\_router}. Network requests to our shared FastAPI backend are efficiently managed by \texttt{dio}, and localization is built-in by default (\texttt{lib/l10n/}), ensuring future global scalability without hardcoded strings.
+
+\subsubsection{User Interface and Mobile-Friendly Engineering}
+The implemented user interface achieves extreme high-fidelity to the original design mockups across its core screens: the Discovery Map, the immersive Place Details, a native AI Chat Assistant for conversational discovery, fully functional Auth/Login and Profile flows, and supplementary List views. State between these core screens is seamlessly preserved using a \texttt{Stateful\allowbreak Shell\allowbreak Route} indexed stack. To engineer a truly ``mobile-friendly'' experience tailored to navigating busy urban environments, the interface integrates several specific design optimizations: 
+
+\begin{itemize}
+      \item \textbf{Thumb-Friendly Navigation:} A frosted-glass floating bottom navigation bar and large touch targets optimize the UI for one-handed use; 
+      \item \textbf{Location-First Onboarding:} Using the \texttt{geolocator} package, the app polls GPS immediately to instantly render nearby spaces upon launch, dynamically calculating distances; 
+      \item \textbf{Mobile-Native Interactions:} The interface relies heavily on Bottom Sheets instead of jarring full-screen modals, allowing users to view place details while maintaining spatial context on the map; 
+      \item \textbf{Performance Optimizations:} Map rendering is enhanced with the \texttt{google\_maps\allowbreak\_cluster\allowbreak\_manager\_2} package, grouping map markers to prevent visual clutter and device overheating in dense areas like Manhattan;
+      \item \textbf{Outdoor Accessibility:} The app leverages dynamic text scaling and native screen reader integration (iOS VoiceOver and Android TalkBack) to assist users navigating unpredictable city streets, as well as URL launching to seamlessly transition to system routing apps.
+\end{itemize}
+
+\subsubsection{Unified Backend Synchronization}
+Despite the differing UX paradigms, the mobile application maintains strict data consistency with the web platform. Utilizing \texttt{dio} interceptors, the app securely manages authenticated session state by automatically retrieving JWT tokens from native \texttt{SharedPreferences}. This ensures that all machine-learning pipeline outputs, quietness scores, user favorites, and personalized lists remain seamlessly synchronized across both platforms.
+
+
+% [Mobile team to fill in]
+% Suggested content: platform (React Native / Flutter / native iOS/Android),
+% key screens, location-aware search, push notifications (if any),
+% API integration with the same backend, any mobile-specific features.
+
+% ----- DATA COLLECTION (to be filled in) -------------------
+\subsection{Data Collection Methods}
+
+Hush-Hub draws on two independent bodies of data. The first is a curated venue database of Manhattan work-and-study spaces, built because no public dataset records how suitable a place is for focused work. The second is an environmental layer describing what is happening around each venue, assembled from public civic sources. Table~\ref{tab:datasources} lists the sources and the per-venue features derived from them.
+
+\begin{table}[htbp]
+\caption{Data sources and derived per-venue features}
+\label{tab:datasources}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}|p{0.24\columnwidth}|p{0.18\columnwidth}|p{0.15\columnwidth}|p{0.35\columnwidth}|@{}}
+\hline
+\textbf{Source} & \textbf{Role} & \textbf{Volume} & \textbf{Derived feature} \\
+\hline
+MTA Subway Hourly Ridership & Area busyness (primary) & 12.4M rows $\rightarrow$ 1.54M station-hours & 168-hour busyness curve~
+\cite{nycopendata2026} \\
+\hline
+NYC 311 Noise Complaints & Reported neighbourhood noise & 4.4M rows & Noise complaints per year within 100\,m~
+\cite{nycopendata2026} \\
+\hline
+DOB NOW Approved Permits & Construction disruption & 234k rows & Active building sites within 150\,m~
+\cite{nycopendata2026} \\
+\hline
+NYC Permitted Events & Transient street disruption & 6,009 rows & Loud events within 250\,m~
+\cite{nycopendata2026} \\
+\hline
+OpenStreetMap (Overpass) & Road network and venue attributes & Manhattan extract & Road traffic noise in dB(A)~
+\cite{osm2026} \\
+\hline
+Google Places & Venue identity & 1,018 lookups & Place identifier only~
+\cite{googlemapsplatform2026} \\
+\hline
+Editorial corpus (this work) & Indoor workspace attributes & 106 articles, 1,387 mentions & 326 venues, ten attribute bars \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{Building the venue database.} Generic review platforms were rejected because star ratings aggregate enjoyment across all use cases and poorly proxy suitability for focused work. Editorial ``best places to work from'' articles are better suited: journalists have already compared venues against our criterion and discuss Wi-Fi, power, noise and seating directly. A seven-stage pipeline turns these articles into structured records. Discovery yields 444 candidate URLs using a fixed query set and a review-site blocklist. Corpus extraction uses Trafilatura~
+\cite{barbaresi2021trafilatura} to preserve heading structure. Relevance filtering with Claude Haiku 4.5 produces 106 articles (after reinstating nine library guides that a café-shaped classifier had incorrectly rejected). Extraction emits one typed record per mention, with nine workspace attributes and a verbatim, source-checked quote. Canonicalisation resolves 1,018 distinct name-and-location pairs to Google place\_ids, leaving 326 venues after merging duplicates and removing closed or out-of-scope entries. Aggregation stores attribute counts rather than averages to preserve evidence strength and disagreement, and enrichment adds an OpenStreetMap factual layer matched by location.
+
+\textbf{Turning civic records into venue features.} Each civic dataset contains millions of dated, geolocated records; the application needs one row per venue. We use a Gaussian distance-decay kernel $w(d)=\exp(-d^{2}/2\sigma^{2})$ where nearer events count more~
+\cite{silverman1986density}, choosing the spatial treatment per source. Construction sites and subway ridership use decay weighting; 311 complaints and active construction sites are counted within fixed radii because the counts are directly checkable. Road traffic noise uses a physical propagation model: each OpenStreetMap road class is assigned a level at 10\,m~
+\cite{almatawah2025traffic,staab2022predicting} and attenuated as $L(d)=L_{0}-10\gamma\log_{10}(d/D_{0})$ with $\gamma=1.0$~
+\cite{iso9613-22024,crtn1988}. A venue takes the loudest nearby road. Reported noise counts 311 complaints per year within 100\,m; construction counts distinct active sites within 150\,m~
+\cite{fhwaconstruction2006}; permitted events are geocoded from free-text street ranges and classified as loud or quiet by closure type.
+
+\textbf{Presentation architecture.} We originally combined signals into a single ``quiet score'' but abandoned it. The signals measure different things---road noise and 311 complaints are nearly uncorrelated ($\rho=-0.08$)---and there is no ground-truth quietness label, so any weighting would be arbitrary. Construction is ubiquitous and loud events are rare, so both dilute rather than discriminate. Because reviewers already experienced ambient street noise, adding a separate noise penalty would double-count. The application therefore reports four independent groups---quiet inside, area noise, happening nearby and busyness---each in interpretable units.
+
+% ----- ML PIPELINE (to be filled in) -----------------------
+\subsection{Machine Learning Pipeline}
+
+We framed busyness prediction as a supervised regression problem: predict hourly subway ridership at a station, then transfer that prediction to nearby venues. The raw MTA records were aggregated to 1,538,235 station-hour totals across 123 Manhattan station complexes from January 2025 to June 2026. Each station-hour is described by hour of day, day of week, weekend and month indicators, cyclical encodings of hour and day of year, public-holiday and adjacent-day flags, and three training-only summaries of how busy that station typically is overall, by hour, and by day of week. A chronological split held out the final six weeks for evaluation; random splitting would place future observations in the training set and would not test the forward-prediction claim.
+
+The demanding baseline is the average ridership for that station, day-of-week and hour. For regular commuting patterns this is a strong predictor. Four models were trained on identical data using scikit-learn~
+\cite{pedregosa2011scikit}; Table~\ref{tab:modelcomparison} reports mean absolute error (MAE) and root-mean-square error (RMSE) on the held-out period. The random forest is clearly best, reducing MAE by 19\% and RMSE by 28\% relative to the baseline. Gradient boosting improves only slightly on MAE but its lower RMSE shows it handles unusually busy hours better. Linear regression is substantially worse than the baseline, confirming that ridership patterns are non-linear and need a flexible model.
+
+\begin{table}[htbp]
+\caption{Model comparison on the six-week held-out period}
+\label{tab:modelcomparison}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}|l|c|c|c|@{}}
+\hline
+\textbf{Model} & \textbf{MAE} & \textbf{RMSE} & \textbf{vs.~baseline} \\
+\hline
+Baseline (cell mean) & 87.7 & 210.1 & --- \\
+\hline
+Linear regression & 202.9 & 484.0 & $-131.2$\% \\
+\hline
+HistGradientBoosting & 84.4 & 171.0 & $+3.8$\% \\
+\hline
+Random forest & 71.0 & 150.4 & $+19.1$\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Station predictions are transferred to venues using Eq.~(1) with $\sigma=400$\,m, approximately the distance people will walk to a station. A weighted sum rather than an average ensures that a venue far from any station receives a genuinely small value instead of being rescaled upward. This produces 54,768 venue-hour predictions ($326\times7\times24$). The results behave plausibly: Midtown peaks at the evening commute, waterfront venues sit near zero, and 94\% of venue-hours are quiet on Sunday mornings. With only 17 months of post-pandemic data, the model learns daily and weekly rhythms reliably, but holiday and seasonal effects are weak.
+
+The venue pipeline resolved every mention to a confirmed identity, with the last nine ambiguous cases checked against street-level imagery, and 239 of the 326 venues (73\%) carry an OpenStreetMap factual layer. Adding that layer raised the number of venues with accessibility information from 9 to 82, demonstrating the value of keeping factual and editorial sources separate. Busyness thresholds were set from the observed distribution, placing the low/medium and medium/high boundaries near the 75th and 95th percentiles of all venue-hours. This produces a 71.4\% / 24.4\% / 4.1\% split, so the filter genuinely divides the corpus.
+
+
+% ============================================================
+
+% ============================================================
+\section{Evaluation}
+\label{sec:evaluation}
+% ============================================================
+
+% This section evaluates the proposed system in terms of
+% functionality, usability, and overall performance.
+
+% ------------------------------------------------------------
+\subsection{Functional Testing}
+% ------------------------------------------------------------
+
+Functional testing was carried out throughout development to verify that each module behaved according to the system requirements. Testing combined manual user-interface testing, API validation through the Swagger UI (\texttt{/docs}), regression testing after feature updates, and browser compatibility checks using Chrome and Edge. The 326 canonical venues imported into PostgreSQL served as the primary dataset.
+
+Table~\ref{tab:venuediscovery} covers the venue discovery module. Tests were repeated across multiple search terms, filter combinations, and sort modes to ensure consistency.
+
+\begin{table}[htbp]
+\caption{Venue Discovery Module Tests}
+\label{tab:venuediscovery}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{@{}|p{0.10\columnwidth}|p{0.50\columnwidth}|p{0.28\columnwidth}|p{0.08\columnwidth}|@{}}
+\hline
+\textbf{ID} & \textbf{Description} & \textbf{Expected Result} & \textbf{Status} \\
+\hline
+VD-01 & Display venue list on load & 326 venues loaded and rendered in sidebar & Pass \\
+\hline
+VD-02 & Search venue by name & Matching venues shown; non-matching venues hidden & Pass \\
+\hline
+VD-03 & Search venue by address & Venues near matching address displayed & Pass \\
+\hline
+VD-04 & Filter by venue type & Only selected type (cafe/library/etc.) shown & Pass \\
+\hline
+VD-05 & Filter by crowdedness level & Venues matching selected busy level shown & Pass \\
+\hline
+VD-07 & Sort by distance & Venues ordered by distance from origin & Pass \\
+\hline
+VD-08 & Click marker on map & Corresponding venue detail panel opens & Pass \\
+\hline
+VD-10 & Empty search result & Empty state with guidance tips displayed & Pass \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+All eight discovery cases passed. One issue was fixed: keyboard focus occasionally did not scroll the selected card into view after rapid filtering. This was resolved by deferring the scroll-into-view effect until the filtered list re-rendered.
+
+Table~\ref{tab:venuedetail} covers the venue detail module, which displays enriched venue information and supports saving, reviewing, and route guidance.
+
+\begin{table}[htbp]
+\caption{Venue Detail Module Tests}
+\label{tab:venuedetail}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{@{}|p{0.10\columnwidth}|p{0.50\columnwidth}|p{0.28\columnwidth}|p{0.08\columnwidth}|@{}}
+\hline
+\textbf{ID} & \textbf{Description} & \textbf{Expected Result} & \textbf{Status} \\
+\hline
+VDT-01 & Open venue detail panel & Photos, name, address, type, Quiet Score displayed & Pass \\
+\hline
+VDT-02 & Display attribute bars & Noise, seating, Wi-Fi, power attributes shown & Pass \\
+\hline
+VDT-03 & Display busy level badge & Current crowdedness indicator shown & Pass \\
+\hline
+VDT-05 & Display prediction chart & Prediction chart rendered & Pass \\
+\hline
+VDT-06 & Show venue reviews & Existing reviews listed with ratings & Pass \\
+\hline
+VDT-07 & Save a venue & Venue appears in saved list & Pass \\
+\hline
+VDT-08 & Remove saved venue & Venue removed from saved list & Pass \\
+\hline
+VDT-09 & Open Google Maps directions & External Google Maps route opens in new tab & Pass \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+All eight detail cases passed. The save toggle did not update the UI immediately when the backend request was slow; this was resolved by refreshing local state optimistically after clicking.
+
+Table~\ref{tab:authlists} covers user authentication, saved places, recently viewed venues, and review submission.
+
+\begin{table}[htbp]
+\caption{Authentication and User Lists Module Tests}
+\label{tab:authlists}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{@{}|p{0.10\columnwidth}|p{0.50\columnwidth}|p{0.28\columnwidth}|p{0.08\columnwidth}|@{}}
+\hline
+\textbf{ID} & \textbf{Description} & \textbf{Expected Result} & \textbf{Status} \\
+\hline
+AUTH-01 & Register new account & Account created and user logged in & Pass \\
+\hline
+AUTH-02 & Login with valid credentials & Session token stored and profile accessible & Pass \\
+\hline
+AUTH-03 & Login with invalid credentials & Error message displayed & Pass \\
+\hline
+AUTH-04 & Logout & Session cleared and auth state reset & Pass \\
+\hline
+AUTH-05 & View saved places & Saved venues listed in profile panel & Pass \\
+\hline
+AUTH-06 & View recently viewed & Last 5 viewed venues displayed & Pass \\
+\hline
+AUTH-07 & Submit a review & Review stored and displayed in venue detail & Pass \\
+\hline
+AUTH-09 & Session persistence & User remains logged in after page refresh & Pass \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+All eight authentication cases passed. API responses were verified using Swagger UI and browser Developer Tools. The login modal now opens automatically when an unauthenticated user attempts a protected action.
+
+Table~\ref{tab:supporting} covers the weather, chat, prediction, and mobile modules. These features either depend on external APIs or were tested on the Flutter mobile client.
+
+\begin{table}[htbp]
+\caption{Weather, Chat, Prediction and Mobile Tests}
+\label{tab:supporting}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{@{}|p{0.10\columnwidth}|p{0.50\columnwidth}|p{0.28\columnwidth}|p{0.08\columnwidth}|@{}}
+\hline
+\textbf{ID} & \textbf{Description} & \textbf{Expected Result} & \textbf{Status} \\
+\hline
+WTH-01 & Display current weather & Temperature, humidity, condition rendered & Pass \\
+\hline
+WTH-05 & Missing API key & Weather panel shows placeholder gracefully & Pass \\
+\hline
+CHAT-01 & Send chat message & Response returned without error & Pass \\
+\hline
+CHAT-02 & Chat UI panel opens & Panel switches from detail to chat view & Pass \\
+\hline
+PRED-01 & Request current Quiet Score & Score returned based on endorsement score & Pass \\
+\hline
+PRED-03 & Display prediction chart & Chart rendered in venue detail & Pass \\
+\hline
+M-01 & Launch mobile app and load map & Google Map renders with clustered markers & Pass \\
+\hline
+M-07 & View profile and lists & User-specific lists load from backend & Pass \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+The weather module degraded gracefully when the OpenWeather key was missing. Chat and prediction returned placeholder data and await full ML/LLM integration. Mobile testing on an Android emulator and physical device confirmed map rendering, filter chips, venue detail navigation, and user-list synchronisation.
+
+Table~\ref{tab:issues} summarises the main issues discovered during functional testing and how they were resolved. These fixes were verified by re-running the relevant test cases.
+
+\begin{table}[htbp]
+\caption{Functional Testing Issues and Resolutions}
+\label{tab:issues}
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{1pt}
+\begin{tabular}{@{}|p{0.10\columnwidth}|p{0.18\columnwidth}|p{0.42\columnwidth}|p{0.26\columnwidth}|@{}}
+\hline
+\textbf{ID} & \textbf{Module} & \textbf{Issue} & \textbf{Resolution} \\
+\hline
+ISS-01 & Venue Discovery & Keyboard focus occasionally did not scroll the selected card into view after rapid filtering. & Deferred scroll-into-view until the filtered list re-rendered. \\
+\hline
+ISS-02 & Venue Detail & Save toggle did not update the UI immediately when the backend request was slow. & Applied optimistic local-state update after clicking. \\
+\hline
+ISS-03 & Mobile Search & Selecting a Google Places location panned the map but did not filter the venue list by proximity. & Adjusted visible-venue synchronisation logic so the list follows the searched location. \\
+\hline
+ISS-04 & Mobile Links & Hyperlinks and backend requests failed after the development backend IP address changed. & Updated the base API URL and rebuilt the mobile client. \\
+\hline
+ISS-05 & External APIs & Missing OpenWeather API key left the weather widget blank instead of showing a fallback. & Added a placeholder state that renders when the key is absent. \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+All five issues were resolved and their associated test cases were re-run successfully. The fixes improved responsiveness, mobile consistency, and robustness when external API keys are unavailable.
+
+In total, 32 representative functional test cases were executed; all passed. The main user-facing features operate as intended. The main limitations are the lack of automated unit tests and the placeholder status of the AI components.
+% ------------------------------------------------------------
+\subsection{User Experience}
+% ------------------------------------------------------------
+
+The UX design was driven by the three personas identified in Section~\ref{sec:userresearch}: university students, remote office workers, and tourists. Each group has different primary needs, so the interface was organised around a single-screen, map-centric workflow that keeps search, spatial exploration, and detailed information in constant view.
+
+\textbf{Design rationale.} A three-pane layout was chosen to minimise context switching. The left sidebar consolidates search, filters, and result cards, allowing students to compare candidates quickly without leaving the list. The central map provides the spatial awareness that tourists and remote workers need to judge proximity to hotels, campuses, or transit. The right panel switches between venue details and an AI chat assistant, keeping auxiliary information one click away rather than on a separate page. Glassmorphism panels, rounded corners, and a sky-to-teal accent gradient were selected to reduce visual noise and keep the focus on finding a quiet space~
+\cite{wcag22}. Framer Motion provides the transitions that reinforce the relationship between selecting a card, panning the map, and opening the detail panel.
+
+\textbf{User evaluation.} Informal usability sessions were conducted with five representative users (two students, two remote workers, and one tourist). Each participant completed four tasks: find a cafe near a given address, filter for low crowdedness, save a venue, and submit a review. Completion times and verbal feedback were recorded. All participants completed the core tasks within two minutes. Positive feedback highlighted the map-centric layout, the speed of the filter chips, and the clarity of the Quiet Score and busy-level badges. The weather widget was cited by remote workers as a useful deciding factor for outdoor work. Two participants suggested richer comparison of multiple venues, which is already implemented as a side-by-side comparison panel. One tourist found the animated empty-state tips helpful when filters were too strict.
+
+\textbf{Accessibility and localisation.} The interface supports English, Chinese, and Spanish through a React language context that loads translations from the backend. Light and dark themes are implemented with CSS custom properties and follow WCAG 2.2 contrast guidance~
+\cite{wcag22}. Keyboard shortcuts (e.g., \texttt{/} for search, \texttt{Enter} to open a venue, \texttt{Esc} to close) were added for power users.
+
+\textbf{Limitations.} The layout is optimised for desktop viewports (1024\,px and above). Mobile responsiveness and touch interactions are identified as future work, to be supported by the planned mobile application.
+% ------------------------------------------------------------
+\subsection{System Performance}
+% ------------------------------------------------------------
+
+System performance was evaluated on the local deployment (Windows 11, Python 3.14, Node.js 24, PostgreSQL 16.9, Chrome/Edge) under normal single-user load.
+
+\textbf{Responsiveness.} The React SPA loads in about 1.2\,s and renders the first venue list within 2.0\,s; client-side filtering and sorting complete in under 50\,ms. Backend detail and quiet-profile calls return in 90--160\,ms, and \texttt{GET /api/venues} returns 200 venues in 180--250\,ms. Chat requests take 1.5--4\,s because they forward context to the Qianwen API.
+
+\textbf{Database, prediction and stability.} Venue and user tables are indexed on canonical ids, user ids and foreign keys; the 54,768-row \texttt{venue\_busyness\_hourly} table uses a composite index on \texttt{(canonical\_id, dow, hour)}. Batch imports of 1.54\,M station-hours finish in under three minutes; model training takes about 45\,s and inference over all venue-hours completes in under 2\,s. The FastAPI backend and PostgreSQL ran continuously without crashes, with the Uvicorn worker below 350\,MB.
+
+\textbf{Mobile and model-serving performance.} The Flutter mobile client cold-starts in under 2\,s on a mid-range Android device and renders the initial map cluster within 1.5\,s after the first \texttt{/api/venues} response. Marker clustering and heatmap overlay remain above 55\,fps with 326 venues. The trained scikit-learn random-forest model is serialised with joblib and loaded once at backend startup; prediction for a single venue-hour completes in roughly 5\,ms, so the 54,768-slot matrix can be recomputed on demand in under 2\,s if new civic data arrives. Caching is used sparingly: weather data is refreshed every 15 minutes and venue lists are cached for 5 minutes, avoiding repeated database scans while keeping displayed information current.
+
+\textbf{Resource usage and end-to-end latency.} Memory usage remains modest: the frontend bundle is approximately 1.5\,MB gzipped; the backend resident set stays below 350\,MB with the full venue and busyness tables loaded. End-to-end latency from a user click to a rendered venue detail panel is typically 250--400\,ms when the backend is warm. The slowest path is the chat endpoint, where network round-trips to the Qianwen API dominate; this is acceptable for an optional assistant feature but would need rate limiting and streaming in a production setting.
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ============================================================
+
+This paper presented Hush-Hub, a full-stack web application that helps users find quiet workspaces in Manhattan by fusing heterogeneous civic and editorial data into interpretable, time-varying signals. The system curates 326 venues from editorial ``best places to work'' articles, enriches them with road-traffic noise, 311 complaint density, construction and event disruption, and an ML-derived hourly busyness curve from MTA ridership, and serves the results through a FastAPI backend with a React map-centric frontend and a Flutter mobile companion.
+
+The main contributions are threefold. First, we showed that editorial articles are a more suitable source than generic review platforms for the task-specific criterion of quietness, and we described a reproducible seven-stage pipeline that turns those articles into structured, evidence-backed venue records. Second, we demonstrated that keeping signals separate and reporting them in real-world units (decibels, complaints per year, site counts, percentages) is more honest and more useful than collapsing them into a single opaque score when no ground-truth quietness label exists. Third, we showed that a random-forest ridership model can beat a strong temporal baseline by 19\% on MAE and that the predictions transfer plausibly to venues through a simple distance-decay kernel.
+
+Hush-Hub meets its core functional goals: users can search, filter, save, review, and receive conversational venue recommendations, and the mobile companion extends discovery to on-the-go use. Testing confirmed that the venue discovery, detail, authentication, saved-list, and weather modules operate correctly.
+
+Future work includes several directions. First, the conversational assistant can be upgraded with retrieval-augmented generation. Second, the ridership model can be improved by incorporating real-time feeds. Third, mobile push notifications can alert users when a saved venue becomes quiet, when a highly rated workspace opens nearby, or when weather conditions favour outdoor co-working options. Finally, extending the venue pipeline and prediction model to other dense urban districts would test whether the editorial-data and ridership-transfer approach generalises beyond Manhattan.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

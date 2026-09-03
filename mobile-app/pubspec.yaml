@@ -1,0 +1,52 @@
+name: mobile_app
+description: "Hush-Hub mobile app for discovering quiet study and work spaces across Manhattan."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State management
+  provider: ^6.1.1
+  # Navigation
+  go_router: ^13.1.0
+  # Networking
+  dio: ^5.4.0
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  # Maps and Location
+  flutter_map: ^6.1.0
+  geolocator: ^14.0.2
+  # Text to speech
+  # UI & Aesthetics
+  google_fonts: ^6.2.1
+  flutter_dotenv: ^6.0.1
+  google_maps_flutter: ^2.17.1
+  url_launcher: ^6.2.5
+  shared_preferences: ^2.5.5
+  flutter_lucide: ^1.11.0
+  google_maps_cluster_manager_2: ^3.2.0
+  auto_size_text: ^3.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - .env
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  remove_alpha_ios: true

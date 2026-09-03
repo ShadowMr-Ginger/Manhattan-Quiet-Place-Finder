@@ -1,0 +1,7 @@
+# regenerable data pulls / OSM cache — never commit (large, rebuilt by the scripts)
+outputs/*.pkl
+outputs/manhattan_highways.json
+# secrets & python cruft
+.env
+__pycache__/
+*.pyc
